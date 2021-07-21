@@ -120,14 +120,6 @@
                 {
                     "name": "VIRUS_CHECKING_ENABLED",
                     "value": "$VIRUS_CHECKING_ENABLED"
-                },
-                {
-                    "name": "ENABLE_CROWDIN_IN_CONTEXT_TRANSLATION",
-                    "value": "$ENABLE_CROWDIN_IN_CONTEXT_TRANSLATION"
-                },
-                {
-                    "name": "CROWDIN_IN_CONTEXT_PROJECT_ID",
-                    "value": "$CROWDIN_IN_CONTEXT_PROJECT_ID"
                 }
             ],
             "image": "${IMAGE_REPO}:${IMAGE_TAG}",
@@ -182,6 +174,14 @@
                 {
                     "name": "DBPASS",
                     "valueFrom": "$DBPASS"
+                },
+                {
+                    "name": "ENABLE_CROWDIN_IN_CONTEXT_TRANSLATION",
+                    "value": "$ENABLE_CROWDIN_IN_CONTEXT_TRANSLATION"
+                },
+                {
+                    "name": "CROWDIN_IN_CONTEXT_PROJECT_ID",
+                    "value": "$CROWDIN_IN_CONTEXT_PROJECT_ID"
                 }
             ]
         },

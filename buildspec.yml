@@ -22,6 +22,15 @@ phases:
       #- echo Building and tagging the Docker image...
       - export GIT_TAG="$(echo $GIT_COMMIT_ID | cut -c1-8)"
       - export IMAGE_TAG=$GIT_TAG
+
+      # Translations
+      - mkdir -p translations/locale
+      - docker-compose run --rm runserver django-admin migrate
+      - ./scripts/build-translation-sources.sh "$APPLICATION_NAME.yaml"
+      - npx @crowdin/cli upload sources -b "$ENVIRONMENT_NAME"
+      - npx @crowdin/cli download -b "$ENVIRONMENT_NAME"
+      - docker-compose run --rm runserver django-admin compilemessages -f
+
       - echo "Building image from commit ${GIT_COMMIT_ID} ${GIT_COMMIT_URL}"
       - docker build -f docker/production/Dockerfile --label "release-id=${RELEASE_ID}" -t "${IMAGE_REPO}:${GIT_TAG}" -t "${IMAGE_REPO}:${GIT_BRANCH_NAME}" .
 

@@ -50,7 +50,7 @@ ENV PYTHONPATH="/app/rdrf/rdrf/:/app/angelman/"
 ENV DJANGO_SETTINGS_MODULE angelman.settings
 ENV STATIC_ROOT="/data/static"
 ENV WRITABLE_DIRECTORY="/data/scratch"
-ENV LOCALE_PATHS="/data/translations/locale"
+ENV LOCALE_PATHS="/app/translations/locale"
 ENV LOG_DIRECTORY="/data/log"
 ENV MEDIA_ROOT="/data/static/media"
 

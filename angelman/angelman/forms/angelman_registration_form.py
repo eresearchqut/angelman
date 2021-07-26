@@ -2,7 +2,7 @@ from operator import attrgetter
 import pycountry
 from django.forms import CharField, ChoiceField, DateField, BooleanField
 from django.forms.widgets import RadioSelect, Select
-from django.utils.translation import gettext as _
+from django.utils.translation import ugettext_lazy as _
 
 from registration.forms import RegistrationForm
 from rdrf.helpers.utils import get_preferred_languages

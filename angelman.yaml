@@ -1,4 +1,4 @@
-EXPORT_TIME: '2021-07-26 09:51:05.478555'
+EXPORT_TIME: '2021-07-29 13:38:23.501084'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -23744,8 +23744,8 @@ consent_sections:
 
     <b><p><center>Thank you for taking the time to read this information sheet</p></b></center><br>
 
-    <h3><p>CONSENT FORM FOR PARENTS/ CARERS/ GUARDIANS"%}</h3></p>
-    <p>{% trans "Name of Researcher:A/Prof Honey Heussler, Children’s Health Queensland Hospital and Health Services, Brisbane.
+    <h3><p>CONSENT FORM FOR PARENTS/ CARERS/ GUARDIANS</h3></p>
+    <p>Name of Researcher:A/Prof Honey Heussler, Children’s Health Queensland Hospital and Health Services, Brisbane.
     <br>email:<a href="mailto:curator@angelmanregistry.info"target="_top">curator@angelmanregistry.info</a>
 
     <p><b>Please provide your informed consent by checking the boxes below. Consent questions 1 - 8 are required for inclusion in the registry, while consent questions 9 - 12 are optional.</p>
@@ -29266,7 +29266,7 @@ forms:
     <p><b>Instructions:</b>
     If your child/ adult has started or stopped a medication: To add more than one medication (either current or past), click the 'Add' button. If you wish to delete a Current Medication and Intervention or Medications and Interventions No Longer Used, please check the 'mark for deletion' box and click the green 'Save' button.</p>
 
-    <p><b> {% trans "Please click the green 'Save' button before progressing to the next Module." %} </p></b>
+    <p><b> Please click the green 'Save' button before progressing to the next Module. </p></b>
   is_questionnaire: false
   name: MedicationIntervention
   position: 4

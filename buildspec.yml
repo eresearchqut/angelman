@@ -24,12 +24,15 @@ phases:
       - export IMAGE_TAG=$GIT_TAG
 
       # Translations
-      - mkdir -p translations/locale
-      - docker-compose run --rm runserver django-admin migrate
-      - ./scripts/build-translation-sources.sh "$APPLICATION_NAME.yaml"
-      - npx @crowdin/cli upload sources -b "$ENVIRONMENT_NAME"
-      - npx @crowdin/cli download -b "$ENVIRONMENT_NAME"
-      - docker-compose run --rm runserver django-admin compilemessages -f
+      - |
+        if [ "$ENVIRONMENT_NAME" != "dev" ]; then # Ignore changes made in dev branch
+          mkdir -p translations/locale
+          docker-compose run --rm runserver django-admin migrate
+          ./scripts/build-translation-sources.sh "$APPLICATION_NAME.yaml"
+          npx @crowdin/cli upload sources -b "$ENVIRONMENT_NAME"
+          npx @crowdin/cli download -b "$ENVIRONMENT_NAME"
+          docker-compose run --rm runserver django-admin compilemessages -f
+        fi
 
       - echo "Building image from commit ${GIT_COMMIT_ID} ${GIT_COMMIT_URL}"
       - docker build -f docker/production/Dockerfile --label "release-id=${RELEASE_ID}" -t "${IMAGE_REPO}:${GIT_TAG}" -t "${IMAGE_REPO}:${GIT_BRANCH_NAME}" .

@@ -27,8 +27,11 @@ phases:
       - mkdir -p translations/locale
       - docker-compose run --rm runserver django-admin migrate
       - ./scripts/build-translation-sources.sh "$APPLICATION_NAME.yaml"
-      - npx @crowdin/cli upload sources -b "$ENVIRONMENT_NAME"
-      - npx @crowdin/cli download -b "$ENVIRONMENT_NAME"
+      - |
+        if [ "$ENVIRONMENT_NAME" != "dev" ]; then # Don't upload dev changes
+          npx @crowdin/cli upload sources
+        fi
+      - npx @crowdin/cli download
       - docker-compose run --rm runserver django-admin compilemessages -f
 
       - echo "Building image from commit ${GIT_COMMIT_ID} ${GIT_COMMIT_URL}"

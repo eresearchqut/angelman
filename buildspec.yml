@@ -29,8 +29,8 @@ phases:
           mkdir -p translations/locale
           docker-compose run --rm runserver django-admin migrate
           ./scripts/build-translation-sources.sh "$APPLICATION_NAME.yaml"
-          npx @crowdin/cli upload sources -b "$ENVIRONMENT_NAME"
-          npx @crowdin/cli download -b "$ENVIRONMENT_NAME"
+          npx @crowdin/cli upload sources
+          npx @crowdin/cli download
           docker-compose run --rm runserver django-admin compilemessages -f
         fi
 

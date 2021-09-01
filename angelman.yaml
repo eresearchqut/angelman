@@ -1,4 +1,4 @@
-EXPORT_TIME: '2021-07-29 13:38:23.501084'
+EXPORT_TIME: '2021-09-01 13:34:40.758927'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -4985,20 +4985,20 @@ cdes:
   calculation: ''
   code: ANGBEHDEVTYPICALGAIT
   datatype: range
-  desc: Would you describe the your child/ adult’s gait as typical when compared to
-    typically developing age matched peers?
+  desc: Would you describe your child/ adult’s gait as typical when compared to typically
+    developing age matched peers?
   important: false
   instructions: ''
   is_required: false
   max_length: null
   max_value: null
   min_value: null
-  name: Would you describe the your child/ adult’s gait as typical when compared to
-    typically developing age matched peers?
+  name: Would you describe your child/ adult’s gait as typical when compared to typically
+    developing age matched peers?
   pattern: ''
   pv_group: YesNoUnknown
-  questionnaire_text: 'Would you describe the individual with Angelman Syndrome’s
-    gait as typical when compared to the typically developing population?   '
+  questionnaire_text: Would you describe the individual with Angelman Syndrome’s gait
+    as typical when compared to the typically developing population?
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
 - allow_multiple: false
@@ -23576,6 +23576,46 @@ consent_rules:
   consent_section_code: ANGconsent
   enabled: true
   user_group: Clinical Staff
+- capability: see_patient
+  consent_question_code: angconsent1
+  consent_section_code: ANGconsent
+  enabled: true
+  user_group: Parents
+- capability: see_patient
+  consent_question_code: angconsent2
+  consent_section_code: ANGconsent
+  enabled: true
+  user_group: Parents
+- capability: see_patient
+  consent_question_code: angconsent3
+  consent_section_code: ANGconsent
+  enabled: true
+  user_group: Parents
+- capability: see_patient
+  consent_question_code: angconsent4
+  consent_section_code: ANGconsent
+  enabled: true
+  user_group: Parents
+- capability: see_patient
+  consent_question_code: angconsent5
+  consent_section_code: ANGconsent
+  enabled: true
+  user_group: Parents
+- capability: see_patient
+  consent_question_code: angconsent6
+  consent_section_code: ANGconsent
+  enabled: true
+  user_group: Parents
+- capability: see_patient
+  consent_question_code: angconsent7
+  consent_section_code: ANGconsent
+  enabled: true
+  user_group: Parents
+- capability: see_patient
+  consent_question_code: angconsent8
+  consent_section_code: ANGconsent
+  enabled: true
+  user_group: Parents
 consent_sections:
 - applicability_condition: ''
   code: ANGconsent
@@ -23933,6 +23973,12 @@ demographic_fields:
   groups:
   - Parents
   - Working Group Curators
+  is_section: false
+  registry: ang
+  status: 2
+- field: date_of_migration
+  groups:
+  - Parents
   is_section: false
   registry: ang
   status: 2
@@ -28531,7 +28577,7 @@ forms:
 
     <p>If you require more information, please visit the following website:<a href="http://www.ilae.org/"target="_blank"><b>http://www.ilae.org/</b></a></p>
 
-    <p><b>{% trans "Please click the green 'Save' button before progressing to the next Module." %} </p></b>
+    <p><b>Please click the green 'Save' button before progressing to the next Module. </p></b>
   is_questionnaire: false
   name: Epilepsy
   position: 3

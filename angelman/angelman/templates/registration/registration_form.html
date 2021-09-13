@@ -89,17 +89,21 @@
         <strong>{% project_title %} - {% trans "Parent Registration" %}</strong>
     </h3>
 
-    <div class="alert alert-warning">
-        <strong>{% trans "Parent/Guardians" %}</strong>:
-        {% trans "You may register one patient at this stage - if you have multiple patients to register, you will be able to enter their details once you have logged into the registry. Please note you must be the patient's parent or guardian to register on their behalf." %}
+    <div class="row">
+        <div class="alert alert-warning">
+            <strong>{% trans "Parent/Guardians" %}</strong>:
+            {% trans "You may register one patient at this stage - if you have multiple patients to register, you will be able to enter their details once you have logged into the registry. Please note you must be the patient's parent or guardian to register on their behalf." %}
+        </div>
     </div>
 
-    <div class="alert alert-info">
-        <small>
-            <p class="text-justify text-muted">
-                {% trans "Privacy Statement - All information we receive from you will be treated confidentially and will be encrypted and stored on a secure server. Only de-identified health information will be made accessible to qualified researchers who are granted permission by the Steering committee." %}
-            </p>
-        </small>
+    <div class="row">
+        <div class="alert alert-info">
+            <small>
+                <p class="text-justify text-muted">
+                    {% trans "Privacy Statement - All information we receive from you will be treated confidentially and will be encrypted and stored on a secure server. Only de-identified health information will be made accessible to qualified researchers who are granted permission by the Steering committee." %}
+                </p>
+            </small>
+        </div>
     </div>
 
     <form id="registration-form" method="POST">
@@ -118,52 +122,53 @@
 
                 <div id="guardian-form">
                     <h2>{% trans "Parent/Guardian Details" %}</h2>
-                    <div id="parent_guardian_form">
-                        <div class="form-group">
+                    <div id="parent_guardian_form" class="row g-3">
+                        <div class="col-12 mt-0">
                             {{form.parent_guardian_first_name}}
                         </div>
-                        <div class="form-group">
+                        <div class="col-12">
                             {{form.parent_guardian_last_name}}
                         </div>
-                        <div class="form-group">
+                        <div class="col-12">
                             {{form.parent_guardian_date_of_birth}}
                             <div class="text-muted">YYYY-MM-DD</div>
                         </div>
-                         <div class="form-group">
-                                <fieldset data-toggle="tooltip" data-placement="left" data-placement="left" title="{% trans 'Indeterminate also refers to Intersex/Unspecified' %}">
+                         <div class="col-12">
+                                <fieldset class="required" data-toggle="tooltip" data-placement="left" data-placement="left" title="{% trans 'Indeterminate also refers to Intersex/Unspecified' %}">
                                 {% for choice in form.parent_guardian_gender %}
-                                    <label>{{ choice.choice_label }}</label>
-                                    {{ choice.tag }}
+                                    <label>{{ choice.choice_label }} {{ choice.tag }}</label>
                                     <br/>
                                 {% endfor %}
                             </fieldset>
                         </div>
-                        <div class="form-group top-separator">
+                        <div class="col-12 top-separator">
                             {{form.parent_guardian_address}}
                         </div>
-                        <div class="form-group">
+                        <div class="col-12">
                             {{form.parent_guardian_suburb}}
                         </div>
-                        <div class="form-group">
+                        <div class="col-12">
                             {{form.parent_guardian_country}}
                         </div>
-                        <div class="form-group">
+                        <div class="col-12">
                             {{form.parent_guardian_state}}
                         </div>
-                        <div class="form-group">
+                        <div class="col-12">
                             {{form.parent_guardian_postcode}}
                         </div>
-                        <div class="form-group">
+                        <div class="col-12">
                             {{form.parent_guardian_phone}}
                         </div>
                     </div>
                 </div>
-                <div id="patient-form">
+                <div id="patient-form" class="row">
                     {% include "registration/registration_patient_details.html" %}
-                    <div class="form-group top-separator">
-                        {{form.same_address}} {% trans "Same details as person completing" %}
-                    </div>
-                    {% include "registration/registration_patient_address.html" %}
+                        <div class="col-12 top-separator">
+                            <label>
+                                {{form.same_address}} {% trans "Same details as person completing" %}
+                            </label>
+                        </div>
+                        {% include "registration/registration_patient_address.html" %}
                     </div>
                 </div>
 
@@ -175,7 +180,7 @@
                         <div class="g-recaptcha" data-sitekey="{% recaptcha_site_key %}"  data-callback='reCaptchaCallback' data-expired-callback='reCaptchaExpiredCallback'></div>
                     </div>
                     <div class="col-md-6">
-                        <button type="button" id="registration-submit" class="btn btn-success pull-right">{% trans "Submit" %}</button>
+                        <button type="button" id="registration-submit" class="btn btn-success float-end">{% trans "Submit" %}</button>
                     </div>
                 </div>
 

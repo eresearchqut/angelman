@@ -24,6 +24,15 @@ def _preferred_languages():
     return [_tuple(lang.code, lang.name) for lang in languages] if languages else [_tuple('en', 'English')]
 
 
+def _field_widget_class(field):
+    if isinstance(field, BooleanField) or isinstance(field.widget, RadioSelect):
+        return None
+    elif isinstance(field.widget, Select):
+        return 'form-select'
+    else:
+        return 'form-control'
+
+
 class ANGPatientRegistrationForm(RegistrationForm):
 
     placeholders = {
@@ -51,8 +60,12 @@ class ANGPatientRegistrationForm(RegistrationForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         for field in self.fields:
+
+            field_widget_class = _field_widget_class(self.fields[field])
+            if field_widget_class is not None:
+                self.fields[field].widget.attrs['class'] = field_widget_class
+
             if field not in self.no_placeholder_fields:
-                self.fields[field].widget.attrs['class'] = 'form-control'
                 self.fields[field].widget.attrs['placeholder'] = self.placeholders.get(field, _(''))
             if field in self.password_fields:
                 self.fields[field].widget.render_value = True

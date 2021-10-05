@@ -10,5 +10,10 @@ files: [
   "source" : "/translations/locale/en/LC_MESSAGES/django.po",
   "translation" : "/translations/locale/%locale_with_underscore%/LC_MESSAGES/%original_file_name%",
   "dest" : "django.po",
- }
+ },
+  {
+    "source": "/translations/locale/en/LC_MESSAGES/django.po",
+    "translation": "/translations/locale/%locale_with_underscore%/LC_MESSAGES/%original_file_name%",
+    "dest": "djangojs.po",
+  }
 ]

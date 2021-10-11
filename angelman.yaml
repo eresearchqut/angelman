@@ -1,4 +1,4 @@
-EXPORT_TIME: '2021-09-01 13:34:40.758927'
+EXPORT_TIME: '2021-10-11 14:13:08.847107'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -23001,38 +23001,12 @@ complete_fields:
   - ResideNewborn
   form_name: NewbornAndInfancyHistory
 - cdes:
-  - ANGAffectionate
-  - ANGAgeStoppedBreastfeeding
-  - ANGAgeStoppedBreastfeedMONTHS
-  - ANGArching
-  - ANGAsthmaWheezing
-  - ANGBiting
-  - ANGBreastFedEffort
-  - ANGbronchitis
-  - ANGCoughing
-  - ANGCouldNotLatch
-  - ANGDifficultyMaintainingTemp
-  - ANGEasyGoing
-  - ANGExcessiveMovement
-  - ANGFailGain
-  - ANGFeedingDifficulties
-  - ANGHappy
-  - ANGHOWFEDINFANCY
-  - ANGIfUnableToBreastBottleFeed
-  - ANGIneffectiveSuck
-  - ANGIrritablefeed
-  - ANGOthBehProblems
-  - ANGOtherHealthProblems
-  - ANGOtherHealthProblemsYES
-  - ANGPlacid
-  - ANGpneumoniadiff
-  - ANGRefluxGastroOesoph
-  - ANGRefusalToNurse
-  - ANGSuckSwallow
-  - ANGTransitionSolid
-  - ANGVerified
-  - ANGVomiting
-  form_name: AngelmanRegistryNewbornAndInfancyHistory
+  - ADMINDUPLICATEOTH
+  - ADMINPASS
+  - ADMINPASSDATE
+  - ADMINPASSDETAIL
+  - ADMINUSERDECISION
+  form_name: AdminInfo
 - cdes:
   - ANGAgeDiagnosis2
   - ANGCurrentPatientAge
@@ -23045,148 +23019,10 @@ complete_fields:
   - ANGWhoMadeDiagnosis
   form_name: HistoryOfDiagnosisAndResults
 - cdes:
-  - ANGAgeDiagnosis
-  - ANGAgeDiagnosisMonth
-  - ANGBloodResultFile
-  - ANGCurrentPatientAge
-  - ANGDiagnosisOther
-  - ANGDNAMethylAbnormalResult
-  - ANGDualDX
-  - ANGDualDxWhat
-  - ANGGeneticTest
-  - ANGGeneticTestType
-  - ANGHistoryOther
-  - ANGMisdiagnosis
-  - ANGMisdiagnosisOTH
-  - ANGNeurologicalSymptoms
-  - ANGWhoMadeDiagnosis
-  form_name: AngelmanRegistryHistoryOfDiagnosisAndResults
-- cdes:
   - ANGAnaesthetic
   - ANGHospitalVisits
   - ANGSurgicalProcedures
   form_name: MedicalHistory
-- cdes:
-  - ANGAgeBracingMonths
-  - ANGAgeBracingYears
-  - ANGAgeScoliosisDiagnosed
-  - ANGAgeScoliosisDiagnosedMONTH
-  - ANGBMIimperial
-  - ANGBMImetric
-  - ANGConstipationManage
-  - ANGConstipationOth
-  - ANGConstipationSever
-  - ANGDentalProblems
-  - ANGDentalProblemsFillings
-  - ANGDentalProblemsOther
-  - ANGEverConstipation
-  - ANGFailuretoThrive
-  - ANGFailureToThriveMonths
-  - ANGFailureToThriveOnsetMonths
-  - ANGFailureToThriveOnsetWeeks
-  - ANGFailureToThriveOnsetYears
-  - ANGFailureToThriveWeeks
-  - ANGFailureToThriveYears
-  - ANGGagging
-  - ANGGaggingYes
-  - ANGGastroesophagealReflux
-  - ANGGastroRefluxDiagnosed
-  - ANGGastroRefluxDiagnosedmonths
-  - ANGGastroRefluxDiagnosedSever
-  - ANGGastroRefluxDiagnosedSurg
-  - ANGGastroRefluxDiagnosedTreat
-  - ANGGastroRefluxRecurred
-  - ANGGastroRefluxRecurredmonths
-  - ANGGastroRefluxRecurredSurgey
-  - ANGGastroRefluxRecurredTreatme
-  - ANGGastroRefluxResolved
-  - ANGGastroRefluxResolvedmonths
-  - ANGGastroRefluxResolvedSever
-  - ANGHearingResult
-  - ANGHeightIn
-  - AngMedAuditory
-  - AngMedCondition1
-  - AngMedConditionYes1
-  - AngMedCortical
-  - AngMedCorticalMyoclonus
-  - ANGMedCorticalOnsetMonths
-  - ANGMedCorticalOnsetWeeks
-  - ANGMedCorticalOnsetYears
-  - ANGMedCorticalSeverity
-  - AngMedHearing
-  - ANGMedOnsetMonths1
-  - ANGMedOnsetWeeks1
-  - ANGMedOnsetYears1
-  - ANGMedOtherComment1
-  - ANGMedRecur1
-  - ANGMedRecurFreq1
-  - ANGMedSeverity1
-  - AngMedVisual
-  - ANGObesity
-  - ANGObesityActivity
-  - ANGObesityAge
-  - ANGObesityExcessiveIntake
-  - ANGObesityFoodSeeking
-  - ANGObesityHeight
-  - ANGObesityHeightft
-  - ANGObesityMonths
-  - ANGObesityWeight
-  - ANGObesityWeightlb
-  - ANGOtitisMedia
-  - ANGOtitisMediaYes
-  - ANGPneumonia
-  - ANGPneumoniaAspiration
-  - ANGPneumoniaFreq
-  - ANGPneumoniaSever
-  - ANGRespiratory
-  - ANGRespiratoryOth
-  - ANGSCOLIOSIS
-  - ANGScoliosisTreatmentUsed
-  - ANGStrabismus
-  - ANGStrabismusRecur
-  - ANGStrabismusRecurTreat
-  - ANGStrabismusTreatment
-  - ANGStrepThroat
-  - ANGStrepThroatFreq
-  - ANGStrepThroatSever
-  - ANGTightHeelCordsRecur
-  - ANGToeWalking
-  - ANGToeWalkingTreatment
-  - ANGTubeComplications
-  - ANGTubeFed
-  - ANGTubeFedMonths
-  - ANGTubeFedWeeks
-  - ANGTubeFedYears
-  - ANGTubeFedYesType
-  - ANGTubeHow
-  - ANGTubeYesReason
-  - ANGVomitingWithFeeds
-  - ANGVomitingWithFeedsMedical
-  - ANGVomitingWithFeedsSurgery
-  form_name: AngelmanRegistryIllnessesOrMedicalProblems
-- cdes:
-  - ANGAgeHospitalVisit1
-  - ANGAgeHospitalVisit1MONTH
-  - ANGAllergies
-  - ANGAllergiesType
-  - ANGAllergySpecify
-  - ANGAnaesthetic
-  - ANGAnaestheticNumber
-  - ANGEpilepsyEver
-  - ANGHospitalVisit1AdmissAPPROX
-  - ANGHospitalVisit1AdmissionDate
-  - ANGHospitalVisit1DaysInHospita
-  - ANGHospitalVisit1LevelOfCare
-  - ANGHospitalVisit1Reason
-  - ANGHospitalVisits
-  - ANGHospitalVisitsNumber
-  - ANGHospOther1
-  - ANGHospSurgery1
-  - ANGIntolerances
-  - ANGIntolerancesDetails
-  - ANGSurgeryNumber
-  - ANGSurgicalProcedures
-  form_name: AngelmanRegistryMedicalHistory
 - cdes:
   - ANGEpilepsyEver2
   form_name: Epilepsy
@@ -23196,110 +23032,9 @@ complete_fields:
   - therapyscreen
   form_name: MedicationIntervention
 - cdes:
-  - ANGBEHDEVALLLANG
-  - ANGBEHDEVBESTLANG
-  - ANGBEHDEVBESTUNDERSTANDING
-  - ANGBEHDEVCOMEyeTrack
-  - ANGBEHDEVCOMFormalPODD
-  - ANGBEHDEVCOMGesture
-  - ANGBEHDEVCOMHighTech
-  - ANGBEHDEVCOMiPadApp
-  - ANGBEHDEVCOMLowTech
-  - ANGBEHDEVCOMMidTech
-  - ANGBEHDEVCOMSigning
-  - ANGBEHDEVCOMSpoken
-  - ANGBEHDEVCOMVisPic
-  - ANGBEHDEVEXPRESS
-  - ANGBEHDEVPREFCOMMBEST
-  form_name: AngelmanRegistryCommunication
-- cdes:
   - ANGClinicYNU
   - ANGOtherStudyYNU
   form_name: ClinicalTrialsAndStudies
-- cdes:
-  - ANGBEHDEVACTOTH
-  - ANGBEHDEVAGITATIONNEW
-  - ANGBEHDEVANXIOUS
-  - ANGBEHDEVANXIOUSWHAT
-  - ANGBEHDEVAPPROPRIATELAUGHTER
-  - ANGBEHDEVATYPGAIT
-  - ANGBEHDEVBITING
-  - ANGBEHDEVDONTLIKE
-  - ANGBEHDEVDONTLIKEWHAT
-  - ANGBEHDEVFEARLEFT
-  - ANGBEHDEVFEARNEW
-  - ANGBEHDEVFEARSTRANGER
-  - ANGBEHDEVFOCAL
-  - ANGBEHDEVGAIT
-  - ANGBEHDEVGENIMPRESS
-  - ANGBEHDEVGOODBEH
-  - ANGBEHDEVGOODCONCENTRATION
-  - ANGBEHDEVGRABBING
-  - ANGBEHDEVHAIRPULLING
-  - ANGBEHDEVHEADBANGING
-  - ANGBEHDEVHITTING
-  - ANGBEHDEVHYPERACTIVITY
-  - ANGBEHDEVIMPULSIVITY
-  - ANGBEHDEVLOSTWHAT
-  - ANGBEHDEVMOBILITYBEST
-  - ANGBEHDEVMOBILITYSUPPORT
-  - ANGBEHDEVMOUTH
-  - ANGBEHDEVMuscleLimbs
-  - ANGBEHDEVMuscleTrunk
-  - ANGBEHDEVMuscleTrunk2
-  - ANGBEHDEVNIGHTLAUGHTER
-  - ANGBEHDEVOPPOSITIONAL
-  - ANGBEHDEVPOORATTENTION
-  - ANGBEHDEVPREFACT
-  - ANGBEHDEVREPET
-  - ANGBEHDEVSELFHITTING
-  - ANGBEHDEVSEPANXIETY
-  - ANGBEHDEVSKINPICKING
-  - ANGBEHDEVSMILING
-  - ANGBEHDEVSMILINGNOTHING
-  - ANGBEHDEVSOCIAL
-  - ANGBEHDEVSPONTLAUGHTER
-  - ANGBEHDEVTYPICALGAIT
-  - ANGBEHDEVWATER
-  - ANGBEHDEVWHOLEBODY
-  - ANGCAPABILITY
-  - ANGCAPABILITYHIST
-  - ANGFREQUENCY
-  - ANGFREQUENCYHIST
-  - ANGMONTH
-  - ANGYEAR
-  form_name: AngelmanRegistryBehaviourAndDevelopment
-- cdes:
-  - ANGAbsenceYNU
-  - ANGAtonicYNU
-  - ANGAtypicalYNU
-  - ANGClonicYNU
-  - ANGConvulsiveStatusYNU
-  - ANGEpilepsyCease
-  - ANGEpilepsyCeaseMONTH
-  - ANGEpilepsyOnset
-  - ANGEpilepsyOnsetMONTH
-  - ANGEpilepsyTrigger
-  - ANGEpilepsyTriggerOTH
-  - ANGEyelidMyocloniaYNU
-  - ANGFebrileYNU
-  - ANGFocalSeizuresYNU
-  - ANGGeneralisedSeizuresYNU
-  - ANGMyoclonicAbsenceYNU
-  - ANGMyoclonicAtonicYNU
-  - ANGMyoclonicYNU
-  - ANGNonConvulsiveStatusYNU
-  - ANGSeizureFrequencyA
-  - ANGSeizureFrequencyAFebrile
-  - ANGSeizureFrequencyB
-  - ANGSeizureOther
-  - ANGSeizureTotalNumber
-  - ANGSpasmsYNU
-  - ANGTonicClonicYNU
-  - ANGTonicYNU
-  - ANGTypicalYNU
-  - ANGUnknownYNU
-  form_name: AngelmanRegistryEpilepsy
 - cdes:
   - 6MoAge
   - 6MoClinic
@@ -23311,30 +23046,6 @@ complete_fields:
   - 6MoTrial
   - 6MoWeight
   form_name: CheckUp6Months
-- cdes:
-  - ANGDose
-  - ANGMedIntAgeStarted
-  - ANGMedIntAgeStartedMONTH
-  - ANGMedIntAgeStopped
-  - ANGMedIntAgeStoppedMONTH
-  - ANGMedIntNameOTH
-  - AngMedIntOften
-  - ANGMedIntOther
-  - ANGMedIntReason
-  - ANGMEDIntReasonPast
-  - ANGMedIntReasonStop
-  - ANGMedIntStrength
-  - ANGMedIntWeight
-  - ANGMedIntWeightlb
-  - ANGMedIntWhat
-  - ANGMedIntWhatStop
-  - ANGTherapy
-  - ANGTherapyAGE
-  - ANGTherapyAGEMonths
-  - ANGTherapyDur
-  - ANGTherapyFreq
-  - ANGTherapyOTH
-  form_name: AngelmanRegistryMedicationIntervention
 - cdes:
   - ANGAllergies
   - ANGDentalProblems
@@ -23446,14 +23157,6 @@ complete_fields:
   - ANGTOILETURINENIGHTABILITYL
   form_name: BehaviourandDevelopment
 - cdes:
-  - ANGComments
-  - ANGInvestigation
-  - ANGOtherTest
-  - ANGResults
-  - ANGTestDate
-  - ANGTestType
-  form_name: AngelmanRegistryPathologyAndDiagnostics
-- cdes:
   - ANGBEHDEVBEDTIME2
   - ANGBEHDEVGOODSLEEP2
   - ANGBEHDEVLONGESTTIME2
@@ -23520,53 +23223,6 @@ complete_fields:
   - ANGTestDate
   - ANGTestType
   form_name: PathologyAndDiagnostics
-- cdes:
-  - ANGBEHDEVBEDTIME2
-  - ANGBEHDEVGOODSLEEP2
-  - ANGBEHDEVLONGESTTIME2
-  - ANGBEHDEVNAPDUR
-  - ANGBEHDEVNAPNO
-  - ANGBEHDEVPARENTNEEDED
-  - ANGBEHDEVSLEEPDAY
-  - ANGBEHDEVSLEEPTIME2
-  - ANGBEHDEVTIMESWOKE
-  - ANGBEHDEVTROUBLESLEEP
-  - ANGBEHDEVWAKEEARLY
-  - ANGBEHDEVWAKETIME2
-  - ANGCOSLEEP
-  - ANGMODBED
-  - ANGRegularSleepingPattern
-  - ANGWAKENIGHT
-  - ANGWAKENIGHT2
-  form_name: AngelmanRegistrySleep
-- cdes:
-  - ANGSleepDisturbance1
-  - ANGSleepDisturbance10
-  - ANGSleepDisturbance11
-  - ANGSleepDisturbance12
-  - ANGSleepDisturbance13
-  - ANGSleepDisturbance14
-  - ANGSleepDisturbance15
-  - ANGSleepDisturbance16
-  - ANGSleepDisturbance17
-  - ANGSleepDisturbance18
-  - ANGSleepDisturbance19
-  - ANGSleepDisturbance2
-  - ANGSleepDisturbance20
-  - ANGSleepDisturbance21
-  - ANGSleepDisturbance22
-  - ANGSleepDisturbance23
-  - ANGSleepDisturbance24
-  - ANGSleepDisturbance25
-  - ANGSleepDisturbance26
-  - ANGSleepDisturbance3
-  - ANGSleepDisturbance4
-  - ANGSleepDisturbance5
-  - ANGSleepDisturbance6
-  - ANGSleepDisturbance7
-  - ANGSleepDisturbance8
-  - ANGSleepDisturbance9
-  form_name: AngelmanRegistryTheSleepDisturbanceScaleForChildren
 consent_configuration:
   consent_locked: true
   esignature: disabled
@@ -24227,8 +23883,8 @@ forms:
 - applicability_condition: ''
   conditional_rendering_rules: ''
   display_name: Behaviour and Development
-  header: <p><b>{% trans "Please click the green 'Save' button before progressing
-    to the next Module."%} </p></b>
+  header: <p><b>Please click the green 'Save' button before progressing to the next
+    Module. </p></b>
   is_questionnaire: false
   name: AngelmanRegistryBehaviourAndDevelopment
   position: 5
@@ -25583,8 +25239,8 @@ forms:
 
     ANGBEHDEVANXIOUSWHAT visible if ANGBEHDEVANXIOUSWHAT2 includes "Other" or ANGBEHDEVANXIOUSWHEN includes "Other"
   display_name: null
-  header: <p><b>{% trans "Please click the green 'Save' button before progressing
-    to the next Module."%} </p></b>
+  header: <p><b>Please click the green 'Save' button before progressing to the next
+    Module.</p></b>
   is_questionnaire: false
   name: AngelmanRegistryBehaviourAndDevelopmentNewVersion
   position: 92
@@ -25856,8 +25512,8 @@ forms:
 - applicability_condition: ''
   conditional_rendering_rules: ''
   display_name: Communication
-  header: <p><b>{% trans "Please click the green 'Save' button before progressing
-    to the next Module."%} </p></b>
+  header: <p><b>Please click the green 'Save' button before progressing to the next
+    Module.</p></b>
   is_questionnaire: false
   name: AngelmanRegistryCommunication
   position: 4
@@ -25950,13 +25606,13 @@ forms:
   conditional_rendering_rules: ''
   display_name: Epilepsy
   header: |-
-    <p>{% trans "We’d like to collect more information on your child/adult with Angelman Syndrome’s seizures. If you are able to complete this section, please do so. Otherwise, we would be glad to contact your child/adult’s clinician on your behalf if you have provided consent to do this." %}</p>
+    <p>We’d like to collect more information on your child/adult with Angelman Syndrome’s seizures. If you are able to complete this section, please do so. Otherwise, we would be glad to contact your child/adult’s clinician on your behalf if you have provided consent to do this.</p>
 
-    <p>{% trans "If the individual has never experienced seizure activity you can move to the next module: Medications and Interventions" %}</p>
+    <p>If the individual has never experienced seizure activity you can move to the next module: Medications and Interventions.</p>
 
-    <p>{% trans "If you require more information, please visit the following website:" %} <a href="http://www.ilae.org/"target="_blank"><b>http://www.ilae.org/</b></a></p>
+    <p>If you require more information, please visit the following website:<a href="http://www.ilae.org/"target="_blank"><b>http://www.ilae.org/</b></a></p>
 
-    <p><b>{% trans "Please click the green 'Save' button before progressing to the next Module." %} </p></b>
+    <p><b>Please click the green 'Save' button before progressing to the next Module.</p></b>
   is_questionnaire: false
   name: AngelmanRegistryEpilepsy
   position: 6
@@ -26673,10 +26329,10 @@ forms:
   conditional_rendering_rules: ''
   display_name: History of Diagnosis and Results
   header: |-
-    <p><b>{% trans "Instructions:" %}</b>
-    {% trans "To add a new Patient Result File, please click the 'Add' button. If you wish to delete a Diagnosis results file, please check the 'mark for deletion' box and click the green 'Save' button." %}</p>
+    <p><b>Instructions:</b>
+    To add a new Patient Result File, please click the 'Add' button. If you wish to delete a Diagnosis results file, please check the 'mark for deletion' box and click the green 'Save' button.</p>
 
-    <p><b> {% trans "Please click the green 'Save' button before progressing to the next Module." %} </p></b>
+    <p><b>Please click the green 'Save' button before progressing to the next Module.</p></b>
   is_questionnaire: false
   name: AngelmanRegistryHistoryOfDiagnosisAndResults
   position: 1
@@ -26735,9 +26391,9 @@ forms:
   conditional_rendering_rules: ''
   display_name: Illnesses or Medical Problems
   header: |-
-    <p><b>{% trans "Instructions:" %} </b>{% trans "To add a new 'Other' Medical Condition, please click the 'Add' button. If you wish to delete an 'Other' Medical Condition, please check the 'mark for deletion' box and click the green 'Save' button." %}</p>
+    <p><b>Instructions: </b>To add a new 'Other' Medical Condition, please click the 'Add' button. If you wish to delete an 'Other' Medical Condition, please check the 'mark for deletion' box and click the green 'Save' button.</p>
 
-    <p><b> {% trans "Please click the green 'Save' button before progressing to the next Module." %}</p></b>
+    <p><b>Please click the green 'Save' button before progressing to the next Module.</p></b>
   is_questionnaire: false
   name: AngelmanRegistryIllnessesOrMedicalProblems
   position: 2
@@ -26982,10 +26638,10 @@ forms:
   conditional_rendering_rules: ''
   display_name: Medical History and Hospitalisations
   header: |-
-    <p><b>{% trans "Instructions:" %}</b>
-    {% trans "To add a new Hospitalisation or Surgery, please click the 'Add' button. If you wish to delete a Hospitalisation or Surgery, please check the 'mark for deletion' box and click the green 'Save' button." %}</p>
+    <p><b>Instructions:</b>
+    To add a new Hospitalisation or Surgery, please click the 'Add' button. If you wish to delete a Hospitalisation or Surgery, please check the 'mark for deletion' box and click the green 'Save' button.</p>
 
-    <p><b> {% trans "Please click the green 'Save' button before progressing to the next Module." %} </p></b>
+    <p><b> Please click the green 'Save' button before progressing to the next Module. </p></b>
   is_questionnaire: false
   name: AngelmanRegistryMedicalHistory
   position: 3
@@ -27068,12 +26724,12 @@ forms:
   conditional_rendering_rules: ''
   display_name: Medications, Interventions and Therapies
   header: |-
-    <p>{% trans "We’d like to collect more information on your child/adult with Angelman Syndrome’s current and past medications, as well as medications and interventions your child/ adult is taking as part of a clinical trial (please record the medications here and report on trial participation in Section 11: Additional Information). If you are able to complete this section, please do so." %}</p>
+    <p>We’d like to collect more information on your child/adult with Angelman Syndrome’s current and past medications, as well as medications and interventions your child/ adult is taking as part of a clinical trial (please record the medications here and report on trial participation in Section 11: Additional Information). If you are able to complete this section, please do so.</p>
 
-    <p><b>{% trans "Instructions:" %}</b>
-    {% trans "To add a new Current Medication and Intervention or Medications and Interventions No Longer Used, please click the 'Add' button. If you wish to delete a Current Medication and Intervention or Medications and Interventions No Longer Used, please check the 'mark for deletion' box and click the green 'Save' button." %}</p>
+    <p><b>Instructions:</b>
+    To add a new Current Medication and Intervention or Medications and Interventions No Longer Used, please click the 'Add' button. If you wish to delete a Current Medication and Intervention or Medications and Interventions No Longer Used, please check the 'mark for deletion' box and click the green 'Save' button.</p>
 
-    <p><b> {% trans "Please click the green 'Save' button before progressing to the next Module." %} </p></b>
+    <p><b> Please click the green 'Save' button before progressing to the next Module.</p></b>
   is_questionnaire: false
   name: AngelmanRegistryMedicationIntervention
   position: 7
@@ -27375,8 +27031,8 @@ forms:
 - applicability_condition: ''
   conditional_rendering_rules: ''
   display_name: Newborn and Infancy History
-  header: <p><b> {% trans "Please click the green 'Save' button before progressing
-    to the next Module." %} </p></b>
+  header: <p><b> Please click the green 'Save' button before progressing to the next
+    Module.</p></b>
   is_questionnaire: false
   name: AngelmanRegistryNewbornAndInfancyHistory
   position: 0
@@ -27425,10 +27081,10 @@ forms:
   conditional_rendering_rules: ''
   display_name: Pathology and Diagnostics
   header: |-
-    <p><b>{% trans "Instructions:" %}</b>
-    {% trans "To add a new Pathology and Diagnostics section, please click the 'Add' button. If you wish to delete a Pathology and Diagnostics section, please check the 'mark for deletion' box and click the green 'Save' button." %}</p>
+    <p><b>Instructions:</b>
+    To add a new Pathology and Diagnostics section, please click the 'Add' button. If you wish to delete a Pathology and Diagnostics section, please check the 'mark for deletion' box and click the green 'Save' button.</p>
 
-    <b>{% trans "Please click the green 'Save' button before progressing to the next Module." %}</b>
+    <b>Please click the green 'Save' button before progressing to the next Module.</b>
   is_questionnaire: false
   name: AngelmanRegistryPathologyAndDiagnostics
   position: 10
@@ -27465,12 +27121,12 @@ forms:
     ANGSLEEPNIGHTUNKNOWN disabled if ANGBEHDEVSLEEPNIGHTYEARS2 is set
   display_name: Sleep
   header: |-
-    <p><b>{% trans "Instructions:" %}</b>
-    {% trans "This section includes a sleep diary of your child/adult’s sleep over one week.  You can return to the Registry at any time to complete the diary for subsequent days." %}</p>
+    <p><b>Instructions:</b>
+    This section includes a sleep diary of your child/adult’s sleep over one week.  You can return to the Registry at any time to complete the diary for subsequent days.</p>
 
-    <p> {% trans "To add a new Sleep Diary entry, please click the 'Add' button. If you wish to delete a Sleep Diary entry, please check the 'mark for deletion' box and click the green 'Save' button." %}</p>
+    <p>To add a new Sleep Diary entry, please click the 'Add' button. If you wish to delete a Sleep Diary entry, please check the 'mark for deletion' box and click the green 'Save' button.</p>
 
-    <p>{% trans "If you wish, you may print a paper copy of the Sleep Diary" %} <a href="https://angelmanregistry.info/files/Sleep_Diary-2016-09-23.pdf" target="_blank"><b>{% trans "from this link" %}</b></a>.
+    <p>If you wish, you may print a paper copy of the Sleep Diary <a href="https://angelmanregistry.info/files/Sleep_Diary-2016-09-23.pdf" target="_blank"><b>from this link</b></a>.
 
     <p><b> Please click the green 'Save' button before progressing to the next Module. </p></b>
   is_questionnaire: false
@@ -27528,9 +27184,9 @@ forms:
   conditional_rendering_rules: ''
   display_name: Thank you from the Global Angelman Syndrome Registry!
   header: |-
-    <h4><center>{% trans "Thank you for completing the Global Angelman Syndrome Registry!" %}</h4><br>
+    <h4><center>Thank you for completing the Global Angelman Syndrome Registry!</h4><br>
 
-    <b>{% trans "Please note you may log in at any time to update your details, or to complete questions you may not have had time to finish. If you have any queries, please " %}<a href="mailto:curator@angelmanregistry.info?Subject=Registry%20Query" target="_top">{% trans "email us" %}</a>.
+    <b>Please note you may log in at any time to update your details, or to complete questions you may not have had time to finish. If you have any queries, please <a href="mailto:curator@angelmanregistry.info?Subject=Registry%20Query" target="_top">email us</a>.
   is_questionnaire: false
   name: AngelmanRegistryThanksYou
   position: 20
@@ -27552,11 +27208,11 @@ forms:
   conditional_rendering_rules: ''
   display_name: The Sleep Disturbance Scale for Children
   header: |-
-    <b><p>{% trans "Instructions:" %}</b> {% trans "This questionnaire will allow your Doctor to have a better understanding of the sleep-wake rhythm of your child, and of any problems in his/her sleep behaviour. Try to answer every question; in answering, consider each question as pertaining to the " %}<b> {% trans "past  six (6) months" %} </b> {% trans " of the child's life. Please answer the questions by choosing the answer that best applies to your child." %}</p>
+    <b><p>Instructions:</b> This questionnaire will allow your Doctor to have a better understanding of the sleep-wake rhythm of your child, and of any problems in his/her sleep behaviour. Try to answer every question; in answering, consider each question as pertaining to the<b> past  six (6) months </b> of the child's life. Please answer the questions by choosing the answer that best applies to your child.</p>
 
-    <p><i>{% trans "Reference: Oliviero Bruni et al" %}</i></p>
+    <p><i>Reference: Oliviero Bruni et al</i></p>
 
-    <p><b>{% trans "Please click the green 'Save' button before progressing to the next Module." %} </p></b>
+    <p><b>Please click the green 'Save' button before progressing to the next Module. </p></b>
   is_questionnaire: false
   name: AngelmanRegistryTheSleepDisturbanceScaleForChildren
   position: 91

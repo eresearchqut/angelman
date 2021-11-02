@@ -1,4 +1,4 @@
-EXPORT_TIME: '2021-10-11 14:13:08.847107'
+EXPORT_TIME: '2021-11-02 09:52:08.325758'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -1318,7 +1318,7 @@ cdes:
   pv_group: AACTrainingDur
   questionnaire_text: How much training have you, as a caregiver, had on using AAC?
   widget_name: RadioSelect
-  widget_settings: ''
+  widget_settings: '{"force_vertical":true}'
 - allow_multiple: false
   calculation: ''
   code: ANGAACTrainOth
@@ -19305,7 +19305,8 @@ cdes:
   datatype: range
   desc: Please indicate any treatments used
   important: false
-  instructions: Check all that apply
+  instructions: Check all that apply. Please describe surgery in the Medical History
+    and Hospitalisation module
   is_required: false
   max_length: null
   max_value: null
@@ -29882,21 +29883,21 @@ forms:
     ANGSLEEPNIGHTUNKNOWN disabled if ANGBEHDEVSLEEPNIGHTYEARS2 is set
   display_name: Sleep (Every 1-2 years)
   header: |-
-    <p><b>Instructions:</b>
+    <p><b>Instructions:</b></p>
 
     <p>Please answer the following questions about your child/ adult's sleep. Complete this module once when you first join the registry, then every year if your child is 10 years of age or younger, or every 2 years if your child is aged 11 or older. </p>
 
-    This module contains the Sleep Disturbance Scale for Children. This questionnaire will allow your Doctor to have a better understanding of the sleep-wake rhythm of your child, and of any problems in his/her sleep behaviour. Try to answer every question; in answering, consider each question as pertaining to the <b> past  six (6) months </b> of the child's life. Please answer the questions by choosing the answer that best applies to your child.</p>
+    <p>This module contains the Sleep Disturbance Scale for Children. This questionnaire will allow your Doctor to have a better understanding of the sleep-wake rhythm of your child, and of any problems in his/her sleep behaviour. Try to answer every question; in answering, consider each question as pertaining to the <b> past  six (6) months </b> of the child's life. Please answer the questions by choosing the answer that best applies to your child.</p>
 
     <p><i>Reference: Oliviero Bruni et al</i></p>
 
-    This module also includes a sleep diary of your child/adult’s sleep over one week.  You can return to the Registry at any time to complete the diary for subsequent days.</p>
+    <p>This module also includes a sleep diary of your child/adult’s sleep over one week.  You can return to the Registry at any time to complete the diary for subsequent days.</p>
 
     <p>To add a new Sleep Diary entry, please click the 'Add' button. If you wish to delete a Sleep Diary entry, please check the 'mark for deletion' box and click the green 'Save' button.</p>
 
-    <p>If you wish, you may print a paper copy of the Sleep Diary<a href="https://angelmanregistry.info/files/Sleep_Diary-2016-09-23.pdf" target="_blank"><b>from this link</b></a>.
+    <p>If you wish, you may print a paper copy of the Sleep Diary<a href="https://angelmanregistry.info/files/Sleep_Diary-2016-09-23.pdf" target="_blank"><b>from this link</b></a></p>.
 
-    <p><b> Please click the green 'Save' button before progressing to the next Module. </p></b>
+    <p><b> Please click the green 'Save' button before progressing to the next Module. </b></p>
   is_questionnaire: false
   name: Sleep
   position: 10

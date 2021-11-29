@@ -1,4 +1,4 @@
-EXPORT_TIME: '2021-11-02 09:52:08.325758'
+EXPORT_TIME: '2021-11-29 12:49:48.827929'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -1523,10 +1523,27 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of absence seizures
-    in the past?
+  name: Since their first absence seizure, have they had periods of freedom from this
+    type of seizure?
   pattern: ''
   pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
+  code: ANGAbsenceTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from absence seizures?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
@@ -2423,10 +2440,27 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of atonic seizures
-    in the past?
+  name: Since their first atonic seizure, have they had periods of freedom from this
+    type of seizure?
   pattern: ''
   pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
+  code: ANGAtonicTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from atonic seizures?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
@@ -5762,10 +5796,27 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of cluster motor
-    seizures in the past?
+  name: Since their first Cluster motor seizure, have they had periods of freedom
+    from this type of seizure?
   pattern: ''
   pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
+  code: ANGClusterMotorTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from Cluster motor seizures?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
@@ -5866,10 +5917,27 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of cluster non motor
-    seizures in the past?
+  name: Since their first cluster non motor seizure, have they had periods of freedom
+    from this type of seizure?
   pattern: ''
   pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
+  code: ANGClusterNonMotorTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from cluster non motor seizures?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
@@ -5987,10 +6055,27 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of convulsive status
-    epilepticus in the past?
+  name: Since their first episode of Convulsive status epilepticus, have they had
+    periods of freedom from this type of seizure?
   pattern: ''
   pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
+  code: ANGConvulsiveStatusTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from Convulsive status epilepticus?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
@@ -14415,10 +14500,27 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of myoclonic seizures
-    in the past?
+  name: Since their first Myoclonic seizure, have they had periods of freedom from
+    this type of seizure?
   pattern: ''
   pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
+  code: ANGMyoclonicTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from Myoclonic seizures?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
@@ -14561,6 +14663,23 @@ cdes:
   name: Was there difficulty sleeping?
   pattern: ''
   pv_group: ANGBEHDEVFUNCTIONSCALE
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
+  code: ANGNonConvStatusTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from Non-convulsive status epilepticus?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
@@ -17199,10 +17318,27 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of epileptic spasms
-    in the past?
+  name: Since their first epileptic spasm, have they had periods of freedom from this
+    type of seizure?
   pattern: ''
   pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
+  code: ANGSpasmTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from epileptic spasms?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
@@ -19474,6 +19610,24 @@ cdes:
   widget_settings: '{}'
 - allow_multiple: false
   calculation: ''
+  code: ANGTonicClonicTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from tonic, clonic or tonic clonic
+    seizures?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
   code: ANGTonicClonicTypeStatus
   datatype: range
   desc: ''
@@ -19501,8 +19655,8 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of tonic, clonic
-    or tonic-clonic seizures in the past?
+  name: Since their first tonic, clonic or tonic clonic seizure, have they had periods
+    of freedom from this type of seizure?
   pattern: ''
   pv_group: YesNo
   questionnaire_text: ''
@@ -19925,10 +20079,27 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of these seizures
-    in the past?
+  name: Since their first unknown type seizure, have they had periods of freedom from
+    this type of seizure?
   pattern: ''
   pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- allow_multiple: false
+  calculation: ''
+  code: ANGUnknownTypeRecurY
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What was their longest period of freedom from unknown seizures?
+  pattern: ''
+  pv_group: ANGSeizureRecurY
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
@@ -21957,8 +22128,8 @@ cdes:
   max_length: null
   max_value: null
   min_value: null
-  name: Has your child/ adult experienced freedom or recurrences of non convulsive
-    status epilepticus in the past?
+  name: Since their first episode of Non-convulsive status epilepticus, have they
+    had periods of freedom from this type of seizure?
   pattern: ''
   pv_group: YesNo
   questionnaire_text: ''
@@ -22998,16 +23169,16 @@ cdes:
 code: ang
 complete_fields:
 - cdes:
-  - ResideInfancy
-  - ResideNewborn
-  form_name: NewbornAndInfancyHistory
-- cdes:
   - ADMINDUPLICATEOTH
   - ADMINPASS
   - ADMINPASSDATE
   - ADMINPASSDETAIL
   - ADMINUSERDECISION
   form_name: AdminInfo
+- cdes:
+  - ResideInfancy
+  - ResideNewborn
+  form_name: NewbornAndInfancyHistory
 - cdes:
   - ANGAgeDiagnosis2
   - ANGCurrentPatientAge
@@ -27187,7 +27358,7 @@ forms:
   header: |-
     <h4><center>Thank you for completing the Global Angelman Syndrome Registry!</h4><br>
 
-    <b>Please note you may log in at any time to update your details, or to complete questions you may not have had time to finish. If you have any queries, please <a href="mailto:curator@angelmanregistry.info?Subject=Registry%20Query" target="_top">email us</a>.
+    <b>Please note you may log in at any time to update your details, or to complete questions you may not have had time to finish. If you have any queries, please <a href="mailto:curator@angelmanregistry.info?Subject=Registry%20Query" target="_top">email us</a></b>.
   is_questionnaire: false
   name: AngelmanRegistryThanksYou
   position: 20
@@ -28188,43 +28359,43 @@ forms:
     section ANGSeizureTypes hidden if ANGEpilepsyEver2 == "No" or ANGEpilepsyEver2 is unset
 
     ANGAtonicOnset ANGAtonicTypeStatus ANGAtonicTypeRecur ANGSeizureFrequencyAAtonic ANGSeizureFrequencyBAtonic ANGAtonicTrigger ANGAtonicMedication ANGAtonicHospitalisation ANGAtonicComment visible if ANGAtonicTypeYNU == "Yes"
-    ANGAtonicTypeDescribe hidden if ANGAtonicTypeRecur == "No" or ANGAtonicTypeRecur is unset or ANGAtonicTypeYNU != "Yes"
+    ANGAtonicTypeDescribe ANGAtonicTypeRecurY hidden if ANGAtonicTypeRecur == "No" or ANGAtonicTypeRecur is unset or ANGAtonicTypeYNU != "Yes"
     ANGAtonicTriggerOTH hidden if ANGAtonicTrigger does not include "Other" or ANGAtonicTypeYNU != "Yes"
 
     ANGTonicClonicTypeFG ANGTonicClonicOnset ANGTonicClonicTypeStatus ANGTonicClonicTypeTypeRecur SeizureFrequencyATonicClonic SeizureFrequencyBTonicClonic ANGTonicClonicTrigger ANGTonicClonicMedication ANGTonicClonicHospitalisation ANGTonicClonicComment visible if ANGTonicClonicTypeYNU == "Yes"
-    ANGTonicClonicTypeDescribe hidden if ANGTonicClonicTypeTypeRecur == "No" or ANGTonicClonicTypeTypeRecur is unset or ANGTonicClonicTypeYNU != "Yes"
+    ANGTonicClonicTypeDescribe ANGTonicClonicTypeRecurY hidden if ANGTonicClonicTypeTypeRecur == "No" or ANGTonicClonicTypeTypeRecur is unset or ANGTonicClonicTypeYNU != "Yes"
     ANGTonicClonicTriggerOTH hidden if ANGTonicClonicTrigger does not include "Other" or ANGTonicClonicTypeYNU != "Yes"
 
     ANGMyoclonicOnset ANGMyoclonicTypeStatus ANGMyoclonicTypeRecur SeizureFrequencyAMyoclonic SeizureFrequencyBMyoclonic ANGMyoclonicTrigger ANGMyoclonicMedication ANGMyoclonicHospitalisation ANGMyoclonicComment visible if ANGMyoclonicTypeYNU == "Yes"
-    ANGMyoclonicTypeDescribe hidden if ANGMyoclonicTypeRecur == "No" or ANGMyoclonicTypeRecur is unset or ANGMyoclonicTypeYNU != "Yes"
+    ANGMyoclonicTypeDescribe ANGMyoclonicTypeRecurY hidden if ANGMyoclonicTypeRecur == "No" or ANGMyoclonicTypeRecur is unset or ANGMyoclonicTypeYNU != "Yes"
     ANGMyoclonicTriggerOTH hidden if ANGMyoclonicTrigger does not include "Other" or ANGMyoclonicTypeYNU != "Yes"
 
     ANGClusterMotorTypeOnset ANGClusterMotorTypeStatus ANGClusterMotorTypeRecur SeizureFrequencyAClusterMotor SeizureFrequencyBClusterMotor ClusterMotorTrigger ClusterMotorMedication ClusterMotorHospitalisation ClusterMotorComment visible if ANGClusterMotorTypeYNU == "Yes"
-    ANGClusterMotorTypeDescribe hidden if ANGClusterMotorTypeRecur == "No" or ANGClusterMotorTypeRecur is unset or ANGClusterMotorTypeYNU != "Yes"
+    ANGClusterMotorTypeDescribe ANGClusterMotorTypeRecurY hidden if ANGClusterMotorTypeRecur == "No" or ANGClusterMotorTypeRecur is unset or ANGClusterMotorTypeYNU != "Yes"
     ClusterMotorTriggerOTH hidden if ClusterMotorTrigger does not include "Other" or ANGClusterMotorTypeYNU != "Yes"
 
     ANGAbsenceTypeOnset ANGAbsenceTypeStatus ANGAbsenceTypeRecur SeizureFrequencyAAbsence SeizureFrequencyBAbsence ANGAbsenceTrigger ANGAbsenceMedication ANGAbsenceHospitalisation ANGAbsenceComment visible if ANGAbsenceTypeYNU  == "Yes"
-    ANGAbsenceTypeDescribe hidden if ANGAbsenceTypeRecur == "No" or ANGAbsenceTypeRecur is unset or ANGAbsenceTypeYNU  != "Yes"
+    ANGAbsenceTypeDescribe ANGAbsenceTypeRecurY hidden if ANGAbsenceTypeRecur == "No" or ANGAbsenceTypeRecur is unset or ANGAbsenceTypeYNU  != "Yes"
     ANGAbsenceTriggerOTH hidden if ANGAbsenceTrigger does not include "Other" or ANGAbsenceTypeYNU  != "Yes"
 
     ANGClusterNonMotorTypeOnset ANGClusterNonMotorTypeStatus ANGClusterNonMotorTypeRecur SeizureFreqAClusterNonMotor SeizureFreqBClusterNonMotor ClusterNonMotorTrigger ClusterNonMotorMedication ClusterNonMotorHospitalisation ClusterNonMotorComment visible if ANGClusterNonMotorType == "Yes"
-    ANGClusterNonMotorTypeDescribe hidden if ANGClusterNonMotorTypeRecur == "No" or ANGClusterNonMotorTypeRecur is unset or ANGClusterNonMotorType != "Yes"
+    ANGClusterNonMotorTypeDescribe ANGClusterNonMotorTypeRecurY hidden if ANGClusterNonMotorTypeRecur == "No" or ANGClusterNonMotorTypeRecur is unset or ANGClusterNonMotorType != "Yes"
     ClusterNonMotorTriggerOTH hidden if ClusterNonMotorTrigger does not include "Other" or ANGClusterNonMotorType != "Yes"
 
     ANGConvulsiveStatusTypeFG ConvulsiveStatusTypeOnset ANGConvulsiveStatusTypeStatus ANGConvulsiveStatusTypeRecur SeizureFreqAConvulsiveStatus SeizureFreqBConvulsiveStatus ConvulsiveTrigger ConvulsiveMedication ConvulsiveHospitalisation ConvulsiveComment visible if ConvulsiveStatusTypeYNU == "Yes"
-    ConvulsiveStatusTypeDescribe hidden if ANGConvulsiveStatusTypeRecur == "No" or ANGConvulsiveStatusTypeRecur is unset or ConvulsiveStatusTypeYNU != "Yes"
+    ConvulsiveStatusTypeDescribe ANGConvulsiveStatusTypeRecurY hidden if ANGConvulsiveStatusTypeRecur == "No" or ANGConvulsiveStatusTypeRecur is unset or ConvulsiveStatusTypeYNU != "Yes"
     ConvulsiveTriggerOTH hidden if ConvulsiveTrigger does not include "Other" or ConvulsiveStatusTypeYNU != "Yes"
 
     NonConvulsiveStatusTypeOnset ANGNonConvulsiveStatTypeStatus NonConvulsiveStatusTypeRecur SeizureFreqANonConvulsiveStat SeizureFreqBNonConvulsiveStat NonConvulsiveTrigger NonConvulsiveStatMedication NonConvulsiveStatHosp NonConvulsiveStatComment visible if NonConvulsiveStatusTypeYNU == "Yes"
-    NonConvulsiveStatusDescribe hidden if NonConvulsiveStatusTypeRecur == "No" or NonConvulsiveStatusTypeRecur is unset or NonConvulsiveStatusTypeYNU != "Yes"
+    NonConvulsiveStatusDescribe ANGNonConvStatusTypeRecurY hidden if NonConvulsiveStatusTypeRecur == "No" or NonConvulsiveStatusTypeRecur is unset or NonConvulsiveStatusTypeYNU != "Yes"
     NonConvulsiveTriggerOTH hidden if NonConvulsiveTrigger does not include "Other" or NonConvulsiveStatusTypeYNU != "Yes"
 
     ANGUnknownTypeOnset ANGUnknownTypeStatus ANGUnknownTypeRecur ANGSeizureFrequencyAUnknown ANGSeizureFrequencyBUnknown ANGUnknownTrigger ANGUnknownMedication ANGUnknownHospitalisation ANGUnknownComment visible if UnknownTypeYNU == "Yes"
-    ANGUnknownTypeDescribe hidden if ANGUnknownTypeRecur == "No" or ANGUnknownTypeRecur is unset or UnknownTypeYNU != "Yes"
+    ANGUnknownTypeDescribe ANGUnknownTypeRecurY hidden if ANGUnknownTypeRecur == "No" or ANGUnknownTypeRecur is unset or UnknownTypeYNU != "Yes"
     ANGUnknownTriggerOTH hidden if ANGUnknownTrigger does not include "Other" or UnknownTypeYNU != "Yes"
 
     ANGSpasmTypeOnset ANGSpasmTypeStatus ANGSpasmTypeRecur SeizureFreqASpasm SeizureFreqBSpasm SpasmTrigger SpasmMedication SpasmHospitalisation SpasmComment visible if ANGSpasmTypeYNU == "Yes"
-    ANGSpasmTypeDescribe hidden if ANGSpasmTypeRecur == "No"  or ANGSpasmTypeRecur is unset or ANGSpasmTypeYNU != "Yes"
+    ANGSpasmTypeDescribe ANGSpasmTypeRecurY hidden if ANGSpasmTypeRecur == "No"  or ANGSpasmTypeRecur is unset or ANGSpasmTypeYNU != "Yes"
     SpasmTriggerOTH hidden if SpasmTrigger does not include "Other" or ANGSpasmTypeYNU != "Yes"
   display_name: Epilepsy
   header: |-
@@ -28268,6 +28439,7 @@ forms:
     - ANGAtonicOnset
     - ANGAtonicTypeStatus
     - ANGAtonicTypeRecur
+    - ANGAtonicTypeRecurY
     - ANGAtonicTypeDescribe
     - ANGSeizureFrequencyAAtonic
     - ANGSeizureFrequencyBAtonic
@@ -28281,6 +28453,7 @@ forms:
     - ANGTonicClonicOnset
     - ANGTonicClonicTypeStatus
     - ANGTonicClonicTypeTypeRecur
+    - ANGTonicClonicTypeRecurY
     - ANGTonicClonicTypeDescribe
     - SeizureFrequencyATonicClonic
     - SeizureFrequencyBTonicClonic
@@ -28293,6 +28466,7 @@ forms:
     - ANGMyoclonicOnset
     - ANGMyoclonicTypeStatus
     - ANGMyoclonicTypeRecur
+    - ANGMyoclonicTypeRecurY
     - ANGMyoclonicTypeDescribe
     - SeizureFrequencyAMyoclonic
     - SeizureFrequencyBMyoclonic
@@ -28305,6 +28479,7 @@ forms:
     - ANGClusterMotorTypeOnset
     - ANGClusterMotorTypeStatus
     - ANGClusterMotorTypeRecur
+    - ANGClusterMotorTypeRecurY
     - ANGClusterMotorTypeDescribe
     - SeizureFrequencyAClusterMotor
     - SeizureFrequencyBClusterMotor
@@ -28317,6 +28492,7 @@ forms:
     - ANGAbsenceTypeOnset
     - ANGAbsenceTypeStatus
     - ANGAbsenceTypeRecur
+    - ANGAbsenceTypeRecurY
     - ANGAbsenceTypeDescribe
     - SeizureFrequencyAAbsence
     - SeizureFrequencyBAbsence
@@ -28329,6 +28505,7 @@ forms:
     - ANGClusterNonMotorTypeOnset
     - ANGClusterNonMotorTypeStatus
     - ANGClusterNonMotorTypeRecur
+    - ANGClusterNonMotorTypeRecurY
     - ANGClusterNonMotorTypeDescribe
     - SeizureFreqAClusterNonMotor
     - SeizureFreqBClusterNonMotor
@@ -28341,6 +28518,7 @@ forms:
     - ANGSpasmTypeOnset
     - ANGSpasmTypeStatus
     - ANGSpasmTypeRecur
+    - ANGSpasmTypeRecurY
     - ANGSpasmTypeDescribe
     - SeizureFreqASpasm
     - SeizureFreqBSpasm
@@ -28354,6 +28532,7 @@ forms:
     - ConvulsiveStatusTypeOnset
     - ANGConvulsiveStatusTypeStatus
     - ANGConvulsiveStatusTypeRecur
+    - ANGConvulsiveStatusTypeRecurY
     - ConvulsiveStatusTypeDescribe
     - SeizureFreqAConvulsiveStatus
     - SeizureFreqBConvulsiveStatus
@@ -28366,6 +28545,7 @@ forms:
     - NonConvulsiveStatusTypeOnset
     - ANGNonConvulsiveStatTypeStatus
     - NonConvulsiveStatusTypeRecur
+    - ANGNonConvStatusTypeRecurY
     - NonConvulsiveStatusDescribe
     - SeizureFreqANonConvulsiveStat
     - SeizureFreqBNonConvulsiveStat
@@ -28378,6 +28558,7 @@ forms:
     - ANGUnknownTypeOnset
     - ANGUnknownTypeStatus
     - ANGUnknownTypeRecur
+    - ANGUnknownTypeRecurY
     - ANGUnknownTypeDescribe
     - ANGSeizureFrequencyAUnknown
     - ANGSeizureFrequencyBUnknown
@@ -30192,6 +30373,46 @@ forms_allowed_groups:
   - Parents
   TrialStudyParticipation:
   - Parents
+forms_readonly_groups:
+  AdminInfo: []
+  AngelmanRegistryAdditionalInformation: []
+  AngelmanRegistryBehaviourAndDevelopment: []
+  AngelmanRegistryBehaviourAndDevelopmentARCHIVED: []
+  AngelmanRegistryBehaviourAndDevelopmentNewVersion: []
+  AngelmanRegistryCommunication: []
+  AngelmanRegistryEpilepsy: []
+  AngelmanRegistryEpilepsyArchive: []
+  AngelmanRegistryHistoryOfDiagnosisAndResults: []
+  AngelmanRegistryIllnessesOrMedicalProblems: []
+  AngelmanRegistryMedicalHistory: []
+  AngelmanRegistryMedicationIntervention: []
+  AngelmanRegistryNewbornAndInfancyHistory: []
+  AngelmanRegistryPathologyAndDiagnostics: []
+  AngelmanRegistrySleep: []
+  AngelmanRegistryThanksYou: []
+  AngelmanRegistryTheSleepDisturbanceScaleForChildren: []
+  BehaviourandDevelopment: []
+  ChangeInSeizureActivity: []
+  CheckUp6Months: []
+  ClinicalTrialsAndStudies: []
+  Communication: []
+  Epilepsy: []
+  GeneratedQuestionnaireForang: []
+  HistoryOfDiagnosisAndResults: []
+  IllnessesOrMedicalProblems: []
+  MedicalHistory: []
+  MedicationIntervention: []
+  NewClinicVisit: []
+  NewHospitalisationOrSurgery: []
+  NewMedicationOrChangedDose: []
+  NewOrChangedTherapy: []
+  NewbornAndInfancyHistory: []
+  PathologyAndDiagnostics: []
+  RDRFArchive: []
+  Sleep: []
+  StoppedMedication: []
+  TherapyStopped: []
+  TrialStudyParticipation: []
 generic_sections:
 - allow_multiple: false
   code: PatientData
@@ -30221,6 +30442,772 @@ generic_sections:
   extra: null
   questionnaire_display_name: ''
   questionnaire_help: ''
+group_permissions:
+- name: Genetic Staff
+  permissions: []
+- name: Clinical Staff
+  permissions: []
+- name: Parents
+  permissions: []
+- name: Working Group Curators
+  permissions:
+  - codename: add_patient
+    content_type:
+    - patients
+    - patient
+    name: Can add patient
+  - codename: can_see_data_modules
+    content_type:
+    - patients
+    - patient
+    name: Can see Data Modules column
+  - codename: can_see_dob
+    content_type:
+    - patients
+    - patient
+    name: Can see Date of Birth column
+  - codename: can_see_full_name
+    content_type:
+    - patients
+    - patient
+    name: Can see Full Name column
+  - codename: can_see_working_groups
+    content_type:
+    - patients
+    - patient
+    name: Can see Working Groups column
+  - codename: change_patient
+    content_type:
+    - patients
+    - patient
+    name: Can change patient
+  - codename: delete_patient
+    content_type:
+    - patients
+    - patient
+    name: Can delete patient
+- name: AdminOnly
+  permissions:
+  - codename: add_logentry
+    content_type:
+    - admin
+    - logentry
+    name: Can add log entry
+  - codename: change_logentry
+    content_type:
+    - admin
+    - logentry
+    name: Can change log entry
+  - codename: delete_logentry
+    content_type:
+    - admin
+    - logentry
+    name: Can delete log entry
+  - codename: add_group
+    content_type:
+    - auth
+    - group
+    name: Can add group
+  - codename: change_group
+    content_type:
+    - auth
+    - group
+    name: Can change group
+  - codename: delete_group
+    content_type:
+    - auth
+    - group
+    name: Can delete group
+  - codename: add_permission
+    content_type:
+    - auth
+    - permission
+    name: Can add permission
+  - codename: change_permission
+    content_type:
+    - auth
+    - permission
+    name: Can change permission
+  - codename: delete_permission
+    content_type:
+    - auth
+    - permission
+    name: Can delete permission
+  - codename: add_contenttype
+    content_type:
+    - contenttypes
+    - contenttype
+    name: Can add content type
+  - codename: change_contenttype
+    content_type:
+    - contenttypes
+    - contenttype
+    name: Can change content type
+  - codename: delete_contenttype
+    content_type:
+    - contenttypes
+    - contenttype
+    name: Can delete content type
+  - codename: add_query
+    content_type:
+    - explorer
+    - query
+    name: Can add query
+  - codename: change_query
+    content_type:
+    - explorer
+    - query
+    name: Can change query
+  - codename: delete_query
+    content_type:
+    - explorer
+    - query
+    name: Can delete query
+  - codename: add_customuser
+    content_type:
+    - groups
+    - customuser
+    name: Can add custom user
+  - codename: change_customuser
+    content_type:
+    - groups
+    - customuser
+    name: Can change custom user
+  - codename: delete_customuser
+    content_type:
+    - groups
+    - customuser
+    name: Can delete custom user
+  - codename: add_workinggroup
+    content_type:
+    - groups
+    - workinggroup
+    name: Can add working group
+  - codename: change_workinggroup
+    content_type:
+    - groups
+    - workinggroup
+    name: Can change working group
+  - codename: delete_workinggroup
+    content_type:
+    - groups
+    - workinggroup
+    name: Can delete working group
+  - codename: add_addresstype
+    content_type:
+    - patients
+    - addresstype
+    name: Can add address type
+  - codename: change_addresstype
+    content_type:
+    - patients
+    - addresstype
+    name: Can change address type
+  - codename: delete_addresstype
+    content_type:
+    - patients
+    - addresstype
+    name: Can delete address type
+  - codename: add_clinicianother
+    content_type:
+    - patients
+    - clinicianother
+    name: Can add clinician other
+  - codename: change_clinicianother
+    content_type:
+    - patients
+    - clinicianother
+    name: Can change clinician other
+  - codename: delete_clinicianother
+    content_type:
+    - patients
+    - clinicianother
+    name: Can delete clinician other
+  - codename: add_consentvalue
+    content_type:
+    - patients
+    - consentvalue
+    name: Can add consent value
+  - codename: change_consentvalue
+    content_type:
+    - patients
+    - consentvalue
+    name: Can change consent value
+  - codename: delete_consentvalue
+    content_type:
+    - patients
+    - consentvalue
+    name: Can delete consent value
+  - codename: add_doctor
+    content_type:
+    - patients
+    - doctor
+    name: Can add doctor
+  - codename: change_doctor
+    content_type:
+    - patients
+    - doctor
+    name: Can change doctor
+  - codename: delete_doctor
+    content_type:
+    - patients
+    - doctor
+    name: Can delete doctor
+  - codename: add_nextofkinrelationship
+    content_type:
+    - patients
+    - nextofkinrelationship
+    name: Can add Next of Kin Relationship
+  - codename: change_nextofkinrelationship
+    content_type:
+    - patients
+    - nextofkinrelationship
+    name: Can change Next of Kin Relationship
+  - codename: delete_nextofkinrelationship
+    content_type:
+    - patients
+    - nextofkinrelationship
+    name: Can delete Next of Kin Relationship
+  - codename: add_parentguardian
+    content_type:
+    - patients
+    - parentguardian
+    name: Can add parent guardian
+  - codename: change_parentguardian
+    content_type:
+    - patients
+    - parentguardian
+    name: Can change parent guardian
+  - codename: delete_parentguardian
+    content_type:
+    - patients
+    - parentguardian
+    name: Can delete parent guardian
+  - codename: add_patient
+    content_type:
+    - patients
+    - patient
+    name: Can add patient
+  - codename: can_see_data_modules
+    content_type:
+    - patients
+    - patient
+    name: Can see Data Modules column
+  - codename: can_see_diagnosis_currency
+    content_type:
+    - patients
+    - patient
+    name: Can see Diagnosis Currency column
+  - codename: can_see_diagnosis_progress
+    content_type:
+    - patients
+    - patient
+    name: Can see Diagnosis Progress column
+  - codename: can_see_dob
+    content_type:
+    - patients
+    - patient
+    name: Can see Date of Birth column
+  - codename: can_see_full_name
+    content_type:
+    - patients
+    - patient
+    name: Can see Full Name column
+  - codename: can_see_working_groups
+    content_type:
+    - patients
+    - patient
+    name: Can see Working Groups column
+  - codename: change_patient
+    content_type:
+    - patients
+    - patient
+    name: Can change patient
+  - codename: delete_patient
+    content_type:
+    - patients
+    - patient
+    name: Can delete patient
+  - codename: add_patientaddress
+    content_type:
+    - patients
+    - patientaddress
+    name: Can add patient address
+  - codename: change_patientaddress
+    content_type:
+    - patients
+    - patientaddress
+    name: Can change patient address
+  - codename: delete_patientaddress
+    content_type:
+    - patients
+    - patientaddress
+    name: Can delete patient address
+  - codename: add_patientconsent
+    content_type:
+    - patients
+    - patientconsent
+    name: Can add patient consent
+  - codename: change_patientconsent
+    content_type:
+    - patients
+    - patientconsent
+    name: Can change patient consent
+  - codename: delete_patientconsent
+    content_type:
+    - patients
+    - patientconsent
+    name: Can delete patient consent
+  - codename: add_patientdoctor
+    content_type:
+    - patients
+    - patientdoctor
+    name: Can add medical professionals for patient
+  - codename: change_patientdoctor
+    content_type:
+    - patients
+    - patientdoctor
+    name: Can change medical professionals for patient
+  - codename: delete_patientdoctor
+    content_type:
+    - patients
+    - patientdoctor
+    name: Can delete medical professionals for patient
+  - codename: add_patientrelative
+    content_type:
+    - patients
+    - patientrelative
+    name: Can add patient relative
+  - codename: change_patientrelative
+    content_type:
+    - patients
+    - patientrelative
+    name: Can change patient relative
+  - codename: delete_patientrelative
+    content_type:
+    - patients
+    - patientrelative
+    name: Can delete patient relative
+  - codename: add_state
+    content_type:
+    - patients
+    - state
+    name: Can add state
+  - codename: change_state
+    content_type:
+    - patients
+    - state
+    name: Can change state
+  - codename: delete_state
+    content_type:
+    - patients
+    - state
+    name: Can delete state
+  - codename: add_cdefile
+    content_type:
+    - rdrf
+    - cdefile
+    name: Can add cde file
+  - codename: change_cdefile
+    content_type:
+    - rdrf
+    - cdefile
+    name: Can change cde file
+  - codename: delete_cdefile
+    content_type:
+    - rdrf
+    - cdefile
+    name: Can delete cde file
+  - codename: add_cdepermittedvalue
+    content_type:
+    - rdrf
+    - cdepermittedvalue
+    name: Can add cde permitted value
+  - codename: change_cdepermittedvalue
+    content_type:
+    - rdrf
+    - cdepermittedvalue
+    name: Can change cde permitted value
+  - codename: delete_cdepermittedvalue
+    content_type:
+    - rdrf
+    - cdepermittedvalue
+    name: Can delete cde permitted value
+  - codename: add_cdepermittedvaluegroup
+    content_type:
+    - rdrf
+    - cdepermittedvaluegroup
+    name: Can add cde permitted value group
+  - codename: change_cdepermittedvaluegroup
+    content_type:
+    - rdrf
+    - cdepermittedvaluegroup
+    name: Can change cde permitted value group
+  - codename: delete_cdepermittedvaluegroup
+    content_type:
+    - rdrf
+    - cdepermittedvaluegroup
+    name: Can delete cde permitted value group
+  - codename: add_cdepolicy
+    content_type:
+    - rdrf
+    - cdepolicy
+    name: Can add CDE Policy
+  - codename: change_cdepolicy
+    content_type:
+    - rdrf
+    - cdepolicy
+    name: Can change CDE Policy
+  - codename: delete_cdepolicy
+    content_type:
+    - rdrf
+    - cdepolicy
+    name: Can delete CDE Policy
+  - codename: add_commondataelement
+    content_type:
+    - rdrf
+    - commondataelement
+    name: Can add Data Element
+  - codename: change_commondataelement
+    content_type:
+    - rdrf
+    - commondataelement
+    name: Can change Data Element
+  - codename: delete_commondataelement
+    content_type:
+    - rdrf
+    - commondataelement
+    name: Can delete Data Element
+  - codename: add_consentquestion
+    content_type:
+    - rdrf
+    - consentquestion
+    name: Can add consent question
+  - codename: change_consentquestion
+    content_type:
+    - rdrf
+    - consentquestion
+    name: Can change consent question
+  - codename: delete_consentquestion
+    content_type:
+    - rdrf
+    - consentquestion
+    name: Can delete consent question
+  - codename: add_consentsection
+    content_type:
+    - rdrf
+    - consentsection
+    name: Can add consent section
+  - codename: change_consentsection
+    content_type:
+    - rdrf
+    - consentsection
+    name: Can change consent section
+  - codename: delete_consentsection
+    content_type:
+    - rdrf
+    - consentsection
+    name: Can delete consent section
+  - codename: add_contextformgroup
+    content_type:
+    - rdrf
+    - contextformgroup
+    name: Can add context form group
+  - codename: change_contextformgroup
+    content_type:
+    - rdrf
+    - contextformgroup
+    name: Can change context form group
+  - codename: delete_contextformgroup
+    content_type:
+    - rdrf
+    - contextformgroup
+    name: Can delete context form group
+  - codename: add_contextformgroupitem
+    content_type:
+    - rdrf
+    - contextformgroupitem
+    name: Can add context form group item
+  - codename: change_contextformgroupitem
+    content_type:
+    - rdrf
+    - contextformgroupitem
+    name: Can change context form group item
+  - codename: delete_contextformgroupitem
+    content_type:
+    - rdrf
+    - contextformgroupitem
+    name: Can delete context form group item
+  - codename: add_demographicfields
+    content_type:
+    - rdrf
+    - demographicfields
+    name: Can add demographic fields
+  - codename: change_demographicfields
+    content_type:
+    - rdrf
+    - demographicfields
+    name: Can change demographic fields
+  - codename: delete_demographicfields
+    content_type:
+    - rdrf
+    - demographicfields
+    name: Can delete demographic fields
+  - codename: add_emailnotification
+    content_type:
+    - rdrf
+    - emailnotification
+    name: Can add email notification
+  - codename: change_emailnotification
+    content_type:
+    - rdrf
+    - emailnotification
+    name: Can change email notification
+  - codename: delete_emailnotification
+    content_type:
+    - rdrf
+    - emailnotification
+    name: Can delete email notification
+  - codename: add_emailnotificationhistory
+    content_type:
+    - rdrf
+    - emailnotificationhistory
+    name: Can add email notification history
+  - codename: change_emailnotificationhistory
+    content_type:
+    - rdrf
+    - emailnotificationhistory
+    name: Can change email notification history
+  - codename: delete_emailnotificationhistory
+    content_type:
+    - rdrf
+    - emailnotificationhistory
+    name: Can delete email notification history
+  - codename: add_emailtemplate
+    content_type:
+    - rdrf
+    - emailtemplate
+    name: Can add email template
+  - codename: change_emailtemplate
+    content_type:
+    - rdrf
+    - emailtemplate
+    name: Can change email template
+  - codename: delete_emailtemplate
+    content_type:
+    - rdrf
+    - emailtemplate
+    name: Can delete email template
+  - codename: add_filestorage
+    content_type:
+    - rdrf
+    - filestorage
+    name: Can add file storage
+  - codename: change_filestorage
+    content_type:
+    - rdrf
+    - filestorage
+    name: Can change file storage
+  - codename: delete_filestorage
+    content_type:
+    - rdrf
+    - filestorage
+    name: Can delete file storage
+  - codename: add_notification
+    content_type:
+    - rdrf
+    - notification
+    name: Can add notification
+  - codename: change_notification
+    content_type:
+    - rdrf
+    - notification
+    name: Can change notification
+  - codename: delete_notification
+    content_type:
+    - rdrf
+    - notification
+    name: Can delete notification
+  - codename: add_questionnaireresponse
+    content_type:
+    - rdrf
+    - questionnaireresponse
+    name: Can add questionnaire response
+  - codename: change_questionnaireresponse
+    content_type:
+    - rdrf
+    - questionnaireresponse
+    name: Can change questionnaire response
+  - codename: delete_questionnaireresponse
+    content_type:
+    - rdrf
+    - questionnaireresponse
+    name: Can delete questionnaire response
+  - codename: add_rdrfcontext
+    content_type:
+    - rdrf
+    - rdrfcontext
+    name: Can add rdrf context
+  - codename: change_rdrfcontext
+    content_type:
+    - rdrf
+    - rdrfcontext
+    name: Can change rdrf context
+  - codename: delete_rdrfcontext
+    content_type:
+    - rdrf
+    - rdrfcontext
+    name: Can delete rdrf context
+  - codename: add_registry
+    content_type:
+    - rdrf
+    - registry
+    name: Can add registry
+  - codename: change_registry
+    content_type:
+    - rdrf
+    - registry
+    name: Can change registry
+  - codename: delete_registry
+    content_type:
+    - rdrf
+    - registry
+    name: Can delete registry
+  - codename: add_registryform
+    content_type:
+    - rdrf
+    - registryform
+    name: Can add registry form
+  - codename: change_registryform
+    content_type:
+    - rdrf
+    - registryform
+    name: Can change registry form
+  - codename: delete_registryform
+    content_type:
+    - rdrf
+    - registryform
+    name: Can delete registry form
+  - codename: add_section
+    content_type:
+    - rdrf
+    - section
+    name: Can add section
+  - codename: change_section
+    content_type:
+    - rdrf
+    - section
+    name: Can change section
+  - codename: delete_section
+    content_type:
+    - rdrf
+    - section
+    name: Can delete section
+  - codename: add_wizard
+    content_type:
+    - rdrf
+    - wizard
+    name: Can add wizard
+  - codename: change_wizard
+    content_type:
+    - rdrf
+    - wizard
+    name: Can change wizard
+  - codename: delete_wizard
+    content_type:
+    - rdrf
+    - wizard
+    name: Can delete wizard
+  - codename: add_registrationprofile
+    content_type:
+    - registration
+    - registrationprofile
+    name: Can add registration profile
+  - codename: change_registrationprofile
+    content_type:
+    - registration
+    - registrationprofile
+    name: Can change registration profile
+  - codename: delete_registrationprofile
+    content_type:
+    - registration
+    - registrationprofile
+    name: Can delete registration profile
+  - codename: add_session
+    content_type:
+    - sessions
+    - session
+    name: Can add session
+  - codename: change_session
+    content_type:
+    - sessions
+    - session
+    name: Can change session
+  - codename: delete_session
+    content_type:
+    - sessions
+    - session
+    name: Can delete session
+  - codename: add_site
+    content_type:
+    - sites
+    - site
+    name: Can add site
+  - codename: change_site
+    content_type:
+    - sites
+    - site
+    name: Can change site
+  - codename: delete_site
+    content_type:
+    - sites
+    - site
+    name: Can delete site
+  - codename: add_failedloginlog
+    content_type:
+    - useraudit
+    - failedloginlog
+    name: Can add failed login log
+  - codename: change_failedloginlog
+    content_type:
+    - useraudit
+    - failedloginlog
+    name: Can change failed login log
+  - codename: delete_failedloginlog
+    content_type:
+    - useraudit
+    - failedloginlog
+    name: Can delete failed login log
+  - codename: add_loginattempt
+    content_type:
+    - useraudit
+    - loginattempt
+    name: Can add login attempt
+  - codename: change_loginattempt
+    content_type:
+    - useraudit
+    - loginattempt
+    name: Can change login attempt
+  - codename: delete_loginattempt
+    content_type:
+    - useraudit
+    - loginattempt
+    name: Can delete login attempt
+  - codename: add_loginlog
+    content_type:
+    - useraudit
+    - loginlog
+    name: Can add login log
+  - codename: change_loginlog
+    content_type:
+    - useraudit
+    - loginlog
+    name: Can change login log
+  - codename: delete_loginlog
+    content_type:
+    - useraudit
+    - loginlog
+    name: Can delete login log
 metadata_json: '{"features": ["clinicians_have_patients", "registration", "proms_landing_login",
   "no_proms_link", "proms_proms", "clinician_form", "clinicians_have_patients", "consent_checks",
   "verification", "questionnaires" ,"contexts"], "proms_system_url": "https://angelmanregistry.info/rdrf",
@@ -33862,6 +34849,28 @@ pvgs:
     position: 2
     questionnaire_value: 'No'
     value: 'No'
+- code: ANGSeizureRecurY
+  values:
+  - code: Less6
+    desc: Less than 6 months
+    position: 1
+    questionnaire_value: Less than 6 months
+    value: Less than 6 months
+  - code: 612Months
+    desc: 6-12 months
+    position: 2
+    questionnaire_value: 6-12 months
+    value: 6-12 months
+  - code: 1224Months
+    desc: 12-24 months
+    position: 3
+    questionnaire_value: 12-24 months
+    value: 12-24 months
+  - code: Morethan24
+    desc: More than 24 months
+    position: 4
+    questionnaire_value: More than 24 months
+    value: More than 24 months
 - code: ANGSeizureSeverity
   values:
   - code: ANGVaried

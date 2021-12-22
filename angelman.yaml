@@ -1,4 +1,4 @@
-EXPORT_TIME: '2021-11-29 12:49:48.827929'
+EXPORT_TIME: '2021-12-22 11:08:45.392270'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -532,6 +532,57 @@ cdes:
   widget_settings: '{}'
 - allow_multiple: false
   calculation: ''
+  code: 75Complete
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: At least 75% complete (eligible for reimbursement)
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: 75Completea
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Complete % items
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: 75Completeb
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Complete % modules
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
   code: ADMINCURATORDEC
   datatype: range
   desc: ''
@@ -646,6 +697,346 @@ cdes:
   name: User decision
   pattern: ''
   pv_group: DUPUSER
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod1
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Newborn and infancy complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod11
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Studies and clinics complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod11b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod1b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod2
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: History of diagnosis complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod2b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod3
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Illness and medical conditions complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod3b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod4
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Hospitalisations complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod45
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Communication complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod45b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod4b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod5
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Behaviour and development complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod5b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod6
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Epilepsy complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod6b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod7
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Medications Interventions and Therapies complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod7b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod8b
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Percent complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ADMMod9
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Sleep complete
+  pattern: ''
+  pv_group: ANGYesNo
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":false}'
@@ -22413,6 +22804,108 @@ cdes:
   widget_settings: '{"force_vertical":true}'
 - allow_multiple: false
   calculation: ''
+  code: ReimChoice
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Reimbursement choice
+  pattern: ''
+  pv_group: ReimChoice
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ReimContact
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Contacted for reimbursement
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ReimDateContact
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date contacted
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
+  code: ReimDetail
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Reimbursement details
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- allow_multiple: false
+  calculation: ''
+  code: ReimFinal
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Reimbursement paid/ complete
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
+- allow_multiple: false
+  calculation: ''
+  code: ReimFinalDate
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date finalised/ complete
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- allow_multiple: false
+  calculation: ''
   code: ResideInfancy
   datatype: range
   desc: ''
@@ -23169,16 +23662,16 @@ cdes:
 code: ang
 complete_fields:
 - cdes:
+  - ResideInfancy
+  - ResideNewborn
+  form_name: NewbornAndInfancyHistory
+- cdes:
   - ADMINDUPLICATEOTH
   - ADMINPASS
   - ADMINPASSDATE
   - ADMINPASSDETAIL
   - ADMINUSERDECISION
   form_name: AdminInfo
-- cdes:
-  - ResideInfancy
-  - ResideNewborn
-  form_name: NewbornAndInfancyHistory
 - cdes:
   - ANGAgeDiagnosis2
   - ANGCurrentPatientAge
@@ -23221,6 +23714,7 @@ complete_fields:
 - cdes:
   - ANGAllergies
   - ANGDentalProblems
+  - ANGDentalProblemsFillings2
   - ANGEverConstipation
   - ANGFailuretoThrive
   - ANGGagging
@@ -23990,6 +24484,42 @@ forms:
     - ADMINPASS
     - ADMINPASSDATE
     - ADMINPASSDETAIL
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - allow_multiple: false
+    code: ADMCOMPLETEREIM
+    display_name: Completion and Reimbursement Details
+    elements:
+    - ADMMod1
+    - ADMMod1b
+    - ADMMod2
+    - ADMMod2b
+    - ADMMod3
+    - ADMMod3b
+    - ADMMod4
+    - ADMMod4b
+    - ADMMod45
+    - ADMMod45b
+    - ADMMod5
+    - ADMMod5b
+    - ADMMod6
+    - ADMMod6b
+    - ADMMod7
+    - ADMMod7b
+    - ADMMod9
+    - ADMMod8b
+    - ADMMod11
+    - ADMMod11b
+    - 75Complete
+    - 75Completea
+    - 75Completeb
+    - ReimContact
+    - ReimDateContact
+    - ReimChoice
+    - ReimFinal
+    - ReimFinalDate
+    - ReimDetail
     extra: null
     questionnaire_display_name: ''
     questionnaire_help: ''
@@ -31387,6 +31917,13 @@ metadata_json: '{"features": ["clinicians_have_patients", "registration", "proms
   "ANGSeizureFrequencyB"}, {"form": "AngelmanRegistryEpilepsy", "section": "ANGNonConvulsiveStatusEpilepsy",
   "cde": "ANGEpilepsyTrigger"}]}'
 name: angelman
+next_of_kin_relationships:
+- Parent
+- Sibling
+- Uncle or Aunt
+- Nephew or Niece
+- Other
+- Grandparent
 patient_data_section: {}
 patient_stage_rules: []
 patient_stages: []
@@ -37123,6 +37660,18 @@ pvgs:
     position: 5
     questionnaire_value: Seizures/ infantile spasms
     value: Seizures/ infantile spasms
+- code: ReimChoice
+  values:
+  - code: Payment
+    desc: Payment
+    position: 1
+    questionnaire_value: null
+    value: Payment
+  - code: Donation
+    desc: Donation
+    position: 2
+    questionnaire_value: null
+    value: Donation
 - code: Sex
   values:
   - code: F

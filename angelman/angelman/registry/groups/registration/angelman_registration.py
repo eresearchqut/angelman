@@ -94,7 +94,7 @@ class AngelmanRegistration(BaseRegistration):
         first_name = form_data['parent_guardian_first_name']
         last_name = form_data['parent_guardian_last_name']
 
-        preferred_language = self.form.cleaned_data.get('preferred_language', 'en')
+        preferred_language = self.form.cleaned_data.get('preferred_languages', 'en')
         django_user.preferred_language = preferred_language
 
         return self.setup_django_user(django_user, registry, GROUPS.PARENT, first_name, last_name)

@@ -53,8 +53,8 @@ class AngelmanRegistration(BaseRegistration):
             "activation_url": self.get_registration_activation_url(registration),
         }
 
-        process_notification(registry_code, EventType.NEW_PATIENT, template_data)
-        logger.info(f"Registration process - sent notification for NEW_PATIENT {template_data}")
+        process_notification(registry_code, EventType.NEW_PATIENT_USER_REGISTERED, template_data)
+        logger.info(f"Registration process - sent notification for NEW_PATIENT_USER_REGISTERED {template_data}")
 
     def _create_patient_address(self, patient, address_type="Postal"):
         form_data = self.form.cleaned_data
@@ -94,7 +94,7 @@ class AngelmanRegistration(BaseRegistration):
         first_name = form_data['parent_guardian_first_name']
         last_name = form_data['parent_guardian_last_name']
 
-        preferred_language = self.form.cleaned_data.get('preferred_language', 'en')
+        preferred_language = self.form.cleaned_data.get('preferred_languages', 'en')
         django_user.preferred_language = preferred_language
 
         return self.setup_django_user(django_user, registry, GROUPS.PARENT, first_name, last_name)

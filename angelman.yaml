@@ -1,4 +1,4 @@
-EXPORT_TIME: '2022-01-28 11:13:23.179798'
+EXPORT_TIME: '2022-02-02 07:54:58.293506'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -24201,7 +24201,7 @@ consent_sections:
   validation_rule: angconsent1 and angconsent2 and angconsent3 and angconsent4 and
     angconsent5 and angconsent6 and angconsent7 and angconsent8
 context_form_groups:
-- code: CFG8
+- code: Archive
   context_type: F
   forms:
   - AdminInfo
@@ -24214,7 +24214,7 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 8
-- code: CFG5
+- code: Review
   context_type: M
   forms:
   - CheckUp6Months
@@ -24224,7 +24224,7 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 2
-- code: CFG3
+- code: BehaviourDev
   context_type: M
   forms:
   - BehaviourandDevelopment
@@ -24235,7 +24235,7 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 5
-- code: CFG2
+- code: Communication
   context_type: M
   forms:
   - Communication
@@ -24245,7 +24245,7 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 4
-- code: CFG7
+- code: History
   context_type: F
   forms:
   - NewbornAndInfancyHistory
@@ -24260,7 +24260,7 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 1
-- code: CFG1
+- code: IllnessMed
   context_type: M
   forms:
   - IllnessesOrMedicalProblems
@@ -24270,7 +24270,7 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 3
-- code: CFG4
+- code: Sleep
   context_type: M
   forms:
   - Sleep
@@ -24280,7 +24280,7 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 6
-- code: CFG6
+- code: Treatment
   context_type: F
   forms:
   - ChangeInSeizureActivity

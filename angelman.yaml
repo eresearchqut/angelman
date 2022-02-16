@@ -1,4 +1,4 @@
-EXPORT_TIME: '2021-12-22 11:08:45.392270'
+EXPORT_TIME: '2022-02-02 07:54:58.293506'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -23941,7 +23941,7 @@ consent_rules:
 consent_sections:
 - applicability_condition: ''
   code: ANGconsent
-  information_link: 25NOV2020_Angelman_Syndrome_Information_Sheet.pdf
+  information_link: 12JAN2022_Angelman_Syndrome_Information_Sheet.pdf
   information_text: |-
     <p>Information Sheet for Parents/Carers/ Guardians <br />
     Version 10.5<br />
@@ -24201,7 +24201,8 @@ consent_sections:
   validation_rule: angconsent1 and angconsent2 and angconsent3 and angconsent4 and
     angconsent5 and angconsent6 and angconsent7 and angconsent8
 context_form_groups:
-- context_type: F
+- code: Archive
+  context_type: F
   forms:
   - AdminInfo
   - AngelmanRegistryEpilepsyArchive
@@ -24213,7 +24214,8 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 8
-- context_type: M
+- code: Review
+  context_type: M
   forms:
   - CheckUp6Months
   is_default: false
@@ -24222,7 +24224,8 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 2
-- context_type: M
+- code: BehaviourDev
+  context_type: M
   forms:
   - BehaviourandDevelopment
   is_default: false
@@ -24232,7 +24235,8 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 5
-- context_type: M
+- code: Communication
+  context_type: M
   forms:
   - Communication
   is_default: false
@@ -24241,7 +24245,8 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 4
-- context_type: F
+- code: History
+  context_type: F
   forms:
   - NewbornAndInfancyHistory
   - HistoryOfDiagnosisAndResults
@@ -24255,7 +24260,8 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 1
-- context_type: M
+- code: IllnessMed
+  context_type: M
   forms:
   - IllnessesOrMedicalProblems
   is_default: false
@@ -24264,7 +24270,8 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 3
-- context_type: M
+- code: Sleep
+  context_type: M
   forms:
   - Sleep
   is_default: false
@@ -24273,7 +24280,8 @@ context_form_groups:
   naming_scheme: D
   ordering: C
   sort_order: 6
-- context_type: F
+- code: Treatment
+  context_type: F
   forms:
   - ChangeInSeizureActivity
   - NewHospitalisationOrSurgery
@@ -24387,7 +24395,7 @@ email_notifications:
     subject: Angelman Registry Clinician Signup Request
   group_recipient: null
   recipient: curator@angelmanregistry.info
-- description: new-patient
+- description: new-patient-user-registered
   disabled: false
   email_from: noreply@angelman.prod.registryframework.net
   email_templates:

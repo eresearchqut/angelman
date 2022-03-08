@@ -68,6 +68,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   nodejs \
   unixodbc \
   libmagic1 \
+  git \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 RUN mkdir -p /requirements/rdrf/

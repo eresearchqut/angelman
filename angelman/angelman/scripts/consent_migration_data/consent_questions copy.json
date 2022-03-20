@@ -1,0 +1,62 @@
+[
+  {
+    "model": "rdrf.consentquestion",
+    "fields": {
+      "code": "angnewconsent1",
+      "position": 1,
+      "question_label": "1. I confirm that I have viewed and understood the video. I have had the opportunity to think about the information, ask questions, and have had questions answered to my satisfaction.",
+      "instructions": "",
+      "questionnaire_label": ""
+    }
+  },
+  {
+    "model": "rdrf.consentquestion",
+    "fields": {
+      "code": "angnewconsent3b",
+      "position": 2,
+      "question_label": "2. I confirm that I am happy for the nominated specialist in charge of my medical care to be contacted if required.",
+      "instructions": "",
+      "questionnaire_label": ""
+    }
+  },
+  {
+    "model": "rdrf.consentquestion",
+    "fields": {
+      "code": "angnewconsent4b",
+      "position": 3,
+      "question_label": "3. I confirm that I am happy for my de-identified data to be made available for analysis through third party platforms or researchers.",
+      "instructions": "",
+      "questionnaire_label": ""
+    }
+  },
+  {
+    "model": "rdrf.consentquestion",
+    "fields": {
+      "code": "angnewconsent2",
+      "position": 5,
+      "question_label": "5. I consent to being contacted about clinical trials and research studies that my child/ adult with Angelman Syndrome may be eligible to participate in.",
+      "instructions": "",
+      "questionnaire_label": ""
+    }
+  },
+  {
+    "model": "rdrf.consentquestion",
+    "fields": {
+      "code": "angnewconsent6b",
+      "position": 4,
+      "question_label": "4. I consent to being contacted to complete additional modules for longitudinal follow up.",
+      "instructions": "",
+      "questionnaire_label": ""
+    }
+  },
+  {
+    "model": "rdrf.consentquestion",
+    "fields": {
+      "code": "angnewconsent5b",
+      "position": 6,
+      "question_label": "6. I consent to being contacted about opportunities to connect with Angelman organisations if there is an opportunity to do so.",
+      "instructions": "",
+      "questionnaire_label": ""
+    }
+  }
+]

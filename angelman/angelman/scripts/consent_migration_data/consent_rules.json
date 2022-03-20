@@ -1,0 +1,22 @@
+[
+  {
+    "model": "rdrf.consentrule",
+    "fields": {
+      "registry": ["ang"],
+      "user_group": ["Clinical Staff"],
+      "capability": "see_patient",
+      "consent_question": ["AngNewConsentSection", "angnewconsent3b"],
+      "enabled": true
+    }
+  },
+  {
+    "model": "rdrf.consentrule",
+    "fields": {
+      "registry": ["ang"],
+      "user_group": ["Parents"],
+      "capability": "see_patient",
+      "consent_question": ["AngNewConsentSection", "angnewconsent1"],
+      "enabled": true
+    }
+  }
+]

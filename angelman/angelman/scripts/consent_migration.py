@@ -67,10 +67,6 @@ questions_qs = (
 
 
 # TODO 
-#   - (LOCAL) more testing:
-#        reimport angelman yaml, enter test data based on PROD, export zip, re-test script
-#   - historical records?
-#   - we don't have clinicians in Angelman, right? (Important only if we do check ConsentQuestion.create_field)
 #   - automated tests:
 #        As the last step,
 
@@ -104,8 +100,6 @@ def run():
 
     print_title('4. Migrating old consents into new consents')
     migrate_old_consents_into_new_consents()
-
-    assert False, 'bum'
 
     print_title('5. Saving migrated Patient consents to CSV file')
     save_migrated_patient_consents_to_csv_file(new_section)

@@ -19,7 +19,6 @@ corresponding old questions (the questions they've been migrated from) for easie
 from collections import OrderedDict
 import csv
 from datetime import datetime
-from functools import partial
 from pathlib import Path
 import sys
 
@@ -28,11 +27,15 @@ from django.db import transaction
 from django.core import serializers
 
 
-from rdrf.models.definition.models import ConsentConfiguration, ConsentQuestion, ConsentSection
+from rdrf.models.definition.models import ConsentConfiguration, ConsentQuestion, ConsentSection, Registry
+from rdrf.views.form_view import CustomConsentFormView
+from registry.groups.models import CustomUser
 from registry.patients.models import ConsentValue, Patient
 
 
-REGISTRY_CODE = 'ang'
+ADMIN_USER = CustomUser.objects.get(username='admin')
+ANGELMAN_REGISTRY = Registry.objects.get(code='ang')
+
 MODELS_TO_BACKUP = (Patient, ConsentSection, ConsentQuestion, ConsentValue, ConsentConfiguration)
 
 DATA_DIR = Path(__file__).parent / 'consent_migration_data'
@@ -61,28 +64,9 @@ MIGRATE_QUESTION_FROM_TO = (
 
 questions_qs = (
     ConsentQuestion.objects
-    .filter(section__registry__code=REGISTRY_CODE)
+    .filter(section__registry=ANGELMAN_REGISTRY)
     .order_by('section__code', 'position')
     .values_list('code', 'pk'))
-
-
-# TODO 
-#   - automated tests:
-#        As the last step,
-
-#        for each Patient in SAVED_CONSENTS_CSV:
-#            Determine what the new consent answers should be based on the rules.
-#            Then verify them by:
-#
-#            ccfv =rdrf.views.form_view.CustomConsentFormView()
-#            form, sections = _get_form_sections(USER, angelman_registry, patient)
-#
-#            You could do this test several times, for key USERs: ie. admin, curator, parent/patient
-#
-#     sections is a list of (section name, [field_keys])
-#     it should have just the one section we created
-#     form[field_key] is the BoundBooleanField so use .label  and .value() (True/False)
-#     to get the question text and whether the checkbox is checked or not on the consent form for the patient
 
 
 @transaction.atomic
@@ -106,6 +90,9 @@ def run():
 
     print_title('6. Delete old consent sections')
     delete_old_consents(new_section)
+
+    print_title('6. Automated verification of migration')
+    automated_verification(new_section)
 
     print('All done!')
 
@@ -153,7 +140,7 @@ def _save_patient_consents_to_csv_file(filename, questions):
         writer = csv.writer(f)
         writer.writerow(header)
 
-        patients = Patient.objects.filter(rdrf_registry__code=REGISTRY_CODE).prefetch_related('consents').order_by('pk')
+        patients = Patient.objects.filter(rdrf_registry=ANGELMAN_REGISTRY).prefetch_related('consents').order_by('pk')
         for patient in patients:
             values = {consent.consent_question_id: consent.answer for consent in patient.consents.all()}
             row = [patient.pk] + [values.get(pk, '-') for pk in question_pks] 
@@ -168,9 +155,7 @@ def make_copies_of_key_tables(models):
 
     with db.connections['default'].cursor() as cursor:
         for name, backup_name in names:
-            pass
-            # TODO re-enable
-            # cursor.execute(f'CREATE TABLE {backup_name} AS TABLE {name}')
+            cursor.execute(f'CREATE TABLE {backup_name} AS TABLE {name}')
 
     print_indented(f'Created backup tables:')
     for _, n in names:
@@ -188,7 +173,6 @@ def create_new_consent_section_questions_and_rules():
     rules = _deserialize_and_save(CONSENT_RULES_JSON) 
     print_indented(f'Created {len(rules)} consent rules.')
 
-
     return section
 
 
@@ -196,7 +180,7 @@ def migrate_old_consents_into_new_consents():
     mandatory_question = ConsentQuestion.objects.get(code=NEW_MANDATORY_CONSENT)
     new_questions = [(from_, ConsentQuestion.objects.get(code=to)) for from_, to in MIGRATE_QUESTION_FROM_TO]
 
-    patients = Patient.objects.filter(rdrf_registry__code=REGISTRY_CODE).prefetch_related('consents', 'consents__consent_question').order_by('pk')
+    patients = Patient.objects.filter(rdrf_registry=ANGELMAN_REGISTRY).prefetch_related('consents', 'consents__consent_question').order_by('pk')
 
     consent_values_created = OrderedDict()
     for patient in patients:
@@ -232,7 +216,6 @@ def migrate_mandatory_consents(patient, mandatory_question):
                 answer=all(c.answer for c in mandatory_consents),
                 first_save=min(first_saves) if first_saves else None,
                 last_update=max(last_updates) if last_updates else None,
-                # TODO do we do something about history (HistoricalRecords)
             )
 
 
@@ -247,18 +230,50 @@ def migrate_optional_consent(patient, from_question_code, new_question):
 
 
 def delete_old_consents(new_section):
-    # TODO re-enable
-    print('Re-enable!')
-    return
     total, details = (
         ConsentSection.objects
-        .filter(registry__code=REGISTRY_CODE)
+        .filter(registry=ANGELMAN_REGISTRY)
         .exclude(pk=new_section.pk)
         .delete())
 
     print_indented(f'Deleted a total of {total} objects:')
     for model, count in details.items():
         print_indented(f'- {model.split(".")[-1]}: {count}', indent=2)
+
+
+def automated_verification(new_section):
+    for patient, expected_values in _patient_expected_values(new_section):
+        form, sections, *_= CustomConsentFormView()._get_form_sections(ADMIN_USER, ANGELMAN_REGISTRY, patient)[0]
+        assert len(sections) == 1, f'Form should display only 1 section (the new section) but it displays {len(sections)} sections!'
+        section_name, field_keys = sections[0]
+
+        assert section_name == new_section.section_label 
+        displayed_questions = [(form[k].label, form[k].value()) for k in field_keys]
+        expected_questions = _apply_values(expected_values)
+        assert len(displayed_questions) == len(expected_questions), \
+            f'{len(expected_questions)} questions should be displayed not {len(displayed_questions)}!'
+        for displayed, expected in zip(displayed_questions, expected_questions):
+            assert displayed == expected, \
+                f'Difference found for Patient with ID {patient.pk}:\n{displayed}\n{expected}'
+
+    print_indented(f'Verified all patients in {SAVED_CONSENTS_CSV}.')
+
+
+def _patient_expected_values(new_section):
+    migrated_questions = [NEW_MANDATORY_CONSENT] + [new for _, new in MIGRATE_QUESTION_FROM_TO]
+    new_questions = set(q.code for q in new_section.questions.all() if q.code not in migrated_questions) 
+
+    def expected_values(row):
+        expected = {new: row[old] == 'True' for old, new in MIGRATE_QUESTION_FROM_TO}
+        expected[NEW_MANDATORY_CONSENT] = all(row[code] == 'True' for code in OLD_MANDATORY_CONSENTS)
+        expected.update({q: False for q in new_questions})
+
+        return expected
+
+    with open(SAVED_CONSENTS_CSV, newline='') as f:
+        reader = csv.DictReader(f)
+        for row in reader:
+            yield Patient.objects.get(pk=row['patient_id']), expected_values(row)
 
 
 def _deserialize_and_save(filename):
@@ -278,5 +293,39 @@ def print_title(title):
 
 
 def print_indented(s, indent=1):
-    print(' ' * 4 * indent + s)
+    print(' ' * 4 * indent + str(s))
 
+
+# Used for the verification step, to assert the text and the values being displayed after the
+# migration finished.
+# The order of the questions is important and the text and New codes have been copied here directly *
+# from the Wiki page to make the assertions process better.
+#
+#    * Some questions had no . ending the sentence on the Wiki page.
+#      Added the missing .'s to make all questions consistent. 
+#
+# Ref: https://eresearchqut.atlassian.net/wiki/spaces/ERS/pages/1682702345/Angelman+Consent+Migration
+#
+# ie. the duplication between this and the JSON files importing the questions is intentional!
+NEW_CONSENT_SECTION_QUESTIONS_TEMPLATE = (
+    ('1. I confirm that I have viewed and understood the video. I have had the opportunity to think '
+    'about the information, ask questions, and have had questions answered to my satisfaction.',
+    'angnewconsent1'),
+    ('2. I confirm that I am happy for the nominated specialist in charge of my medical care '
+    'to be contacted if required.',
+    'angnewconsent3b'),
+    ('3. I confirm that I am happy for my de-identified data to be made available for analysis '
+    'through third party platforms or researchers.',
+    'angnewconsent4b'),
+    ('4. I consent to being contacted to complete additional modules for longitudinal follow up.',
+    'angnewconsent6b'),
+    ('5. I consent to being contacted about clinical trials and research studies that my child/ '
+    'adult with Angelman Syndrome may be eligible to participate in.',
+    'angnewconsent2'),
+    ('6. I consent to being contacted about opportunities to connect with Angelman organisations if '
+    'there is an opportunity to do so.',
+    'angnewconsent5b'),
+)
+
+def _apply_values(expected_values):
+    return [(text, expected_values[value]) for text, value in NEW_CONSENT_SECTION_QUESTIONS_TEMPLATE]

@@ -44,7 +44,7 @@ CONSENT_SECTIONS_JSON = DATA_DIR / 'consent_sections.json'
 CONSENT_QUESTIONS_JSON = DATA_DIR / 'consent_questions.json'
 CONSENT_RULES_JSON = DATA_DIR / 'consent_rules.json'
 
-# Now formatted in a file-name-friendly way
+# Now formatted in a file-name-friendly way. Ex. 20220411T092921Z for 11 Apr 2022 09:29:21 UTC
 NOW = datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
 
 SAVED_CONSENTS_CSV = f'saved_patient_consents_{NOW}.csv'
@@ -138,16 +138,16 @@ def save_migrated_patient_consents_to_csv_file(new_section):
 def _save_patient_consents_to_csv_file(filename, questions):
     question_pks = [pk for _, pk in questions]
 
-    header = ['patient_id'] + [code for code, _ in questions]
+    header = ['patient_id', 'is_active'] + [code for code, _ in questions]
 
     with open(filename, 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow(header)
 
-        patients = Patient.objects.filter(rdrf_registry=ANGELMAN_REGISTRY).prefetch_related('consents').order_by('pk')
+        patients = Patient.objects.really_all().filter(rdrf_registry=ANGELMAN_REGISTRY).prefetch_related('consents').order_by('pk')
         for patient in patients:
             values = {consent.consent_question_id: consent.answer for consent in patient.consents.all()}
-            row = [patient.pk] + [values.get(pk, '-') for pk in question_pks]
+            row = [patient.pk, patient.active] + [values.get(pk, '-') for pk in question_pks]
             writer.writerow(row)
 
     print_indented(f'Saved {len(patients)} Patients into {filename}.')
@@ -184,7 +184,7 @@ def migrate_old_consents_into_new_consents():
     mandatory_question = ConsentQuestion.objects.get(code=NEW_MANDATORY_CONSENT)
     new_questions = [(from_, ConsentQuestion.objects.get(code=to)) for from_, to in MIGRATE_QUESTION_FROM_TO]
 
-    patients = Patient.objects.filter(rdrf_registry=ANGELMAN_REGISTRY).prefetch_related('consents', 'consents__consent_question').order_by('pk')
+    patients = Patient.objects.really_all().filter(rdrf_registry=ANGELMAN_REGISTRY).prefetch_related('consents', 'consents__consent_question').order_by('pk')
 
     consent_values_created = OrderedDict()
     for patient in patients:
@@ -269,7 +269,7 @@ def verify_consent_values_of_all_patients(new_section):
 
 
 def verify_consent_based_form_access():
-    consented = ConsentValue.objects.filter(consent_question__code=NEW_MANDATORY_CONSENT).values_list('patient_id', flat=True)
+    consented = ConsentValue.objects.filter(consent_question__code=NEW_MANDATORY_CONSENT, patient__active=True).values_list('patient_id', flat=True)
     patient = Patient.objects.get(pk=consented[0])
     parent = patient.parentguardian_set.first()
     assert consent_check(ANGELMAN_REGISTRY, parent.user, patient, 'see_patient')
@@ -295,7 +295,7 @@ def _patient_expected_values(new_section):
     with open(SAVED_CONSENTS_CSV, newline='') as f:
         reader = csv.DictReader(f)
         for row in reader:
-            yield Patient.objects.get(pk=row['patient_id']), expected_values(row)
+            yield Patient.objects.really_all().get(pk=row['patient_id']), expected_values(row)
 
 
 def _deserialize_and_save(filename):

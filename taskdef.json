@@ -102,6 +102,10 @@
                     "value": "$DEBUG"
                 },
                 {
+                    "name": "PROJECT_TITLE",
+                    "value": "$PROJECT_TITLE"
+                },
+                {
                     "name": "TRRF_SOURCE_DIR",
                     "value": "/app/rdrf"
                 },

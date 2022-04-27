@@ -66,7 +66,7 @@ class ANGPatientRegistrationForm(RegistrationForm):
                 self.fields[field].widget.attrs['class'] = field_widget_class
 
             if field not in self.no_placeholder_fields:
-                self.fields[field].widget.attrs['placeholder'] = self.placeholders.get(field, _(''))
+                self.fields[field].widget.attrs['placeholder'] = self.placeholders.get(field, '')
             if field in self.password_fields:
                 self.fields[field].widget.render_value = True
 

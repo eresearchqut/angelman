@@ -1,4 +1,4 @@
-EXPORT_TIME: '2022-04-20 10:33:16.032254'
+EXPORT_TIME: '2022-04-27 12:32:18.911186'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -22989,6 +22989,24 @@ cdes:
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CommSurveyFormNo
+  allow_multiple: false
+  calculation: ''
+  code: CommSurveyFormNo
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Communication Survey Form Number
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
 - abbreviated_name: I have completed all relevant questions for my child adult
   allow_multiple: true
   calculation: ''
@@ -23195,6 +23213,258 @@ cdes:
   questionnaire_text: ''
   widget_name: ''
   widget_settings: ''
+- abbreviated_name: DateAddInfoComp
+  allow_multiple: false
+  calculation: ''
+  code: DateAddInfoCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Additional Info Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateBehDevComp
+  allow_multiple: false
+  calculation: ''
+  code: DateBehDevCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Behaviour and Development Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateCommComp
+  allow_multiple: false
+  calculation: ''
+  code: DateCommCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date communication form completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateComSurveyComp
+  allow_multiple: false
+  calculation: ''
+  code: DateCommSurveyCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Communication Survey Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateEpilepsyComp
+  allow_multiple: false
+  calculation: ''
+  code: DateEpilepsyCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Epilepsy Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateHistComp
+  allow_multiple: false
+  calculation: ''
+  code: DateHistCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date history of diagnosis form completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateIllComp
+  allow_multiple: false
+  calculation: ''
+  code: DateIllCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date illness and medical condition form completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateMedHistComp
+  allow_multiple: false
+  calculation: ''
+  code: DateMedHistCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date medical history form completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateMedIntComp
+  allow_multiple: false
+  calculation: ''
+  code: DateMedIntCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Medications and Interventions Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateNewComp
+  allow_multiple: false
+  calculation: ''
+  code: DateNewCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date newborn and infancy form completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DatePathComp
+  allow_multiple: false
+  calculation: ''
+  code: DatePathCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Pathology and Diagnostics Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateSDSCComp
+  allow_multiple: false
+  calculation: ''
+  code: DateSDSCCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date SDSC Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateSleepComp
+  allow_multiple: false
+  calculation: ''
+  code: DateSleepCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Sleep Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateThanksComp
+  allow_multiple: false
+  calculation: ''
+  code: DateThanksCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Thank You Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
 - abbreviated_name: Are you still participating in the Disruptive Nutrition FANSketone
     trial
   allow_multiple: false
@@ -24235,6 +24505,24 @@ cdes:
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
+- abbreviated_name: RegistrationDiagnosis
+  allow_multiple: false
+  calculation: ''
+  code: RegistrationDiagnosis
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Registration Diagnosis
+  pattern: ''
+  pv_group: RegistrationDiagnosisPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
 - abbreviated_name: Reimbursement choice
   allow_multiple: false
   calculation: ''
@@ -25709,6 +25997,7 @@ context_form_groups:
   context_type: F
   forms:
   - AdminInfo
+  - AdminOnlyExtraInfo
   - AngelmanRegistryEpilepsyArchive
   - AngelmanRegistryBehaviourAndDevelopmentARCHIVED
   - RDRFArchive
@@ -26045,6 +26334,50 @@ forms:
     - ReimFinal
     - ReimFinalDate
     - ReimDetail
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: DateFormCompleted
+    allow_multiple: false
+    code: DateComForm
+    display_name: Pre Migration Date Forms Completed
+    elements:
+    - DateNewCompleted
+    - DateHistCompleted
+    - DateIllCompleted
+    - DateMedHistCompleted
+    - DateCommCompleted
+    - DateBehDevCompleted
+    - DateEpilepsyCompleted
+    - DateMedIntCompleted
+    - DateSleepCompleted
+    - DateSDSCCompleted
+    - DatePathCompleted
+    - DateAddInfoCompleted
+    - DateThanksCompleted
+    - DateCommSurveyCompleted
+    - CommSurveyFormNo
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  tags: []
+- abbreviated_name: AdminOnlyExtraInfo
+  applicability_condition: ''
+  conditional_rendering_rules: ''
+  display_name: Admin Only
+  header: ''
+  is_questionnaire: false
+  name: AdminOnlyExtraInfo
+  position: 20
+  questionnaire_display_name: ''
+  questionnaire_questions: ''
+  sections:
+  - abbreviated_name: RegistrationExtraInfo
+    allow_multiple: false
+    code: RegistrationExtraInfo
+    display_name: Registration Extra Information
+    elements:
+    - RegistrationDiagnosis
     extra: null
     questionnaire_display_name: ''
     questionnaire_help: ''
@@ -32757,6 +33090,8 @@ forms:
 forms_allowed_groups:
   AdminInfo:
   - AdminOnly
+  AdminOnlyExtraInfo:
+  - AdminOnly
   AngelmanRegistryAdditionalInformation: []
   AngelmanRegistryBehaviourAndDevelopment: []
   AngelmanRegistryBehaviourAndDevelopmentARCHIVED:
@@ -32825,6 +33160,7 @@ forms_allowed_groups:
   - Parents
 forms_readonly_groups:
   AdminInfo: []
+  AdminOnlyExtraInfo: []
   AngelmanRegistryAdditionalInformation: []
   AngelmanRegistryBehaviourAndDevelopment: []
   AngelmanRegistryBehaviourAndDevelopmentARCHIVED: []
@@ -39597,6 +39933,43 @@ pvgs:
     position: 5
     questionnaire_value: Seizures/ infantile spasms
     value: Seizures/ infantile spasms
+- code: RegistrationDiagnosisPVG
+  values:
+  - code: RegistrationDiagnosisUnknown
+    desc: Unknown
+    position: 7
+    questionnaire_value: null
+    value: Unknown
+  - code: RegistrationDiagnosisMosaic
+    desc: Mosaic
+    position: 6
+    questionnaire_value: null
+    value: Mosaic
+  - code: RegistrationDiagnosisClinical
+    desc: Clinical
+    position: 5
+    questionnaire_value: null
+    value: Clinical
+  - code: RegistrationDiagnosisUPD
+    desc: Uniparental disomy (UPD)
+    position: 4
+    questionnaire_value: null
+    value: Uniparental disomy (UPD)
+  - code: RegistrationDiagnosisMutation
+    desc: Mutation
+    position: 3
+    questionnaire_value: null
+    value: Mutation
+  - code: RegistrationDiagnosisICD
+    desc: Imprinting centre defect (ICD)
+    position: 2
+    questionnaire_value: null
+    value: Imprinting centre defect (ICD)
+  - code: RegistrationDiagnosisDeletion
+    desc: Deletion
+    position: 1
+    questionnaire_value: null
+    value: Deletion
 - code: ReimChoice
   values:
   - code: Payment

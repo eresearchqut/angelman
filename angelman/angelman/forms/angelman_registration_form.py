@@ -23,9 +23,10 @@ def _countries():
 
 def _diagnosis():
     cde_code = DIAGNOSIS_CDE['cde_code']
-    cde = CommonDataElement.objects.get(code=cde_code)
+    cde = CommonDataElement.objects.filter(code=cde_code).first()
+    options = cde.pv_group.options if cde else []
     initial = {'code': '', 'text': 'Diagnosis'}
-    options = [initial] + cde.pv_group.options
+    options = [initial] + options
     return [(o['code'], _(o['text'])) for o in options]
 
 

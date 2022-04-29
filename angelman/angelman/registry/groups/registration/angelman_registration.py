@@ -4,7 +4,7 @@ from operator import itemgetter
 from django.utils.translation import get_language
 
 from rdrf.events.events import EventType
-from rdrf.models.definition.models import ContextFormGroup, RDRFContext
+from rdrf.models.definition.models import CommonDataElement, ContextFormGroup, RDRFContext
 from rdrf.services.io.notifications.email_notification import process_notification
 
 from registration.models import RegistrationProfile
@@ -124,6 +124,13 @@ class AngelmanRegistration(BaseRegistration):
     @property
     def language(self):
         return get_language()
+
+    def registration_allowed(self):
+        cde_code = DIAGNOSIS_CDE["cde_code"]
+        is_allowed = CommonDataElement.objects.filter(code=cde_code).exists()
+        if not is_allowed:
+            logger.warning(f'CDE with code {cde_code} does NOT exits. Disabling registration!')
+        return is_allowed
 
     def get_template_name(self):
         return "registration/registration_form.html"

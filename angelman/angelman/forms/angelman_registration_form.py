@@ -1,4 +1,6 @@
 from operator import attrgetter
+
+from django.db import ProgrammingError, connection
 import pycountry
 from django.forms import CharField, ChoiceField, DateField, BooleanField
 from django.forms.widgets import RadioSelect, Select
@@ -21,9 +23,20 @@ def _countries():
     return result + [_tuple(c.alpha_2, c.name) for c in countries]
 
 
+def _get_cde(cde_code):
+    try:
+        return CommonDataElement.objects.get(code=cde_code)
+    except CommonDataElement.DoesNotExist:
+        return None
+    except ProgrammingError:
+        db_table_exists = CommonDataElement._meta.db_table in connection.introspection.table_names()
+        if not db_table_exists:
+            return None
+        raise
+
+
 def _diagnosis():
-    cde_code = DIAGNOSIS_CDE['cde_code']
-    cde = CommonDataElement.objects.filter(code=cde_code).first()
+    cde = _get_cde(DIAGNOSIS_CDE['cde_code'])
     options = cde.pv_group.options if cde else []
     initial = {'code': '', 'text': 'Diagnosis'}
     options = [initial] + options
@@ -89,7 +102,7 @@ class ANGPatientRegistrationForm(RegistrationForm):
     surname = CharField(required=True, max_length=30)
     date_of_birth = DateField(required=True)
     gender = ChoiceField(choices=Patient.SEX_CHOICES, widget=RadioSelect, required=True)
-    diagnosis = ChoiceField(required=True, widget=Select, choices=diagnosis_choices, initial="")
+    diagnosis = ChoiceField(required=True, widget=Select, choices=_diagnosis, initial="")
     address = CharField(required=True, max_length=100)
     suburb = CharField(required=True, max_length=30)
     country = ChoiceField(required=True, widget=Select, choices=country_choices, initial="")

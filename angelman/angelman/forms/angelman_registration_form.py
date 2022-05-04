@@ -3,7 +3,7 @@ from operator import attrgetter
 import pycountry
 from django.forms import CharField, ChoiceField, DateField, BooleanField
 from django.forms.widgets import RadioSelect, Select
-from django.utils.translation import ugettext_lazy as _
+from django.utils.translation import gettext_lazy as _
 
 from registration.forms import RegistrationForm
 from angelman.registry.groups.registration.angelman_registration import DIAGNOSIS_CDE

@@ -1,6 +1,5 @@
 from operator import attrgetter
 
-from django.db import ProgrammingError, connection
 import pycountry
 from django.forms import CharField, ChoiceField, DateField, BooleanField
 from django.forms.widgets import RadioSelect, Select

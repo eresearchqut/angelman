@@ -1,11 +1,14 @@
 from operator import attrgetter
+
 import pycountry
 from django.forms import CharField, ChoiceField, DateField, BooleanField
 from django.forms.widgets import RadioSelect, Select
 from django.utils.translation import ugettext_lazy as _
 
 from registration.forms import RegistrationForm
+from angelman.registry.groups.registration.angelman_registration import DIAGNOSIS_CDE
 from rdrf.helpers.utils import get_preferred_languages
+from rdrf.models.definition.models import CommonDataElement
 from registry.patients.models import Patient
 
 
@@ -17,6 +20,15 @@ def _countries():
     countries = sorted(pycountry.countries, key=attrgetter('name'))
     result = [_tuple("", "Country")]
     return result + [_tuple(c.alpha_2, c.name) for c in countries]
+
+
+def _get_diagnosis():
+    cde_code = DIAGNOSIS_CDE['cde_code']
+    cde = CommonDataElement.objects.filter(code=cde_code).first()
+    options = cde.pv_group.options if cde else []
+    initial = {'code': '', 'text': 'Diagnosis'}
+    options = [initial] + options
+    return [(o['code'], _(o['text'])) for o in options]
 
 
 def _preferred_languages():
@@ -42,6 +54,7 @@ class ANGPatientRegistrationForm(RegistrationForm):
         'first_name': _("Given Names"),
         'surname': _("Surname"),
         'date_of_birth': _("Date of Birth"),
+        'diagnosis': _("Diagnosis"),
         'address': _("Address"),
         'suburb': _("Suburb / Town"),
         'state': _("State / County / Province / Region"),
@@ -75,6 +88,7 @@ class ANGPatientRegistrationForm(RegistrationForm):
     surname = CharField(required=True, max_length=30)
     date_of_birth = DateField(required=True)
     gender = ChoiceField(choices=Patient.SEX_CHOICES, widget=RadioSelect, required=True)
+    diagnosis = ChoiceField(required=True, widget=Select, choices=_get_diagnosis, initial="")
     address = CharField(required=True, max_length=100)
     suburb = CharField(required=True, max_length=30)
     country = ChoiceField(required=True, widget=Select, choices=country_choices, initial="")

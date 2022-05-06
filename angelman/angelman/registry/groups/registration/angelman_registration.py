@@ -1,8 +1,10 @@
 import logging
+from operator import itemgetter
 
 from django.utils.translation import get_language
 
 from rdrf.events.events import EventType
+from rdrf.models.definition.models import CommonDataElement, ContextFormGroup, RDRFContext
 from rdrf.services.io.notifications.email_notification import process_notification
 
 from registration.models import RegistrationProfile
@@ -14,6 +16,14 @@ from registry.groups.registration.base import BaseRegistration
 
 
 logger = logging.getLogger(__name__)
+
+
+DIAGNOSIS_CDE = dict(
+    context_form_group_code='Archive',
+    form_name='AdminOnlyExtraInfo',
+    section_code='RegistrationExtraInfo',
+    cde_code='RegistrationDiagnosis',
+)
 
 
 class AngelmanRegistration(BaseRegistration):
@@ -33,6 +43,8 @@ class AngelmanRegistration(BaseRegistration):
         logger.info(f"Registration process - created patient {patient}")
         patient.home_phone = self.form.cleaned_data["phone_number"]
         patient.save(update_fields=['home_phone'])
+
+        self._save_diagnosis(registry, patient)
 
         address = self._create_patient_address(patient)
         address.save()
@@ -89,6 +101,16 @@ class AngelmanRegistration(BaseRegistration):
         )
         return parent_guardian
 
+    def _save_diagnosis(self, registry, patient):
+        context_form_group_code, form_name, section_code, cde_code = itemgetter(
+            'context_form_group_code', 'form_name', 'section_code', 'cde_code')(DIAGNOSIS_CDE)
+
+        context_form_group = ContextFormGroup.objects.get(code=context_form_group_code)
+        context = RDRFContext.objects.get(registry=registry, context_form_group=context_form_group, object_id=patient.pk)
+
+        diagnosis = self.form.cleaned_data['diagnosis']
+        patient.set_form_value(registry.code, form_name, section_code, cde_code, diagnosis, context)
+
     def update_django_user(self, django_user, registry):
         form_data = self.form.cleaned_data
         first_name = form_data['parent_guardian_first_name']
@@ -102,6 +124,13 @@ class AngelmanRegistration(BaseRegistration):
     @property
     def language(self):
         return get_language()
+
+    def registration_allowed(self):
+        cde_code = DIAGNOSIS_CDE["cde_code"]
+        is_allowed = CommonDataElement.objects.filter(code=cde_code).exists()
+        if not is_allowed:
+            logger.warning(f'CDE with code {cde_code} does NOT exits. Disabling registration!')
+        return is_allowed
 
     def get_template_name(self):
         return "registration/registration_form.html"

@@ -1,4 +1,4 @@
-EXPORT_TIME: '2022-05-05 09:47:52.027558'
+EXPORT_TIME: '2022-05-13 09:11:17.959630'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -23249,10 +23249,46 @@ cdes:
   questionnaire_text: ''
   widget_name: DateWidget
   widget_settings: '{}'
+- abbreviated_name: DateBehDevCompleted2
+  allow_multiple: false
+  calculation: ''
+  code: DateBehDevCompleted2
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Behaviour and Development Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
 - abbreviated_name: DateCommComp
   allow_multiple: false
   calculation: ''
   code: DateCommCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date communication form completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateCommCompleted2
+  allow_multiple: false
+  calculation: ''
+  code: DateCommCompleted2
   datatype: date
   desc: ''
   important: false
@@ -23325,6 +23361,24 @@ cdes:
   allow_multiple: false
   calculation: ''
   code: DateIllCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date illness and medical condition form completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateIllCompleted2
+  allow_multiple: false
+  calculation: ''
+  code: DateIllCompleted2
   datatype: date
   desc: ''
   important: false
@@ -23433,6 +23487,24 @@ cdes:
   allow_multiple: false
   calculation: ''
   code: DateSleepCompleted
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date Sleep Form Completed
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
+- abbreviated_name: DateSleepCompleted2
+  allow_multiple: false
+  calculation: ''
+  code: DateSleepCompleted2
   datatype: date
   desc: ''
   important: false
@@ -26340,7 +26412,7 @@ forms:
   - abbreviated_name: DateFormCompleted
     allow_multiple: false
     code: DateComForm
-    display_name: Pre Migration Date Forms Completed (RDRF Info)
+    display_name: Pre Migration Date Forms Completed (RDRF Lee Info)
     elements:
     - DateNewCompleted
     - DateHistCompleted
@@ -26357,6 +26429,18 @@ forms:
     - DateThanksCompleted
     - DateCommSurveyCompleted
     - CommSurveyFormNo
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: DateCompletedForm2
+    allow_multiple: false
+    code: DateComForm2
+    display_name: Pre Migration Date Forms Completed (RDRF Info 2020-2021)
+    elements:
+    - DateIllCompleted2
+    - DateCommCompleted2
+    - DateBehDevCompleted2
+    - DateSleepCompleted2
     extra: null
     questionnaire_display_name: ''
     questionnaire_help: ''
@@ -40246,459 +40330,6 @@ splash_screen: |-
   <div class="alert alert-warning">{% trans "This is a demo site only! Do not enter real data!"%}</div>
 
   <div class="alert alert-info">{% trans "Please log in by clicking on the link located in the top-right corner"%}</div>
-surveys:
-- context_form_group: ''
-  display_name: test
-  form: AngelmanRegistryCommunication
-  is_followup: false
-  name: test
-  questions:
-  - cde: CDEPatientSex
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 1
-    precondition: null
-    source: ''
-- context_form_group: ''
-  display_name: Communications Survey
-  form: AngelmanRegistryCommunication
-  is_followup: false
-  name: commsurvey
-  questions:
-  - cde: ANGBEHDEVEXPRESS
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 1
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVBESTLANG
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 2
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVALLLANG
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 3
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVBESTUNDERSTANDING
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 4
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMSpoken
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 5
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMGesture
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 6
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMSigning
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 7
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMVisPic
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 8
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMFormalPODD
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 9
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMiPadApp
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 10
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMEyeTrack
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 11
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMLowTech
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 12
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMMidTech
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 13
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVCOMHighTech
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 14
-    precondition: null
-    source: ''
-  - cde: ANGBEHDEVPREFCOMMBEST
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 15
-    precondition: null
-    source: ''
-  - cde: ANGAACSL
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 16
-    precondition: null
-    source: ''
-  - cde: ANGAACCM
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 17
-    precondition: null
-    source: ''
-  - cde: ANGAACUse
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 18
-    precondition: null
-    source: ''
-  - cde: ANGAACInterest
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 19
-    precondition: null
-    source: ''
-  - cde: ANGAACDeny
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 20
-    precondition: null
-    source: ''
-  - cde: ANGAACLoc
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 21
-    precondition: null
-    source: ''
-  - cde: ANGAACHome
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 22
-    precondition: null
-    source: ''
-  - cde: ANGAACSchool
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 23
-    precondition: null
-    source: ''
-  - cde: ANGAACST
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 24
-    precondition: null
-    source: ''
-  - cde: ANGAACHear
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 25
-    precondition: null
-    source: ''
-  - cde: ANGAACStart
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 26
-    precondition: null
-    source: ''
-  - cde: ANGAACFunction
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 27
-    precondition: null
-    source: ''
-  - cde: ANGAACDevice
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 28
-    precondition: null
-    source: ''
-  - cde: ANGAACDurCOM
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 29
-    precondition: null
-    source: ''
-  - cde: ANGAACDurOth
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 30
-    precondition: null
-    source: ''
-  - cde: ANGAACPerson
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 31
-    precondition: null
-    source: ''
-  - cde: ANGAACTrain
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 32
-    precondition: null
-    source: ''
-  - cde: ANGAACTrainWho
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 33
-    precondition: null
-    source: ''
-  - cde: ANGAACTrainDur
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 34
-    precondition: null
-    source: ''
-  - cde: ANGAACConfident
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 35
-    precondition: null
-    source: ''
-- context_form_group: ''
-  display_name: Sleep Disturbance Scale for Children
-  form: AngelmanRegistryTheSleepDisturbanceScaleForChildren
-  is_followup: false
-  name: SDSC
-  questions:
-  - cde: ANGSleepDisturbance1
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 1
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance2
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 2
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance3
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 3
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance4
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 4
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance5
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 5
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance6
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 6
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance7
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 7
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance8
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 8
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance9
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 9
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance10
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 10
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance11
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 11
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance12
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 12
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance13
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 13
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance14
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 14
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance15
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 15
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance16
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 16
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance17
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 17
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance18
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 18
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance19
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 19
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance20
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 20
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance21
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 21
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance22
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 22
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance23
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 23
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance24
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 24
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance25
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 25
-    precondition: null
-    source: ''
-  - cde: ANGSleepDisturbance26
-    cde_path: null
-    copyright_text: ''
-    instruction: ''
-    position: 26
-    precondition: null
-    source: ''
 working_groups:
 - Unallocated
 - Default Working Group

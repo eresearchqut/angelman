@@ -23,6 +23,8 @@ RECAPTCHA_SECRET_KEY = env.get("recaptcha_secret_key", "")
 PROJECT_TITLE = env.get("project_title", "Global Angelman Syndrome Registry")
 PROJECT_TITLE_LINK = "login_router"
 
+PROJECT_LOGO = env.get("project_logo", "images/logo.png")
+
 VERSION = env.get('app_version', '%s (ang)' % angelman.VERSION)
 
 REGISTRATION_FORM = "angelman.forms.angelman_registration_form.ANGRegistrationForm"

@@ -330,8 +330,9 @@ def print_indented(s, indent=1):
 #
 # ie. the duplication between this and the JSON files importing the questions is intentional!
 NEW_CONSENT_SECTION_QUESTIONS_TEMPLATE = (
-    ('1. I confirm that I have viewed and understood the video. I have had the opportunity to think '
-     'about the information, ask questions, and have had questions answered to my satisfaction.',
+    ('1. I confirm that I have read and understood the above information sheet (V10.7) dated '
+     '1 February 2022. I have had the opportunity to think about the information, ask questions, '
+     'and have had questions answered to my satisfaction.',
      'angnewconsent1'),
     ('2. I confirm that I am happy for the nominated specialist in charge of my medical care '
      'to be contacted if required.',

@@ -124,6 +124,14 @@
                 {
                     "name": "VIRUS_CHECKING_ENABLED",
                     "value": "$VIRUS_CHECKING_ENABLED"
+                },
+                {
+                    "name": "ENABLE_VIDEO_HOSTING",
+                    "value": "$ENABLE_VIDEO_HOSTING"
+                },
+                {
+                    "name": "VIDEO_HOSTING_BASE_URL",
+                    "value": "$VIDEO_HOSTING_BASE_URL"
                 }
             ],
             "image": "${IMAGE_REPO}:${IMAGE_TAG}",

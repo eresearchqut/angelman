@@ -1,4 +1,4 @@
-EXPORT_TIME: '2022-05-13 09:11:17.959630'
+EXPORT_TIME: '2022-06-29 16:17:36.077246'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -24667,6 +24667,24 @@ cdes:
   questionnaire_text: ''
   widget_name: DateWidget
   widget_settings: '{}'
+- abbreviated_name: Date contacted 3
+  allow_multiple: false
+  calculation: ''
+  code: ReimDateContact3
+  datatype: date
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Date contacted 3
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: DateWidget
+  widget_settings: '{}'
 - abbreviated_name: Reimbursement details
   allow_multiple: false
   calculation: ''
@@ -25757,312 +25775,166 @@ consent_configuration:
   esignature: disabled
 consent_rules:
 - capability: see_patient
-  consent_question_code: angconsent9
-  consent_section_code: ANGconsent
+  consent_question_code: angnewconsent3b
+  consent_section_code: AngNewConsentSection
   enabled: true
   user_group: Clinical Staff
 - capability: see_patient
-  consent_question_code: angconsent1
-  consent_section_code: ANGconsent
-  enabled: true
-  user_group: Parents
-- capability: see_patient
-  consent_question_code: angconsent2
-  consent_section_code: ANGconsent
-  enabled: true
-  user_group: Parents
-- capability: see_patient
-  consent_question_code: angconsent3
-  consent_section_code: ANGconsent
-  enabled: true
-  user_group: Parents
-- capability: see_patient
-  consent_question_code: angconsent4
-  consent_section_code: ANGconsent
-  enabled: true
-  user_group: Parents
-- capability: see_patient
-  consent_question_code: angconsent5
-  consent_section_code: ANGconsent
-  enabled: true
-  user_group: Parents
-- capability: see_patient
-  consent_question_code: angconsent6
-  consent_section_code: ANGconsent
-  enabled: true
-  user_group: Parents
-- capability: see_patient
-  consent_question_code: angconsent7
-  consent_section_code: ANGconsent
-  enabled: true
-  user_group: Parents
-- capability: see_patient
-  consent_question_code: angconsent8
-  consent_section_code: ANGconsent
+  consent_question_code: angnewconsent1
+  consent_section_code: AngNewConsentSection
   enabled: true
   user_group: Parents
 consent_sections:
 - applicability_condition: ''
-  code: ANGconsent
-  information_link: 27APR2022_Angelman_Syndrome_Information_Sheet.pdf
+  code: AngNewConsentSection
+  information_link: 8MAR2022_Angelman_Syndrome_Information_Sheet.pdf
   information_text: |-
-    <p>Information Sheet for Parents/Carers/ Guardians <br />
-    Version 10.5<br />
-    25 November 2020<br />
-    </p>
+    <p><b>Parent/Carer/ Guardian Information </br></b></p>
 
-    <h2><p><center><b>Global Angelman Syndrome Registry</h2></p></center></b>
+    <h2><p><center><b> Global Angelman Syndrome Registry</h2></p></center></b>
+    <p><b> Protocol Number: HREC/13/MHS/76</p></b>
 
-    <h2><p><center><b>Parent/Carer/ Guardian Information Sheet</h2></p></center></b>
-
-    <p><b>Principal Investigators:</b><br>
-    A/Prof Honey Heussler, Children’s Health Queensland Hospital and Health Services, Brisbane<br>
-    Email:<a href="mailto:h.heussler@health.qld.gov.au"target="_top">h.heussler@health.qld.gov.au</a> <br>
-
-    Phone: + 61(7) 3163 1636</p>
-    <p>Prof Matthew Bellgard, Queensland University of Technology, Brisbane<br>
-    Email:<a href="mailto:matthew.bellgard@qut.edu.au"target="_top">matthew.bellgard@qut.edu.au</a> <br>
+    <p><b> Project Sponsor: Foundation for Angelman Syndrome Therapeutics Australia</p></b>
+    <p><b>Coordinating Principal Investigator: A/Prof Honey Heussler, Children’s Health Queensland Hospital and Health Services, Brisbane</b> <br>
+    Email: <a href="mailto:h.heussler@health.qld.gov.au"target="_top">h.heussler@health.qld.gov.au</a> <br>
+    Phone: + 61(7) 3163 1636 </p>
+    <p><b> Site Principal Investigator: Professor Matthew Bellgard, Queensland University of Technology, Brisbane</b><br>
+    Email: <a href="mailto:matthew.bellgard@qut.edu.au"target="_top">matthew.bellgard@qut.edu.au</a> <br>
     Phone: +61(7) 3138 9749</p>
-    <p>Megan Tones (registry curator), Queensland University of Technology, Brisbane<br>
-    Email:<a href="mailto:curator@angelmanregistry.info"target="_top">curator@angelmanregistry.info</a> <br>
+    <p>Registry curator: Megan Tones, Queensland University of Technology, Brisbane<br>
+    Email: <a href="mailto:curator@angelmanregistry.info"target="_top">curator@angelmanregistry.info</a> <br>
 
-    <p><b>You are being invited to take part in a global registry as the parent/ caregiver/ guardian of a child or an adult who has a diagnosis of Angelman Syndrome (AS). Before you decide to take part, it is important for you to understand why this registry has been built and what it will involve. Please read this information sheet and discuss it with relatives, friends and clinicians caring for your child/ adult with AS, if you wish. If you have any further questions, please contact a member of the research team above.</p></b>
-    <p><b>Participation in the registry is voluntary. Please take the time to decide whether you would like to take part, or not.</p></b>
+    <h4><p><b>Welcome to the Global Angelman Syndrome Registry. </h4></p></b>
 
-    <h4><p><b>Project Overview</h4></p></b>
-    <p>The Global Angelman Syndrome Registry was initiated by the Foundation for Angelman Syndrome Therapeutics (FAST) Australia with support from Mater Research in Brisbane and the Royal Children’s Hospital in Melbourne. FAST Australia is an organisation of families and professionals dedicated to finding a cure for Angelman Syndrome and related disorders through funding research, education, and advocacy. The Foundation is committed to assisting individuals living with Angelman Syndrome to realise their full potential and quality of life. We are confident that our goals are now within reach and together, with your help, we will change lives.  Established in 2010, FAST Australia is a Health Promotion Charity with DGR status that is registered with the Australian Charities and Not-for-Profits Commission (ACNC).</p>
+    <p>Please watch this video before you decide to take part. You may also wish to show this video to other people involved in caring for your child or adult with AS including relatives, friends or clinicians. </p>
 
-    <p>The registry is being coordinated by Queensland University of Technology. The lead researcher is Associate Professor Honey Heussler from the Children’s Health Queensland Hospital and Health Services. Professor Matthew Bellgard heads the contribution of Queensland University of Technology. The Global Angelman Syndrome Registry was created using the Rare Disease Registry Framework (RDRF), which was developed by the Centre for Comparative Genomics at Murdoch University. The registry is currently hosted by the Trial Ready Registry Framework (TRRF) at Queensland University of Technology (QUT).</p>
-
-    <p>The aim of the registry is to establish an electronic repository containing information about your child/ adult affected by Angelman Syndrome. Having an electronic record of individuals with AS means that we can identify groups of individuals with AS from all over the world, who might be able to participate in clinical trials and other research to help develop new therapies for AS. The registry will contain all the data that researchers will need, including each child/ adult’s diagnosis, symptoms, and other important aspects of their disorder.</p>
-
-    <p>Registry data collected over time will also be used to compile a natural history data set for individuals with Angelman Syndrome. Descriptive and statistical analysis techniques will be used to develop an understanding of the health and medical, behavioural, and developmental outcomes of individuals with Angelman Syndrome according to phenotype, genotype or other characteristics of their diagnosis, as well as demographic factors. This may help to enhance understanding of the long term clinical outcomes and natural history of AS, which may help to shape future research in treating this disorder. Third party researchers not affiliated with this project may also apply to the Global Angelman Syndrome Registry governance committee to access data for research purposes.</p>
-
-    <p>See the section<b> 'Will information about me and my child/ adult be kept confidential?'</b> and <b> How will my child/ adult's data be used? </b> for further information below. </p>
-
-    <p>The registry is patient driven, meaning that parents and caregivers take an active role in participating in this registry. Recruitment for the registry takes place online via participating global Angelman Syndrome organisations, which provide links to the online registry.</p>
-
-    <p>Before you consider registering your child/ adult’s details, it is important that you understand what is involved and what will be done with the information you provide. This form contains answers to some of the questions you might have on the registry. At the end of the form, and after you have had some time to think about it, we shall ask if you wish to register.</p>
-
-    <p>If you do, we shall ask you to submit an online consent form saying that you agree to join to start entering data into the registry. If you have any questions, please contact us before consenting to join the registry.</p>
-
-    <h4><p><b>How will I benefit from registering?</h4></p></b>
-    <p>This registry aims to benefit individuals living with AS. You will be contacted as a parent/ caregiver of a child/ adult with AS when requests from doctors or researchers are received to help assess possible new treatments (clinical trials). Secure records of your child/ adult’s clinical details will be used to determine whether such trials would be suitable for your child/ adult with AS. If you consent, you will be contacted using the details you provide to the registry to advise of upcoming trials or studies you may wish to take part in. Your name will not be given to researchers or external groups. Rather you will be given information about the study for you to decide whether you wish to take part. You will not receive any payment or any other financial benefit because of joining the registry. The results of research arising from the registry may have business potential (if for example utilised by a pharmaceutical company to develop a new drug) but you will not receive financial benefits from such development.</p>
-
-    <p>Other possible benefits to being involved in the registry are:</p>
-    <ul>
-    <li>You will be informed as a parent/ caregiver about suitable clinical trials that your child/ adult might be eligible to join.</li>
-    <li>The details collected will also provide information for doctors interested in the best standards of care for Angelman Syndrome.</li>
-    <li>Information collected in the registry may help to progress research into the study of Angelman Syndrome.</li>
-    <li>The information may help with service planning for people with Angelman Syndrome and their families in various locations.</li>
-    </ul>
-
-    <h4><p><b>What information will I be asked to provide about my child/ adult with Angelman Syndrome?</h4></p></b>
-    <p>Once you have consented to participate in the registry you will be able to complete a series of modules that will take approximately 1.5 to 2 hours to complete. We suggest that you collect any information you have on your child/ adult's diagnosis, tests, and development to make this process easier (however they can be added at a later date). Similarly if you find that you don’t have enough time to complete all the information in one block you can login again and complete at a later date.</p>
-    <p>The current modules are:
-    <ul>
-    <li>Demographics</li>
-    <li>My Child/ Adult’s History (Complete first)</li>
-    <ul>
-    <li>Newborn and infancy history</li>
-    <li>History of diagnosis and results</li>
-    <li>Hospitalisations and surgical procedures</li>
-    <li>Epilepsy</li>
-    <li>Medications, interventions and therapies</li>
-    <li>Clinical trials and studies</li>
-    </ul>
-    <li>6 month check up</li>
-    <li>Illnesses or medical problems (Every 12 months)</li>
-    <li>Communication (Every 1-2 years)</li>
-    <li>Behaviour and Development (Every 1-2 years)</li>
-    <li>Sleep (Every 1-2 years)</li>
-    <li>My Child/ Adult’s Treatment (update as needed)</li>
-    <ul>
-    <li>Change in Seizure Activity</li>
-    <li>New Hospitalisations or Surgical Procedures</li>
-    <li>New Medication or Changed Dose</li>
-    <li>Stopped Medication</li>
-    <li>New Therapy Service or Changed Frequency or Duration</li>
-    <li>Stopped Therapy Service</li>
-    <li>Trial/ Study Participation</li>
-    <li>Clinic Attendance</li>
-    <li>Pathology and Diagnostics</li>
-    </ul>
-    </ul>
-    <p>You will be asked to review the information that you have provided about the individual with AS and update any changes to their condition. Additional modules may also be added over time.</p>
-
-    <h4><p><b>I want my child/ adult with AS to be involved in a clinical trial. If I register, is this guaranteed?</h4></p></b>
-    <p>No. Although one of the main aims of this registry is to make it easier for individuals with AS to be recruited for clinical trials, there is no guarantee that providing your details will mean you will be automatically approached to take part in a clinical trial. For example, if the researchers are looking for individuals who have UPD only, we would let all of those who have UPD know that a trial is coming up.</p>
-
-    <p>Doctors or researchers coordinating a clinical trial may approach the registry governance committee to provide details about the clinical trial and eligibility requirements. If the clinical trial satisfies the requirements of the registry governance committee, the principal investigators and curator  will review the details of suitable trial candidates contact parents/ caregivers to share information about the trial and provide contact details for the trial team.</p>
-
-    <p>Please note that the doctors/ researchers conducting the trial may need to assess the child/ adult with AS in greater detail, during which it may be clear that other developments in their health or details not recorded on the registry mean that the trial is not suitable for them.</p>
-
-    <h4><p><b>Will information about me and my child/ adult be kept confidential?</h4></p></b>
-    <p>All information received will be treated confidentially. Every effort will be made to ensure your data is kept safe but we remind you to be vigilant when entering information online. Details of your child/ adult’s specific diagnosis as well as personal information about you and your child/ adult (name, age, address, gender) will be stored on the database. This information is all required to enable us to match you with criteria for prospective clinical trials and better understand Angelman Syndrome. Only doctors and scientists involved in this project who are given specific permission will be allowed to look at this personal information. The information you provide can be made available to your treating doctor if you consent to this. If any research or other documents based on information from the registry is published, they will not include identifiable information (your child/ adult’s name, date of birth and clinic information, or your name and contact details.</p>
-
-    <p>The Foundation for Angelman Syndrome Therapeutics Australia, and participating global partners in this project, along with associated researchers do not have access to any personal details or identifying information. If the Foundation for Angelman Syndrome Therapeutics Australia or any participating global partners request data for research purposes they will be subject to the same requirements as any other application for data and you will be contacted by the data curator prior to such information being provided (see below <b>How will my child/ adult's data be used?</b>)</p>
-
-    <p>Please note that non identifiable data must be stored for a minimum of 15 years as required by Australian government regulations (National Health & Medical Research Council Guidelines). In the case of children, data must be stored up until they reach the age of 18 years, and 15 years thereafter. The research team will take all reasonable steps to protect participants' personal information and data against breaches of security or loss in accordance with the Federal Privacy Act.</p>
-
-    <h4><p><b>Do I have to enrol my child/ adult with AS in the registry and can I withdraw if I change my mind?</h4></p></b>
-    <p>Enrolling your child/ adult with AS in the registry is voluntary. Should you wish to withdraw your child/ adult's information from the registry you will be free to do so at any time without having to provide any explanation. If you wish to withdraw your child/ adult with AS from the registry, you should get in touch with the registry curator. Contact details are provided above. Joining or leaving the registry will in no way affect the care your child/ adult receives for his/ her condition.</p>
-
-    <h4><p><b>How will my child/ adult's data be used?</h4></p></b>
-    <p>The data you share with the registry is very helpful and will improve upon current knowledge and understandings about people with Angelman Syndrome. Your information can also help to inform and plan new research about Angelman Syndrome and therapeutics. Registry data will be used for the following purposes: </p>
-    <ul>
-    <li>Recruitment into clinical trials and therapeutic studies; </li>
-    <li>Recruitment for surveys and other non-experimental research; </li>
-    <li>Linking registry data with data from other Angelman Syndrome Studies;</li>
-    <li>Research and analysis of anonymised registry data sets; and</li>
-    <li>Uploading of non-identifiable data to an online data analytics platform. </li>
-    </ul>
-    <h5><p><b>Recruitment into clinical trials and therapeutic studies</h5></p></b>
-    <p>One of the main aims for participation in the registry is to help recruitment into clinical trials and therapeutic studies. If your child/ adult is potentially eligible for a clinical trial or therapeutic study, we will contact you directly about the study if you provide consent for us to do so. You will then be able to decide about whether you wish to participate in the study. Your information will not be shared with external researchers for the purposes of clinical trials or therapeutic studies. </p>
-    <h5><p><b>Recruitment for surveys and other non-experimental research</h5></p></b>
-    <p>The Global Angelman Syndrome Registry also assists in recruiting participants for survey and non-experimental research about Angelman Syndrome. If you have consented for us to contact you about research studies, we will contact you directly to advise you of any surveys or non-experimental research you may be eligible for. You will then be able to decide about whether you wish to participate in the study. Your information will not be shared with external researchers for the purposes of surveys or non-experimental studies.</p>
-    <h5><p><b>Linking registry data with data from other Angelman Syndrome Research Projects</h5></p></b>
-    <p>Researchers from other Angelman Syndrome research projects (external researchers) may request registry data from their participants to link with the data collected by their study. Such data linkages will potentially add value to Angelman Syndrome research and reduce participant burden. A list of Angelman Syndrome research projects are included under the clinical trial sections of the registry, “Clinical trials and studies.” For external researchers to request data to link with their study, they must:</p>
-    <ul>
-    <li>Show evidence of ethical clearance to conduct their research from an independent ethical review board;</li>
-    <li>Provide a copy of the participant information and consent sheet; and</li>
-    <li>Provide written documentation explaining how the registry data will be used in their study.</li>
-    </ul>
-    <p>It will be necessary to provide identifiable (e.g. your child/ adult’s name and date of birth) or reidentifiable (deidentified data that can be made identifiable with a code or by matching the information with another data set) information to external researchers in order to link your child/ adult’s registry data with data collected by the external researcher. As per the Federal Privacy Act, we will never provide any personal information (including you or your child’s name, date of birth or contact information) to external researchers without your written consent.</p>
-    <p>If you have consented for us to contact you about research studies, we will contact you directly if there is an opportunity to link your child/ adult’s registry data with another study that your child/ adult is part of. If you wish for your data to be linked, you will be required to provide written consent for us to release your identifiable information to the external researchers.</p>
-    <p>The governance committee will make every endeavour to ensure external researchers understand their obligations regarding protecting your privacy. Please note that once identifiable data are accessed by external researchers the Angelman Registry no longer has control over its use or further sharing. Data protection laws may differ from the Federal Privacy Act outside of Australia. However, the United States of America and the European Union are recognised as having data protection systems equal to or greater than the Australian system.</p>
-    <h5><p><b>Research and analysis of anonymised registry data sets</h5></p></b>
-    <p>Your child/ adult’s de-identified data (with your child/ adult’s name, date of birth and clinic information, or your name and contact details removed from the data set) may be accessed as part of the full Angelman Syndrome registry data set by external researchers wishing to analyse registry data for the purposes of conducting their own research into Angelman Syndrome. All external researchers must do the following to access a de-identified dataset:</p>
-    <ul>
-    <li>Submit a research proposal to the Global Angelman Syndrome Registry governance committee (the governance committee), who will decide whether the external research meets the standards and aims of the registry; and</li>
-    <li>Show evidence of ethical clearance to conduct research using secondary data (data that has already been collected) from an independent ethical review board. </li>
-    </ul>
-    <p>Any data sets released to external researchers will not identify you or your child/ adult by name. De-identified data sets will be anonymised by removing all identifiable information including name, date of birth, address, and open comment sections (which may include names of individuals or clinicians, or other potentially identifiable information). However, please note that if your child/ adult with AS has a rare mutation or other distinct feature your information may be re-identifiable by those who are aware of your child/ adult’s condition.</p>
-    <p>The governance committee will make every endeavour to ensure external researchers understand their obligations regarding protecting your privacy. Please note that once de-identified data sets are accessed by external researchers the Angelman Registry no longer has control over its use or further sharing. Data protection laws may differ from the Federal Privacy Act outside of Australia. However, the United States of America and the European Union are recognised as having data protection systems equal to or greater than the Australian system. </p>
-    <h5><p><b>Uploading of non-identifiable data to third party data analytics platforms</h5></p></b>
-
-    <p>De-identified data from the Global Angelman Syndrome Registry will be made accessible online via third party data analytics platforms. The purpose of these platforms is to enable parents/caregivers, researchers, clinicians, pharmaceutical and other interested parties to query statistical information about registry participants. Examples of statistical information include the average age at which participants took their first steps or the percentage of individuals taking common anti-epilepsy drugs. </p>
-    <p>Any data which may identify a registry participant such as names, date of birth, clinic information or contact details, or may potentially identify an individual (such as rare genotype or remote location), is removed before it is shared with the platform.  Data will only be provided on the condition that the platform and its users will comply with all applicable laws and regulations relating to privacy, security, and data protection.  To further prevent re-identification, only aggregated (grouped) results of five or more cases will be provided in response to queries. Users will not be able to view individual child/ adult records.</p>
-
-    <p>If you do not wish for your child/ adult’s data to be accessed through third party data analytics platforms, you have the option of not consenting to your child/ adult’s data being made available this way.</p>
+    <p>If you have any questions, please contact the registry curator:<br>
+    Megan Tones (registry curator), Queensland University of Technology, Brisbane<br>
+    Email: <a href="mailto:curator@angelmanregistry.info"target="_top">curator@angelmanregistry.info</a></p>
 
 
-    <h4><p><b>How will our details be updated?</h4></p></b>
-    <p>You will be able to update any registry details via the web page including parent/ caregiver contact details or any changes to your child/ adult with Angelman Syndrome’s condition. You will be sent  reminders to update information about your child/ adult with Angelman Syndrome’s condition and/ or complete a follow up module about your child/ adult’s condition. However, you may also need to update information about your child/ adult’s condition at other times, such as following clinic visits. You may also contact us at any time if you need to amend your details. Each year you will be contacted to see if you are still happy to have your details included on the registry. You are free to have your child/ adult’s information withdrawn from the registry at any time.</p>
-    <p>If you have provided consent for us to do so, we will also contact the clinician in charge of your child/ adult’s medical care so we verify your child/ adult’s Angelman Syndrome Diagnosis. You may also give your clinician permission to view and verify your child/ adult’s registry data. You may change your child/ adult’s nominated clinician or withdraw consent for them to view your child/ adult’s record at any time.</p>
+    <video
+        id="test-video"
+        class="video-js"
+        controls
+        preload="auto"
+        poster="https://d4d7dpr65gp9x.cloudfront.net/angelman/01G6PFFT70CMQR8VS9G6W8N94C/poster/consent_20220629.0000001.jpg"
+        data-setup='{"fluid": true}'
+      >
+        <source src="https://d4d7dpr65gp9x.cloudfront.net/angelman/01G6PFFT70CMQR8VS9G6W8N94C/cmaf/consent_20220629.m3u8" type="application/x-mpegURL" />
+        <source src="https://d4d7dpr65gp9x.cloudfront.net/angelman/01G6PFFT70CMQR8VS9G6W8N94C/hls/consent_20220629.m3u8" type="application/x-mpegURL" />
+        <source src="https://d4d7dpr65gp9x.cloudfront.net/angelman/01G6PFFT70CMQR8VS9G6W8N94C/hls/consent_20220629.m3u8" type="application/x-mpegURL" />
+        <source src="https://d4d7dpr65gp9x.cloudfront.net/angelman/01G6PFFT70CMQR8VS9G6W8N94C/mp4/consent_20220629_avc_720p.mp4" type="video/mp4" />
+        <source src="angelman/01G6PFFT70CMQR8VS9G6W8N94C/mp4/consent_20220629_avc_480p.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+          To view this video please enable JavaScript, and consider upgrading to a
+          web browser that
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >supports HTML5 video</a
+          >
+        </p>
+      </video>
 
-    <h4><p><b>Who is funding the research?</h4></p></b>
-    <p>This study has been funded by the Foundation for Angelman Syndrome Therapeutics (FAST) Australia and there is no conflict of interest on the part of any of the researchers</p>
+    <div class="btn-group" role="group">
+    <button type="button" class="btn btn-link btn-sm" data-bs-toggle="modal" data-bs-target="#transcriptModal">
+      Read transcript
+    </button>
+    <a class="btn btn-link btn-sm" style="text-decoration: underline" href="https://youtu.be/82aZCfgsmY0" target=”_blank”>Watch on YouTube</a>
+    </div>
 
-    <h4><p><b>Who has reviewed this project?</h4></p></b>
-    <p>This study has been reviewed and approved by the Mater Misericordiae Ltd Human Research Ethics Committee (EC00332). Should you wish to discuss the study in relation to your rights as a participant, or should you wish to make an independent complaint, you may contact the Coordinator or Chairperson, Human Research Ethics Committee, Mater Misericordiae Ltd, Level 2 Aubigny Place, Raymond Terrace South Brisbane 4101 or telephone (07) 3163 1585, email: <a href="mailto:research.ethics@ mater.uq.edu.au"target="_top">research.ethics@ mater.uq.edu.au</a> </p>
-
-    <h4><p><b>What if I have any concerns?</h4></p></b>
-    <p>If you have any concerns or other questions about this study or the way it has been carried out, you should contact the data curator, Dr Megan Tones at curator@angelmanregistry.info.</p>
-
-    <p>Alternatively, you may contact one of the other investigators on the telephone numbers or email addresses provided on page 1 of this document.</p>
-
-    <p>Should you wish to discuss the study in relation to your rights as a participant, or should you wish to make an independent complaint, you may contact the Coordinator or Chairperson, Human Research Ethics Committee, Mater Misericordiae Ltd Level 2 Aubigny Place, Raymond Terrace South Brisbane 4101 or telephone +617 3163 1585, email: <a href="mailto:research.ethics@ mater.uq.edu.au"target="_top">research.ethics@ mater.uq.edu.au</a> </p>
-
-    <p>In addition, if you have any complaints or concerns specific to data security, you may wish to contact the Australian Federal Privacy Commissioner: telephone: 1300 363 992; email:<a href="mailto:enquiries@oaic.gov.au"target="_top">enquiries@oaic.gov.au</a> </p>
-
-
-    <b><p><center>Thank you for taking the time to read this information sheet</p></b></center><br>
-
-    <h3><p>CONSENT FORM FOR PARENTS/ CARERS/ GUARDIANS</h3></p>
-    <p>Name of Researcher:A/Prof Honey Heussler, Children’s Health Queensland Hospital and Health Services, Brisbane.
-    <br>email:<a href="mailto:curator@angelmanregistry.info"target="_top">curator@angelmanregistry.info</a>
-
-    <p><b>Please provide your informed consent by checking the boxes below. Consent questions 1 - 8 are required for inclusion in the registry, while consent questions 9 - 12 are optional.</p>
-
-    <p>A copy of the Parent/ Carer Information presented here is available by clicking on the 'Information Sheet - Please Read!' link at the top of this page. There is no need to sign or upload this form unless you are giving consent for the research team to contact your clinician on your behalf (see item 9 below).</p>
-
-    <p>If you are not able to print or scan this form to upload it, please
-    <a href="mailto:curator@angelmanregistry.info?Subject=Request%20for%20Consent%20Form" target="_top">email the data curator</a> and we will mail you a form with a return envelope.
-    </p>
-
-    <p>Once you have provided your Informed Consent and have clicked the green 'save' button, please navigate to the Modules by clicking the 'next arrow' to the right, or from the 'Modules' listed at the side of the page.</p></b>
+    <div class="modal fade" id="transcriptModal" tabindex="-1" aria-labelledby="transcript" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Transcript</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <p>
+              The Global Angelman Syndrome Registry collects data on individuals with Angelman syndrome through a series of online surveys, or modules that are driven by parents and caregivers.
+              </p>
+              <p>
+              Your data, combined with data from all around the world, helps clinicians and researchers understand how people with  Angelman syndrome differ from one another, and how their condition changes over time. This will help researchers develop new studies into Angelman syndrome, as  well as  help clinical trial sponsors to find suitable patients for each study.
+              </p>
+              <p>
+              Taking part in the registry is easy. We will ask you to complete the online consent questions on this webpage and save your response. This will unlock a series of registry modules that will take approximately 1.5 to 2 hours to complete. To help you do this, gather up any information you have on your child or adult’s diagnosis, tests and development. If you can’t find all the details you need, or you don’t have enough time to complete the registry, don’t worry. You can log in at a later date and complete or update your child/ adult’s information.
+              <p>
+              When you first join the registry, you will complete an initial set of modules about the health and development of your child or adult. We will email you reminders to complete follow up modules to understand Angelman syndrome across time. We may contact you if there are changes and additional modules added.
+              </p>
+              <p>
+              The Global Angelman Syndrome Registry is not a trial. Your child or adult does not need to have any medical tests or take any medications to be included in the registry.
+              </p>
+              <p>
+              The research team will make every effort to ensure your data is kept safe. We remind you to be vigilant when entering information online. Once you consent to enter the project your data will be stored in secure systems where identifying information such as your name and address are stored separately to the other data. In this way, the data held and used for research cannot be directly linked back to you by anyone but the authorised registry staff.  Researchers will receive a ‘code’ linked to individual data that we can use to re-identify you if we need to. Your coded data can be used to provide statistics for research. Your agreement to allow this only relates to your data in this registry.
+              </p>
+              <p>
+              We cannot promise any benefits from taking part in this registry. Your child/ adult may have the opportunity to take part in a clinical trial if they meet the requirements for the trial. You will be asked for additional consent if we wish to invite you to participate in studies that involve you or your child directly.
+              </p>
+              <p>
+              This project is not directly related to your child’s ongoing medical care and is voluntary. Not participating or withdrawing will not impact any care being provided to your child now or in the future. You can decide to leave this project at any time and request that any data currently held is removed from further use. It is important to note that if any data has already been used this cannot be withdrawn. However, all use of data is in aggregate forms and your child cannot be identified through its use. If you wish to withdraw, please email the data curator.
+              </p>
+              <p>
+              There is one consent that is required, or mandatory, for you to be part of this project and there are others that are optional, it’s important that you understand these and also that you can change these consents at any time.
+              </p>
+              <p>
+              Our goal is to make your data as useful as possible and where you give your consent to allow it, we will share your non identifiable or coded data with others who have similar goals to understanding Angelman syndrome and can demonstrate equivalent protections of privacy and confidentiality. These projects will require independent evaluation by an ethics committee to ensure they meet the obligations we have outlined to you.
+              <p>
+              In some cases, such as Angelman syndrome clinics or Natural History studies, we may ask you if you would like to share your identifying information as well to save time and money across each study. We will always contact you personally before doing this and won’t share anything without your consent.
+              </p>
+              <p>
+              Another optional consent is to be contacted regarding patient organisations in your region, research studies and clinical trials. If you give your consent for this we will contact you directly to share any relevant opportunities directly with you so you can make a decision at that time. Again, this does not guarantee a place in any study or clinical trial.
+              </p>
+              <p>
+              If you have any concerns or questions about the study, please contact the data curator.
+              </p>
+              <p>
+              The Mater Misericordiae Ltd Human Research Ethics Committee is overseeing the registry. If you wish to discuss your rights as a participant or make a complaint, you may contact the Chairperson of the ethics committee at research.ethics@mater.uq.edu.au. If you have any concerns about data security, you may contact the Australian Federal Privacy Commissioner at enquiries@oaic.gov.au.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
   questions:
-  - code: angconsent1
+  - code: angnewconsent1
     instructions: ''
     position: 1
-    question_label: 1. I confirm that I have read and understand the information sheet
-      (V10.5) dated 25 November 2020, for the above study. I have had the opportunity
-      to consider the information, ask questions and have had these answered satisfactorily.
+    question_label: 1. I confirm that I have viewed and understood the video. I have
+      had the opportunity to think about the information, ask questions, and have
+      had questions answered to my satisfaction.
     questionnaire_label: ''
-  - code: angconsent2
+  - code: angnewconsent3b
     instructions: ''
     position: 2
-    question_label: 2. I understand that my participation is voluntary and that I
-      am free to withdraw at any time, without giving any reason, without my medical
-      care or legal rights being affected.
+    question_label: 2. I confirm that I am happy for the nominated specialist in charge
+      of my medical care to be contacted if required.
     questionnaire_label: ''
-  - code: angconsent3
+  - code: angnewconsent4b
     instructions: ''
     position: 3
-    question_label: 3. By entering data into the registry, I understand that I give
-      consent for the storage of data on my child/ adult with Angelman Syndrome in
-      the Global Angelman Syndrome Registry.
+    question_label: 3. I confirm that I am happy for my de-identified data to be made
+      available for analysis through third party platforms or researchers.
     questionnaire_label: ''
-  - code: angconsent4
+  - code: angnewconsent6b
     instructions: ''
     position: 4
-    question_label: 4. I understand that the storing of data will allow contact to
-      be made with me if a suitable clinical trial becomes available for my child/adult
-      with Angelman Syndrome.
-    questionnaire_label: ''
-  - code: angconsent5
-    instructions: ''
-    position: 5
-    question_label: 5. However, I accept that allowing my data to be stored on this
-      database does not mean my child/ adult with Angelman Syndrome will automatically
-      be entered into future clinical trials/ research studies.
-    questionnaire_label: ''
-  - code: angconsent6
-    instructions: ''
-    position: 6
-    question_label: 6. I understand that the data I provide may be used to inform
-      and plan future research.
-    questionnaire_label: ''
-  - code: angconsent7
-    instructions: ''
-    position: 7
-    question_label: 7. I understand that the results from future research may not
-      have any direct implications for me or my family.
-    questionnaire_label: ''
-  - code: angconsent8
-    instructions: ''
-    position: 8
-    question_label: 8. I am happy to consent to be included in this registry.
-    questionnaire_label: ''
-  - code: angconsent9
-    instructions: ''
-    position: 9
-    question_label: 9. I confirm I am happy for the specialist in charge of my medical
-      care to be contacted to verify diagnostic information.
-    questionnaire_label: ''
-  - code: angconsentTRANSMART
-    instructions: ''
-    position: 10
-    question_label: 10. I confirm that I am happy for my de-identified data to be
-      made available for analysis through third party platforms
-    questionnaire_label: ''
-  - code: angconsent10
-    instructions: ''
-    position: 11
-    question_label: 11. I consent to being contacted to complete additional modules
+    question_label: 4. I consent to being contacted to complete additional modules
       for longitudinal follow up.
     questionnaire_label: ''
-  - code: angconsent11
+  - code: angnewconsent2
     instructions: ''
-    position: 12
-    question_label: 12. I consent to being contacted about clinical trials and research
+    position: 5
+    question_label: 5. I consent to being contacted about clinical trials and research
       studies that my child/ adult with Angelman Syndrome may be eligible to participate
       in.
     questionnaire_label: ''
-  section_label: Consent - Parent/Guardians
-  validation_rule: angconsent1 and angconsent2 and angconsent3 and angconsent4 and
-    angconsent5 and angconsent6 and angconsent7 and angconsent8
+  - code: angnewconsent5b
+    instructions: ''
+    position: 6
+    question_label: 6. I consent to being contacted about opportunities to connect
+      with Angelman organisations if there is an opportunity to do so.
+    questionnaire_label: ''
+  section_label: Angelman general information and consent
+  validation_rule: angnewconsent1
 context_form_groups:
 - abbreviated_name: Archived Data
   code: Archive
@@ -26402,6 +26274,7 @@ forms:
     - ReimContact
     - ReimDateContact
     - ReimDateContact2
+    - ReimDateContact3
     - ReimChoice
     - ReimFinal
     - ReimFinalDate

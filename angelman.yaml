@@ -1,4 +1,4 @@
-EXPORT_TIME: '2022-06-29 16:17:36.077246'
+EXPORT_TIME: '2022-07-04 13:32:15.112180'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -25787,7 +25787,7 @@ consent_rules:
 consent_sections:
 - applicability_condition: ''
   code: AngNewConsentSection
-  information_link: 8MAR2022_Angelman_Syndrome_Information_Sheet.pdf
+  information_link: 4JUL2022_Angelman_Syndrome_Information_Sheet.pdf
   information_text: |-
     <p><b>Parent/Carer/ Guardian Information </br></b></p>
 
@@ -33954,8 +33954,8 @@ group_permissions:
     - loginlog
     name: Can delete login log
 metadata_json: '{"features": ["clinicians_have_patients", "registration", "clinician_form",
-  "clinicians_have_patients", "consent_checks", "verification", "questionnaires" ,"contexts",
-  "legacy_reports"], "diagnosis_code": "ANGDNAMethylAbnormalResult", "verification_cdes":
+  "clinicians_have_patients", "consent_checks", "verification", "questionnaires" ,"contexts"],
+  "diagnosis_code": "ANGDNAMethylAbnormalResult", "verification_cdes":
   [{"form": "AngelmanRegistryHistoryOfDiagnosisAndResults", "section": "ANGPatientResults",
   "cde": "ANGGeneticTest"}, {"form": "AngelmanRegistryHistoryOfDiagnosisAndResults",
   "section": "ANGPatientResults", "cde": "ANGGeneticTestType"}, {"form": "AngelmanRegistryHistoryOfDiagnosisAndResults",

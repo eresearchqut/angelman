@@ -1,5 +1,5 @@
 # FROM muccg/rdrf-builder
-FROM python:3.8.0 as builder
+FROM python:3.9 as builder
 
 ENV PYTHONUNBUFFERED 1
 
@@ -44,7 +44,7 @@ RUN    pip install -r rdrf/requirements.txt \
 
 VOLUME ["/data"]
 
-FROM python:3.8.0-slim
+FROM python:3.9-slim
 
 ENV PYTHONPATH="/app/rdrf/rdrf/:/app/angelman/"
 ENV DJANGO_SETTINGS_MODULE angelman.settings

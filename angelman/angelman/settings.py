@@ -29,6 +29,7 @@ VERSION = env.get('app_version', '%s (ang)' % angelman.VERSION)
 
 REGISTRATION_FORM = "angelman.forms.angelman_registration_form.ANGRegistrationForm"
 REGISTRATION_CLASS = "angelman.registry.groups.registration.angelman_registration.AngelmanRegistration"
+REGISTRATION_CLASS_EMBEDDED = "angelman.registry.groups.registration.angelman_registration.EmbeddedAngelmanRegistration"
 
 CSP_FRAME_SRC += ["https://www.youtube.com", "https://angelmanregistry.info", "https://www.angelmanregistry.info"]
 CSP_OBJECT_SRC += ["https://angelmanregistry.info", "https://www.angelmanregistry.info"]

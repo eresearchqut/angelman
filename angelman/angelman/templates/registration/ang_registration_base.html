@@ -1,0 +1,71 @@
+{% extends "registration/registration_base.html" %}
+
+{% load i18n %}
+{% load countries %}
+
+{% block extra_js_init %}
+    $("#id_date_of_birth").datepicker(dateOptions);
+    $("#id_parent_guardian_date_of_birth").datepicker(dateOptions);
+
+    function lookupStatesForCountry(country, stateSelector, currentStateValueSelector) {
+        if (typeof currentStateValueSelector === 'undefined') {
+            currentStateValueSelector = '';
+        }
+        var state_lookup_url = "{% url 'v1:state_lookup' 'XX' %}";
+        var states = $(stateSelector);
+        states.empty();
+        states.append($('<option>', {value: ""}).text(gettext("State / County / Province / Region")));
+        $.getJSON(state_lookup_url.replace('XX', country), function (data) {
+            $.each(data, function (key, val) {
+                states.append($('<option>', {value: val.code}).text(val.name));
+            });
+            if (currentStateValueSelector !== '') {
+                var current_state_value = $(currentStateValueSelector).val();
+                if (current_state_value !== '') {
+                    $(stateSelector).val(current_state_value);
+                }
+            }
+        });
+    }
+
+    function setStatesOnLoad(countrySelector, stateSelector, currentStateValueSelector) {
+        var country = $(countrySelector).val();
+        if (country !== "") {
+            lookupStatesForCountry(country, stateSelector, currentStateValueSelector);
+        }
+    }
+
+
+    function setUpStateOnCountryChange(countrySelector, stateSelector) {
+        $(countrySelector).change(function () {
+            lookupStatesForCountry(this.value, stateSelector)
+        });
+    }
+
+
+    setStatesOnLoad("#id_country", "#id_state", "#patient_state_value");
+    setUpStateOnCountryChange("#id_country", "#id_state");
+    setStatesOnLoad("#id_parent_guardian_country", "#id_parent_guardian_state", "#parent_state_value");
+    setUpStateOnCountryChange("#id_parent_guardian_country", "#id_parent_guardian_state");
+
+    function onSameAddressChecked() {
+        var self = this;
+        $("#patient-address-div").slideToggle("fast", function () {
+            var disabled = $(self).prop('checked');
+            $("#id_address").prop("disabled", disabled);
+            $("#id_suburb").prop("disabled", disabled);
+            $("#id_country").prop("disabled", disabled);
+            $("#id_state").prop("disabled", disabled);
+            $("#id_postcode").prop("disabled", disabled);
+        });
+    }
+
+    if ($('#id_same_address').prop('checked')) {
+        onSameAddressChecked();
+    }
+
+    $("#id_same_address").on("click", onSameAddressChecked);
+{% endblock %}
+
+{% block content %}
+{% endblock %}

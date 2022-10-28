@@ -1,0 +1,25 @@
+{% extends "registration/ang_registration_base.html" %}
+
+{% block extra_js_init %}
+  {{ block.super }}
+
+  // Scroll to top on page load
+  // This behaviour isn't automatic with iframes and is especially useful when there are server-side errors after form submission
+  $("#registration_base_container")[0].scrollIntoView({behavior: 'smooth'});
+
+{% endblock %}
+{% block content %}
+
+    <form id="registration-form" method="POST">
+        <div class="row mx-2 mt-2">
+          <div class="col-12">
+            {% include "registration/registration_login_details.html" %}
+          </div>
+          <div class="col-12 mt-4">
+            {% include "registration/_parent_registration_details.html" %}
+          </div>
+
+        </div>
+    </form>
+
+{% endblock %}

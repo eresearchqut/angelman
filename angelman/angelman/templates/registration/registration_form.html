@@ -4,24 +4,27 @@
 {% load countries %}
 {% load project_title %}
 
-{% block content %}
+{% block form_instructions %}
     <h3 class="pb-2">{% project_title %} - {% trans "Parent Registration" %}</h3>
-
     {% include "registration/_registration_info.html" %}
+{% endblock %}
 
-    <form id="registration-form" method="POST">
-        {% csrf_token %}
-        <div class="row">
+{% block content %}
 
-            <div class="col-md-6">
-                {% include "registration/registration_login_details.html" %}
-            </div>
+    {{ block.super }}
 
-            <div class="col-md-6">
-                {% include "registration/_parent_registration_details.html" %}
-            </div>
+    {% csrf_token %}
 
+    <div class="row">
+
+        <div class="col-md-6">
+            {% include "registration/registration_login_details.html" %}
         </div>
-    </form>
+
+        <div class="col-md-6">
+            {% include "registration/_parent_registration_details.html" %}
+        </div>
+
+    </div>
 
 {% endblock %}

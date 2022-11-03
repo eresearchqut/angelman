@@ -48,7 +48,7 @@ def _field_widget_class(field):
 class ANGPatientRegistrationForm(RegistrationForm):
 
     labels = {
-        'username': _("Username"),
+        'username': _("Email"),
         'password1': _("Password"),
         'password2': _("Repeat Password"),
         'first_name': _("Given Names"),

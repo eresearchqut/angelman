@@ -135,6 +135,7 @@ class AngelmanRegistration(BaseRegistration):
     def get_template_name(self):
         return "registration/registration_form.html"
 
+
 class EmbeddedAngelmanRegistration(AngelmanRegistration):
     def get_template_name(self):
         return "registration/registration_form_embedded.html"

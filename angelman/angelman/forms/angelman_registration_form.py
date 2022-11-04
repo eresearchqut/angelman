@@ -67,7 +67,6 @@ class ANGPatientRegistrationForm(RegistrationForm):
         'date_of_birth': _("YYYY-MM-DD")
     }
 
-
     country_choices = _countries()
 
     language_choices = _preferred_languages()

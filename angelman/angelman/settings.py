@@ -31,7 +31,7 @@ REGISTRATION_FORM = "angelman.forms.angelman_registration_form.ANGRegistrationFo
 REGISTRATION_CLASS = "angelman.registry.groups.registration.angelman_registration.AngelmanRegistration"
 REGISTRATION_CLASS_EMBEDDED = "angelman.registry.groups.registration.angelman_registration.EmbeddedAngelmanRegistration"
 
-EMBED_FRAME_ANCESTORS += ['https://*.angelmanregistry.info/registry/']
+EMBED_FRAME_ANCESTORS += ['https://*.angelmanregistry.info']
 
 CSP_FRAME_SRC += ["https://www.youtube.com", "https://angelmanregistry.info", "https://www.angelmanregistry.info"]
 CSP_OBJECT_SRC += ["https://angelmanregistry.info", "https://www.angelmanregistry.info"]

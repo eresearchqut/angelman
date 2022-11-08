@@ -1,0 +1,96 @@
+{% load i18n %}
+{% load recaptcha_site_key %}
+<input type="hidden" name="registry_code" value="{{registry_code}}">
+<input id="id_email" name="email" type="hidden" />
+<input type="hidden" id="parent_state_value" value="{{form.parent_guardian_state.value}}">
+<input type="hidden" id="patient_state_value" value="{{form.state.value}}">
+
+<fieldset id="guardian-form" class="border bg-light p-3">
+    <legend>{% trans "Parent/Guardian Details" %}</legend>
+    <div id="parent_guardian_form" class="row g-3">
+        <div class="col-12">
+            <label for="id_parent_guardian_first_name">{{form.parent_guardian_first_name.label}}</label>
+            {{form.parent_guardian_first_name}}
+        </div>
+        <div class="col-12">
+            <label for="id_parent_guardian_last_name">{{form.parent_guardian_last_name.label}}</label>
+            {{form.parent_guardian_last_name}}
+        </div>
+        <div class="col-12">
+            <label for="id_parent_guardian_phone">{{form.parent_guardian_phone.label}}</label>
+            {{form.parent_guardian_phone}}
+        </div>
+        <div class="col-12  ">
+            <label for="id_parent_guardian_date_of_birth">{{form.parent_guardian_date_of_birth.label}}</label>
+            {{form.parent_guardian_date_of_birth}}
+        </div>
+         <div class="col-12">
+             <fieldset class="radio-group">
+                 <legend class="h6">{{form.parent_guardian_gender.label}}</legend>
+                 {% for choice in form.parent_guardian_gender %}
+                    <div class="form-check form-check-inline p-0">
+                        <label>
+                            {{ choice.tag }} {{ choice.choice_label }}
+                        </label>
+                    </div>
+                {% endfor %}
+                 <div class="form-text">{% trans 'Indeterminate also refers to Intersex/Unspecified' %}</div>
+             </fieldset>
+        </div>
+        <fieldset class="col-12 top-separator">
+            <legend class="h6">{% trans 'Address' %}</legend>
+            <div class="row g-3">
+                <div class="col-12">
+                    <label for="id_parent_guardian_country">{{form.parent_guardian_country.label}}</label>
+                    {{form.parent_guardian_country}}
+                </div>
+
+                <div class="col-12">
+                    <label for="id_parent_guardian_address">{{form.parent_guardian_address.label}}</label>
+                    {{form.parent_guardian_address}}
+                </div>
+                <div class="col-12">
+                    <label for="id_parent_guardian_suburb">{{form.parent_guardian_suburb.label}}</label>
+                    {{form.parent_guardian_suburb}}
+                </div>
+
+                <div class="col-12">
+                    <label for="id_parent_guardian_postcode">{{form.parent_guardian_postcode.label}}</label>
+                    {{form.parent_guardian_postcode}}
+                </div>
+
+                <div class="col-12">
+                    <label for="id_parent_guardian_state">{{form.parent_guardian_state.label}}</label>
+                    {{form.parent_guardian_state}}
+                </div>
+            </div>
+        </fieldset>
+    </div>
+</fieldset>
+
+<fieldset id="patient-form" class="border bg-light p-3 mt-4">
+    <legend>{% trans "Patient Details" %}</legend>
+    {% include "registration/registration_patient_details.html" %}
+
+    <div class="clearfix"></div>
+    <fieldset class="mt-2 top-separator">
+        <legend class="h6">Contact Details</legend>
+        <div class="clearfix"></div>
+        <div class="my-2">
+            <label>
+                {{form.same_address}} {% trans "Same details as person completing" %}
+            </label>
+        </div>
+        {% include "registration/registration_patient_address.html" %}
+    </fieldset>
+
+</fieldset>
+
+<div class="row mt-4">
+    <div class="col-md-6">
+        <div class="g-recaptcha" data-sitekey="{% recaptcha_site_key %}"  data-callback='reCaptchaCallback' data-expired-callback='reCaptchaExpiredCallback'></div>
+    </div>
+    <div class="col-md-6">
+        <button type="button" id="registration-submit" class="btn btn-success float-end">{% trans "Submit" %}</button>
+    </div>
+</div>

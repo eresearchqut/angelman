@@ -1,193 +1,30 @@
-{% extends "registration/registration_base.html" %}
+{% extends "registration/ang_registration_base.html" %}
 
 {% load i18n %}
 {% load countries %}
 {% load project_title %}
-{% load recaptcha_site_key %}
 
-{% block extra_js_init %}
-    {% if form.non_field_errors or form.errors %}
-      var anyServerSideErrors = true;
-    {% else %}
-      var anyServerSideErrors = false;
-    {% endif %};
-
-    $("#id_date_of_birth").datepicker(dateOptions);
-    $("#id_parent_guardian_date_of_birth").datepicker(dateOptions);
-
-    function lookupStatesForCountry(country, stateSelector, currentStateValueSelector) {
-        if (typeof currentStateValueSelector === 'undefined') { currentStateValueSelector = ''; }
-        var state_lookup_url = "{% url 'v1:state_lookup' 'XX' %}";
-        var states = $(stateSelector);
-        states.empty();
-        states.append($('<option>', { value : "" }).text(gettext("State / County / Province / Region")));
-        $.getJSON( state_lookup_url.replace('XX', country), function( data ) {
-            $.each( data, function( key, val ) {
-                states.append($('<option>', { value : val.code }).text(val.name));
-            });
-            if (currentStateValueSelector !== '') {
-                var current_state_value = $(currentStateValueSelector).val();
-                if (current_state_value !== '') {
-                    $(stateSelector).val(current_state_value);
-                }
-            }
-        });
-    }
-
-    function setStatesOnLoad(countrySelector, stateSelector, currentStateValueSelector) {
-        var country = $(countrySelector).val();
-        if (country !== "") {
-            lookupStatesForCountry(country, stateSelector, currentStateValueSelector);
-        }
-    }
-
-
-    function setUpStateOnCountryChange(countrySelector, stateSelector) {
-        $(countrySelector).change(function() {
-            lookupStatesForCountry(this.value, stateSelector)
-        });
-    }
-
-
-    setStatesOnLoad("#id_country", "#id_state", "#patient_state_value");
-    setUpStateOnCountryChange("#id_country", "#id_state");
-    setStatesOnLoad("#id_parent_guardian_country", "#id_parent_guardian_state", "#parent_state_value");
-    setUpStateOnCountryChange("#id_parent_guardian_country", "#id_parent_guardian_state");
-
-    function onSameAddressChecked() {
-        var self = this;
-        $("#patient-address-div").slideToggle("fast", function() {
-            var disabled = $(self).prop('checked');
-            $("#id_address").prop("disabled", disabled);
-            $("#id_suburb").prop("disabled", disabled);
-            $("#id_country").prop("disabled", disabled);
-            $("#id_state").prop("disabled", disabled);
-            $("#id_postcode").prop("disabled", disabled);
-        });
-    }
-
-    if ($('#id_same_address').prop('checked')) {
-        onSameAddressChecked();
-    }
-
-    $("#id_same_address").on("click", onSameAddressChecked);
-
-    if (!anyServerSideErrors) {
-        // Collapse the accordion on initial view, but leave it expanded if there are
-        // any server-side errors, to be able to view all incorrect fields
-        var accordion = $("#patient-form").accordion("instance");
-        if (typeof(accordion) !== "undefined") {
-            accordion.option("active", false);
-        }
-    }
-
+{% block form_instructions %}
+    <h3 class="pb-2">{% project_title %} - {% trans "Parent Registration" %}</h3>
+    {% include "registration/_registration_info.html" %}
 {% endblock %}
 
 {% block content %}
 
-    <h3>
-        <strong>{% project_title %} - {% trans "Parent Registration" %}</strong>
-    </h3>
+    {{ block.super }}
+
+    {% csrf_token %}
 
     <div class="row">
-        <div class="alert alert-warning">
-            <strong>{% trans "Parent/Guardians" %}</strong>:
-            {% trans "You may register one patient at this stage - if you have multiple patients to register, you will be able to enter their details once you have logged into the registry. Please note you must be the patient's parent or guardian to register on their behalf." %}
+
+        <div class="col-md-6">
+            {% include "registration/registration_login_details.html" %}
         </div>
+
+        <div class="col-md-6">
+            {% include "registration/_parent_registration_details.html" %}
+        </div>
+
     </div>
-
-    <div class="row">
-        <div class="alert alert-info">
-            <small>
-                <p class="text-justify text-muted">
-                    {% trans "Data collected on the parent registration page is used to further Angelman research and understanding of global prevalence rates via initiatives such as Search and Rescue. Submission of this form is considered your consent. No identifying data (name, date of or address) is provided to the project or anyone outside of the Global Angelman Syndrome Registry project without your consent." %}
-                </p>
-            </small>
-        </div>
-    </div>
-
-    <form id="registration-form" method="POST">
-        {% csrf_token %}
-        <div class="row">
-
-            <div class="col-md-6">
-                {% include "registration/registration_login_details.html" %}
-            </div>
-
-            <div class="col-md-6">
-                <input type="hidden" name="registry_code" value="{{registry_code}}">
-                <input id="id_email" name="email" type="hidden" />
-                <input type="hidden" id="parent_state_value" value="{{form.parent_guardian_state.value}}">
-                <input type="hidden" id="patient_state_value" value="{{form.state.value}}">
-
-                <div id="guardian-form">
-                    <h2>{% trans "Parent/Guardian Details" %}</h2>
-                    <div id="parent_guardian_form" class="row g-3">
-                        <div class="col-12 mt-0">
-                            {{form.parent_guardian_first_name}}
-                        </div>
-                        <div class="col-12">
-                            {{form.parent_guardian_last_name}}
-                        </div>
-                        <div class="col-12">
-                            {{form.parent_guardian_date_of_birth}}
-                            <div class="text-muted">YYYY-MM-DD</div>
-                        </div>
-                         <div class="col-12">
-                                <fieldset class="required" data-toggle="tooltip" data-placement="left" data-placement="left" title="{% trans 'Indeterminate also refers to Intersex/Unspecified' %}">
-                                {% for choice in form.parent_guardian_gender %}
-                                    <label>{{ choice.choice_label }} {{ choice.tag }}</label>
-                                    <br/>
-                                {% endfor %}
-                            </fieldset>
-                        </div>
-                        <div class="col-12 top-separator">
-                            {{form.parent_guardian_address}}
-                        </div>
-                        <div class="col-12">
-                            {{form.parent_guardian_suburb}}
-                        </div>
-                        <div class="col-12">
-                            {{form.parent_guardian_country}}
-                        </div>
-                        <div class="col-12">
-                            {{form.parent_guardian_state}}
-                        </div>
-                        <div class="col-12">
-                            {{form.parent_guardian_postcode}}
-                        </div>
-                        <div class="col-12">
-                            {{form.parent_guardian_phone}}
-                        </div>
-                    </div>
-                </div>
-                <div id="patient-form" class="row">
-                    {% include "registration/registration_patient_details.html" %}
-                        <div class="col-12 top-separator">
-                            <label>
-                                {{form.same_address}} {% trans "Same details as person completing" %}
-                            </label>
-                        </div>
-                        {% include "registration/registration_patient_address.html" %}
-                    </div>
-                </div>
-
-
-                <br>
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="g-recaptcha" data-sitekey="{% recaptcha_site_key %}"  data-callback='reCaptchaCallback' data-expired-callback='reCaptchaExpiredCallback'></div>
-                    </div>
-                    <div class="col-md-6">
-                        <button type="button" id="registration-submit" class="btn btn-success float-end">{% trans "Submit" %}</button>
-                    </div>
-                </div>
-
-
-            </div>
-
-        </div>
-    </form>
 
 {% endblock %}

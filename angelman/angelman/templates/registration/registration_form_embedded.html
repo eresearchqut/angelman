@@ -1,0 +1,18 @@
+{% extends "registration/ang_registration_base.html" %}
+
+{% block content %}
+
+    <div class="ms-4">
+      {{ block.super }}
+    </div>
+
+    <div class="row mx-2 mt-2">
+      <div class="col-12">
+        {% include "registration/registration_login_details.html" %}
+      </div>
+      <div class="col-12 mt-4">
+        {% include "registration/_parent_registration_details.html" %}
+      </div>
+    </div>
+
+{% endblock %}

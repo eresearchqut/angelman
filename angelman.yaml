@@ -1,4 +1,4 @@
-EXPORT_TIME: '2022-07-04 13:32:15.112180'
+EXPORT_TIME: '2022-11-08 14:45:39.461415'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -22478,6 +22478,3790 @@ cdes:
   questionnaire_text: ''
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS0CareSupVol
+  allow_multiple: false
+  calculation: ''
+  code: CBS0CareSup
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Do you provide care or support on a voluntary basis to a household member
+    with Angelman syndrome?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS0CostProvide
+  allow_multiple: false
+  calculation: ''
+  code: CBS0Cost
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Are you able to provide estimates of the costs and impact of this care and
+    support for you and your household?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS0Duration2wk
+  allow_multiple: false
+  calculation: ''
+  code: CBS0Duration
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Have you been providing this care or support for more than two weeks?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS0Over18yrs
+  allow_multiple: false
+  calculation: ''
+  code: CBS0Over18
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Are you ≥ 18 years old?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS0USAreside
+  allow_multiple: false
+  calculation: ''
+  code: CBS0USA
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Have you and the person with Angelman syndrome been residing in the United
+    States for more than 12 months?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS1CareRes
+  allow_multiple: false
+  calculation: ''
+  code: CBS1CareRes
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Does the person with Angelman syndrome visit a day care facility or residential
+    nursing home?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS1CareResHrs
+  allow_multiple: false
+  calculation: ''
+  code: CBS1CareResHrs
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: For how many hours per week?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS1InsureMedPharm
+  allow_multiple: false
+  calculation: ''
+  code: CBS1Insure
+  datatype: range
+  desc: Has the person with Angelman syndrome had medical and/or pharmacy insurance
+    coverage during the PAST 12 MONTHS?
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Has the person with Angelman syndrome had medical and/or pharmacy insurance
+    coverage during the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: MedPharmPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS1InsureType
+  allow_multiple: true
+  calculation: ''
+  code: CBS1InsureType
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What types of health insurance did the person with Angelman syndrome have
+    during the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: InsureTypePVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS1InsureTypeOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS1InsureTypeOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS1LiveCGSameHouseAS
+  allow_multiple: false
+  calculation: ''
+  code: CBS1LiveCG
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Do you currently live in the same household as the person with Angelman syndrome?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS1LivePTwAS
+  allow_multiple: false
+  calculation: ''
+  code: CBS1LivePT
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Please describe the current living situation for the person with Angelman
+    syndrome?
+  pattern: ''
+  pv_group: ResidenceAS
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS1LivePTOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS1LivePTOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: If other living situation, please state
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS1ProfessionalCare
+  allow_multiple: false
+  calculation: ''
+  code: CBS1ProfCare
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Besides your care or support, does the person with Angelman syndrome also
+    receive care from a professional caregiver at home?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS1ProfCareHrsNum
+  allow_multiple: false
+  calculation: ''
+  code: CBS1ProfCareHrs
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: For how many hours per week?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS1RacePersonAS
+  allow_multiple: true
+  calculation: ''
+  code: CBS1Race
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What is the race/ethnicity of the person with Angelman syndrome?
+  pattern: ''
+  pv_group: RacePVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS2Adults
+  allow_multiple: false
+  calculation: ''
+  code: CBS2Adult
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: Number of household members in this age category. Include yourself
+    if you are in this age group.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: How many people are currently living in your household (including yourself)?
+    Adults (≥ 18 years old and ≤ 64 years old)
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS2AdultsSecondary
+  allow_multiple: false
+  calculation: ''
+  code: CBS2AdultSec
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: |-
+    For the purposes of this study, a SECONDARY caregiver is anyone who has caregiving responsibility for the person but is not the PRIMARY caregiver.
+    If you are a SECONDARY caregiver in your household, please include yourself in this count. Please do not include your household’s PRIMARY caregiver in this count, and please do not include counts for paid caregivers who are not members of your household.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Adults (≥ 18 years old and ≤ 64 years old)
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS2Age
+  allow_multiple: false
+  calculation: ''
+  code: CBS2Age
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '120.00'
+  min_value: '0.00'
+  name: What is your current age (in years)?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS2Children
+  allow_multiple: false
+  calculation: ''
+  code: CBS2Child
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: Number of household members in this age category.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: How many people are currently living in your household? Children (<18 years
+    old)
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS2ChildrenSecondary
+  allow_multiple: false
+  calculation: ''
+  code: CBS2ChildSec
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: |-
+    For the purposes of this study, a SECONDARY caregiver is anyone who has caregiving responsibility for the person but is not the PRIMARY caregiver.
+    If you are a SECONDARY caregiver in your household, please include yourself in this count. Please do not include your household’s PRIMARY caregiver in this count, and please do not include counts for paid caregivers who are not members of your household.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: How many members of your household assist as SECONDARY caregivers for the
+    person with Angelman syndrome? Children (< 18 years old)
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS2Education
+  allow_multiple: false
+  calculation: ''
+  code: CBS2Edu
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What is the highest level of education that you have completed?
+  pattern: ''
+  pv_group: EduPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS2Marital
+  allow_multiple: false
+  calculation: ''
+  code: CBS2Marital
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What is your current marital status?
+  pattern: ''
+  pv_group: MarStatPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS2OtherSecondary
+  allow_multiple: false
+  calculation: ''
+  code: CBS2OthSec
+  datatype: range
+  desc: ''
+  important: false
+  instructions: For the purposes of this study, a SECONDARY caregiver is anyone who
+    has caregiving responsibility for the person but is not the PRIMARY caregiver
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Are there other SECONDARY caregivers in your household?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS2PrimarySecondary
+  allow_multiple: false
+  calculation: ''
+  code: CBS2PriSec
+  datatype: range
+  desc: ''
+  important: false
+  instructions: For the purposes of this study, the PRIMARY caregiver refers to the
+    person who has the greatest responsibility for the daily care, health, housing,
+    or safety of the person. The SECONDARY caregiver is anyone who has caregiving
+    responsibility for the person but is not the PRIMARY caregiver.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Would you describe yourself as the PRIMARY or SECONDARY caregiver in your
+    household for the person with Angelman syndrome?
+  pattern: ''
+  pv_group: CaregPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS2Race
+  allow_multiple: true
+  calculation: ''
+  code: CBS2Race
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What is your race/ethnicity?
+  pattern: ''
+  pv_group: RacePVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS2RelationshipAS
+  allow_multiple: false
+  calculation: ''
+  code: CBS2Rel
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What is your relationship to the person with Angelman syndrome?
+  pattern: ''
+  pv_group: RelPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS2RelOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS2RelOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS2Seniors
+  allow_multiple: false
+  calculation: ''
+  code: CBS2Senior
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: Number of household members in this age category. Include yourself
+    if you are in this age group.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: How many people are currently living in your household (including yourself)?
+    Seniors (≥ 65 years old)
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS2SeniorsSecondary
+  allow_multiple: false
+  calculation: ''
+  code: CBS2SeniorSec
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: |-
+    For the purposes of this study, a SECONDARY caregiver is anyone who has caregiving responsibility for the person but is not the PRIMARY caregiver.
+    If you are a SECONDARY caregiver in your household, please include yourself in this count. Please do not include your household’s PRIMARY caregiver in this count, and please do not include counts for paid caregivers who are not members of your household.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Seniors (≥ 65 years old)
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS2Sex
+  allow_multiple: false
+  calculation: ''
+  code: CBS2Sex
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What is your sex?
+  pattern: ''
+  pv_group: SexPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS3CareAffectOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS3CareAffectOther
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: By regular activities, we mean the usual activities you do such as
+    work around the house, shopping, childcare, exercising, studying, etc. Think about
+    times you were limited in the amount or kind of activities you could do and times
+    you accomplished less than you would like. On a scale of 0 to 10, how has caregiving
+    affected your activities? If caregiving affected your activities only a little,
+    choose a low number. Choose a high number if caregiving affected your activities
+    a great deal.
+  is_required: false
+  max_length: null
+  max_value: '10.00'
+  min_value: '0.00'
+  name: During the past seven days, how much did your caregiving affect your ability
+    to do your regular daily activities, other than work at a job?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: SliderWidget
+  widget_settings: '{"left_label":"0","right_label":"10","step":"1"}'
+- abbreviated_name: CBS3CareAffectWork
+  allow_multiple: false
+  calculation: ''
+  code: CBS3CareAffectWork
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: Think about days you were limited in the amount or kind of work you
+    could do, days you accomplished less than you would like, or days you could not
+    do your work as carefully as usual because of caregiving. On a scale of 0 to 10,
+    how has caregiving affected your work? If caregiving affected your work only a
+    little, choose a low number. Choose a high number if caregiving affected your
+    work a great deal.
+  is_required: false
+  max_length: null
+  max_value: '10.00'
+  min_value: '0.00'
+  name: During the past seven days, how did your caregiving affect your productivity
+    while you were working?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: SliderWidget
+  widget_settings: '{"left_label":"0","right_label":"10","step":"1"}'
+- abbreviated_name: CBS3YourEarnings
+  allow_multiple: false
+  calculation: ''
+  code: CBS3Earn
+  datatype: range
+  desc: ''
+  important: false
+  instructions: "Please only include wage / salary earnings from employment (including\
+    \ commissions, bonuses, or tips from all jobs). Please DO NOT include earnings\
+    \ from any of the following sources of income:\n•\tSelf-employment income from\
+    \ own business\n•\tSocial Security\n•\tSocial Security Disability Insurance\n\
+    •\tSupplemental Security Income\n•\tRetirement income, pensions, survivor, or\
+    \ disability income (not including Social Security)\n•\tOther public assistance\
+    \ or welfare payments from the state or local welfare office\n•\tAny other sources\
+    \ of income received regularly (e.g., Veterans’ payments, unemployment compensation,\
+    \ child support or alimony)\nIt may be helpful to refer to last year’s tax return\
+    \ when selecting a response."
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: During the PAST 12 MONTHS, what were your total personal wage / salary earnings
+    before taxes?
+  pattern: ''
+  pv_group: EarnPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS3EarningsAS
+  allow_multiple: false
+  calculation: ''
+  code: CBS3EarnAS
+  datatype: range
+  desc: ''
+  important: false
+  instructions: "Please only include wage / salary earnings from employment (including\
+    \ commissions, bonuses, or tips from all jobs). Please DO NOT include earnings\
+    \ from any of the following sources of income:\n•\tSocial Security\n•\tSocial\
+    \ Security Disability Insurance\n•\tSupplemental Security Income\n•\tOther public\
+    \ assistance or welfare payments from the state or local welfare office\n•\tAny\
+    \ other sources of income received regularly\nIt may be helpful to refer to last\
+    \ year’s tax return when selecting a response."
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: During the PAST 12 MONTHS, what were the person with Angelman syndrome’s total
+    personal wage / salary earnings before taxes?
+  pattern: ''
+  pv_group: EarnPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS3FinancialAssist
+  allow_multiple: true
+  calculation: ''
+  code: CBS3Fin
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: During the PAST 12 MONTHS, please indicate any additional financial assistance
+    received by the person with Angelman syndrome, if applicable
+  pattern: ''
+  pv_group: FinAssisPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3FinSS
+  allow_multiple: false
+  calculation: ''
+  code: CBS3FinSS
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Earnings in $USD over the PAST 12 MONTHS for the person with Angelman
+    syndrome
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Social Security
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3FinSSNA
+  allow_multiple: true
+  calculation: ''
+  code: CBS3FinSSNA
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, not applicable
+  pattern: ''
+  pv_group: CBSNA
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3HoursWorked
+  allow_multiple: false
+  calculation: ''
+  code: CBS3HourWork
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: During the past seven days, how many hours did you actually work?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3LossOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS3LossOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Please only include your best estimate of total lost income for you
+    and all members of your household. Please do not include any estimates of expenses
+    or costs incurred to accommodate the person with Angelman syndrome.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: During the PAST 12 MONTHS, please estimate how much total income do you believe
+    has been lost due to caring for the person with Angelman syndrome
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3LossOtherDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS3LossOtherDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3LossYou
+  allow_multiple: false
+  calculation: ''
+  code: CBS3LossYou
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Please only include your best estimate of total lost income for you.
+    Please do not include any estimates of expenses or costs incurred to accommodate
+    the person with Angelman syndrome.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: During the PAST 12 MONTHS, please estimate how much of your income you believe
+    has been lost due to caring for the person with Angelman syndrome?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3LossYouDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS3LossYouDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3MissCare
+  allow_multiple: false
+  calculation: ''
+  code: CBS3MissCare
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Include hours you missed on sick days, times you went in late, left
+    early, etc., because of your caregiving responsibilities. Do not include time
+    you missed to participate in this study.
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: During the past seven days, how many hours did you miss from work because
+    of your caregiving?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3MissOthHours
+  allow_multiple: false
+  calculation: ''
+  code: CBS3MissOth
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: During the past seven days, how many hours did you miss from work because
+    of any other reason, such as vacation, holidays, time off to participate in this
+    study?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3OthWelfare
+  allow_multiple: false
+  calculation: ''
+  code: CBS3OthWelfare
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Earnings in $USD over the PAST 12 MONTHS for the person with Angelman
+    syndrome
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other public assistance or welfare payments from the state or local welfare
+    office
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3OthWelfareNA
+  allow_multiple: true
+  calculation: ''
+  code: CBS3OthWelfareNA
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, not applicable
+  pattern: ''
+  pv_group: CBSNA
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3Other
+  allow_multiple: false
+  calculation: ''
+  code: CBS3Other
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Earnings in $USD over the PAST 12 MONTHS for the person with Angelman
+    syndrome
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Any other sources of income received regularly
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3OtherEmpSit
+  allow_multiple: true
+  calculation: ''
+  code: CBS3OtherEmpSit
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select all that apply to OTHER HOUSEHOLD MEMBERS
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Because of your responsibilities caring for the person with Angelman syndrome,
+    has another household member EVER experienced one of the following employment
+    situations?
+  pattern: ''
+  pv_group: EmpSitPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3OtherNA
+  allow_multiple: true
+  calculation: ''
+  code: CBS3OtherNA
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, not applicable
+  pattern: ''
+  pv_group: CBSNA
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3SSDI
+  allow_multiple: false
+  calculation: ''
+  code: CBS3SSDI
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Earnings in $USD over the PAST 12 MONTHS for the person with Angelman
+    syndrome
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Social Security Disability Insurance
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3SSDINA
+  allow_multiple: true
+  calculation: ''
+  code: CBS3SSDINA
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, not applicable
+  pattern: ''
+  pv_group: CBSNA
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3SSI
+  allow_multiple: false
+  calculation: ''
+  code: CBS3SSI
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Earnings in $USD over the PAST 12 MONTHS for the person with Angelman
+    syndrome
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Supplemental Security Income
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3SSINA
+  allow_multiple: true
+  calculation: ''
+  code: CBS3SSINA
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, not applicable
+  pattern: ''
+  pv_group: CBSNA
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS3WorkPay
+  allow_multiple: false
+  calculation: ''
+  code: CBS3Work
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Are you currently employed (working for pay)?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS3WorkStatusAS
+  allow_multiple: false
+  calculation: ''
+  code: CBS3WorkAS
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select “Not applicable” if the person with Angelman syndrome
+    is younger than 16 years old
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What is the employment status of the person with Angelman syndrome?
+  pattern: ''
+  pv_group: EmpStatPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS3YourEmpSituation
+  allow_multiple: true
+  calculation: ''
+  code: CBS3YourEmpSit
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select all that apply to YOU
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Because of your responsibilities caring for the person with Angelman syndrome,
+    have you EVER experienced one of the following employment situations?
+  pattern: ''
+  pv_group: EmpSitPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4Alone
+  allow_multiple: false
+  calculation: ''
+  code: CBS4Alone
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Can the person with Angelman syndrome be left alone?
+  pattern: ''
+  pv_group: AlonePVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: What is the source of this compensation for your time providing
+    care to the person with Angelman syn
+  allow_multiple: true
+  calculation: ''
+  code: CBS4CompSource
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please only include compensation for your time providing care to the
+    person with Angelman syndrome, and do not include any financial support / waivers
+    to compensate paid caregiving
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What is the source of this compensation for your time providing care to the
+    person with Angelman syndrome?
+  pattern: ''
+  pv_group: CompSourcePVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4CompSourceOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS4CompSourceOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: If other, please state
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS4Compensation
+  allow_multiple: false
+  calculation: ''
+  code: CBS4Compensation
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Do you receive any compensation for your time providing care to the person
+    with Angelman syndrome?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS4DaysWk
+  allow_multiple: false
+  calculation: ''
+  code: CBS4DaysWk
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: On how many days per week do you usually provide care to the person with Angelman
+    syndrome?
+  pattern: ''
+  pv_group: DaysPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS4FewerHrLeisure
+  allow_multiple: false
+  calculation: ''
+  code: CBS4FewerHrLeisure
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: How many fewer hours of leisure time per week?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4FewerHrPaid
+  allow_multiple: false
+  calculation: ''
+  code: CBS4FewerHrPaid
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: How many fewer hours of paid work per week?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4FewerHrUnpaid
+  allow_multiple: false
+  calculation: ''
+  code: CBS4FewerHrUnpaid
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: How many fewer hours of unpaid work per week?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4GiveUpLeisure
+  allow_multiple: false
+  calculation: ''
+  code: CBS4GiveUpLeisure
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Did you completely or partly give up time spent on leisure in order to provide
+    informal care to the person with Angelman syndrome?
+  pattern: ''
+  pv_group: GiveUpLeisurePVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS4GiveUpPaid
+  allow_multiple: false
+  calculation: ''
+  code: CBS4GiveUpPaid
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Did you completely or partly give up paid work in order to provide informal
+    care to the person with Angelman syndrome?
+  pattern: ''
+  pv_group: GiveUpPaidPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS4GiveUpUnpaid
+  allow_multiple: false
+  calculation: ''
+  code: CBS4GiveUpUnpaid
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Did you completely or partly give up unpaid work in order to provide informal
+    care to the person with Angelman syndrome?
+  pattern: ''
+  pv_group: GiveUpUnpaidPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS4GovtHrs
+  allow_multiple: false
+  calculation: ''
+  code: CBS4GovtHrs
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: Government, hours per week
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4GovtPerHr
+  allow_multiple: false
+  calculation: ''
+  code: CBS4GovtPerHr
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Government, $ per hour
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4HoursOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS4HoursOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: Total hours during the week
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4HouseholdTask
+  allow_multiple: false
+  calculation: ''
+  code: CBS4HouseholdTask
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Report time in hours over the past week. For example, food preparation,
+    cleaning, washing, ironing, sewing, taking care of and playing with your children,
+    shopping or maintenance work, odd jobs, gardening. Please do not include any time
+    spent on these activities / tasks by other paid or unpaid caregivers.
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: How much time during the last week did you spend on household activities that
+    would not have been performed if the person with Angelman syndrome were in good
+    health?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4InsureHrs
+  allow_multiple: false
+  calculation: ''
+  code: CBS4InsureHrs
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: Insurance company, hours per week
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4InsurePerHr
+  allow_multiple: false
+  calculation: ''
+  code: CBS4InsurePerHr
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Insurance company, $ per hour
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4LongCare
+  allow_multiple: false
+  calculation: ''
+  code: CBS4LongCare
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Informal care can consist of different activities, such as emotional
+    support and surveillance, help with travelling, household activities, personal
+    care, nursing care, or administrative activities.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How long have you been providing informal care to the person with Angelman
+    syndrome?
+  pattern: ''
+  pv_group: LongCarePVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS4Months
+  allow_multiple: false
+  calculation: ''
+  code: CBS4Months
+  datatype: float
+  desc: Months
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '12.00'
+  min_value: '0.00'
+  name: Months
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4NumberOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS4NumberOther
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: How many other informal caregivers?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4OtherCaregiver
+  allow_multiple: false
+  calculation: ''
+  code: CBS4OtherCaregiver
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Besides your care or support, does the person with Angelman syndrome also
+    receive care from other informal caregivers?
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS4OtherHrs
+  allow_multiple: false
+  calculation: ''
+  code: CBS4OtherHrs
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: Other, hours per week
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4OtherPerHr
+  allow_multiple: false
+  calculation: ''
+  code: CBS4OtherPerHr
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, $ per hour
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4PersonalCare
+  allow_multiple: false
+  calculation: ''
+  code: CBS4PersonalCare
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Report time in hours over the past week. For example, dressing/undressing,
+    washing, combing, shaving, going to the toilet, mobility around the house, eating
+    and drinking and medication. Please do not include any time spent on these activities
+    / tasks by other paid or unpaid caregivers.
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: How much time during the last week did you spend on personal care for the
+    person with Angelman syndrome?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4PracticalSupport
+  allow_multiple: false
+  calculation: ''
+  code: CBS4PracticalSupport
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Report time in hours over the past week. For example, mobility outside
+    of the house including assistance with walking or wheelchair, visiting family
+    or friends, seeing to health care contacts (e.g., doctors’ appointments), organizing
+    help, physical aids or house adaptations and taking care of financial matters
+    (e.g., insurance). Please do not include any time spent providing this practical
+    support by other paid or unpaid caregivers.
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: How much time during the last week did you spend on practical support that
+    would not have been performed if the person with Angelman syndrome were in good
+    health?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4SpendTime
+  allow_multiple: true
+  calculation: ''
+  code: CBS4SpendTime
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: 'Suppose you did not have to provide informal care anymore for the person
+    with Angelman syndrome - how would you spend this time: on paid work, unpaid work,
+    or leisure?'
+  pattern: ''
+  pv_group: SpendTimePVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4TimeLeisure
+  allow_multiple: false
+  calculation: ''
+  code: CBS4TimeLeisure
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Suppose you did not have to provide informal care for the person with
+    Angelman syndrome - how many additional leisure hours per week would you expect
+    to have?
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: Leisure hours per week
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4TimePaid
+  allow_multiple: false
+  calculation: ''
+  code: CBS4TimePaid
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Suppose you did not have to provide informal care for the person with
+    Angelman syndrome - how many additional paid hours per week would you expect to
+    have?
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: Paid work hours per week
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4TimeUnpaid
+  allow_multiple: false
+  calculation: ''
+  code: CBS4TimeUnpaid
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Suppose you did not have to provide informal care for the person with
+    Angelman syndrome - how many additional unpaid hours per week would you expect
+    to have?
+  is_required: false
+  max_length: null
+  max_value: '168.00'
+  min_value: '0.00'
+  name: Unpaid work hours per week
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4Weeks
+  allow_multiple: false
+  calculation: ''
+  code: CBS4Weeks
+  datatype: float
+  desc: Weeks
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: '4.00'
+  min_value: '0.00'
+  name: Weeks
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4Year
+  allow_multiple: false
+  calculation: ''
+  code: CBS4Year
+  datatype: float
+  desc: Years
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Years
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4YearGaveUpLeisure
+  allow_multiple: false
+  calculation: ''
+  code: CBS4YearGaveUpLeisure
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: 4
+  max_value: '2030.00'
+  min_value: '1900.00'
+  name: Since what year?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4YearGaveUpPaid
+  allow_multiple: false
+  calculation: ''
+  code: CBS4YearGaveUpPaid
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: 4
+  max_value: '2030.00'
+  min_value: '1900.00'
+  name: Since what year?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS4YearGaveUpUnpaid
+  allow_multiple: false
+  calculation: ''
+  code: CBS4YearGaveUpUnpaid
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: 4
+  max_value: '2030.00'
+  min_value: '1900.00'
+  name: Since what year?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AdditionalCostHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AdditionalCostHouse
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by your household (eg, credit card, cash, family savings)
+    on these other expenses over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5AdditionalCostOthHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AdditionalCostOthHouse
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AdditionalCostOthOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AdditionalCostOthOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AdditionalCostOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AdditionalCostOther
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by other sources (eg, health insurance, government, charitable
+    organizations) on these other expenses over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5AdditionalWhat
+  allow_multiple: true
+  calculation: ''
+  code: CBS5AdditionalWhat
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What additional out-of-pocket expenses did your household pay for in the PAST
+    12 MONTHS to accommodate the person with Angelman syndrome? (excluding categories
+    of expenses already mentioned in this survey)
+  pattern: ''
+  pv_group: AdditionalWhatPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AdditionalWhatOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AdditionalWhatOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS5AntHomeMod
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AntHomeMod
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: 'Anticipated cost if affordability had not been an issue: Home modifications
+    / repairs'
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntHomeModDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5AntHomeModDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntLongTermCare
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AntLongTermCare
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: 'Anticipated cost if affordability had not been an issue: Long-term care'
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntLongTermCareDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5AntLongTermCareDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntMedEquipMod
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AntMedEquipMod
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: 'Anticipated cost if affordability had not been an issue: Medical equipment
+    purchases'
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntMedEquipModDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5AntMedEquipModDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AntOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: 'Anticipated cost if affordability had not been an issue: Other expense'
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntOtherDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5AntOtherDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntProfCare
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AntProfCare
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: 'Anticipated cost if affordability had not been an issue: Professional caregiving'
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntProfCareDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5AntProfCareDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntSchoolEdu
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AntSchoolEdu
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: 'Anticipated cost if affordability had not been an issue: School / educational
+    expense'
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntSchoolEduDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5AntSchoolEduDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntSupportTherapy
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AntSupportTherapy
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: 'Anticipated cost if affordability had not been an issue: Supportive therapy
+    (eg, horse therapy, speech therapy)'
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntSupportTherapyDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5AntSupportTherapyDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntVehicleMod
+  allow_multiple: false
+  calculation: ''
+  code: CBS5AntVehicleMod
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: 'Anticipated cost if affordability had not been an issue: Vehicle purchases
+    / modifications'
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5AntVehicleModDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5AntVehicleModDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5CostOOP
+  allow_multiple: false
+  calculation: ''
+  code: CBS5CostOOP
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Your estimates should include any spending towards home modifications
+    / repairs, vehicular purchases / modifications, medical equipment, long-term care,
+    professional caregiving, supportive therapies, special education, and any other
+    applicable expenses.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Total out-of-pocket (eg, paid by your household through credit card, cash,
+    loans, family savings, etc) during the PAST 12 MONTHS
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5CostOOPDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5CostOOPDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5CostOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5CostOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Your estimates should include any spending towards home modifications
+    / repairs, vehicular purchases / modifications, medical equipment, long-term care,
+    professional caregiving, supportive therapies, special education, and any other
+    applicable expenses.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Total spending by other sources (eg, health insurance, government, donations
+    from charitable organizations, etc) during the PAST 12 MONTHS
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5CostOtherDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5CostOtherDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5CostPaid
+  allow_multiple: false
+  calculation: ''
+  code: CBS5CostPaid
+  datatype: float
+  desc: ''
+  important: false
+  instructions: Total estimated cost for all expenses. Your estimates should include
+    any spending towards home modifications / repairs, vehicular purchases / modifications,
+    medical equipment, long-term care, professional caregiving, supportive therapies,
+    special education, and any other applicable expenses that are specifically related
+    to the special needs of a person with AS.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: During the PAST 12 MONTHS, about how much was spent on ALL expenses for the
+    person with Angelman syndrome?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5CostPaidDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS5CostPaidDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or, don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5HouseCost
+  allow_multiple: true
+  calculation: ''
+  code: CBS5HouseCost
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Has your household incurred any of the following costs / services over the
+    PAST 12 MONTHS to accommodate the person with Angelman syndrome?
+  pattern: ''
+  pv_group: AccommodationsPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5LongCareCostHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5LongCareCostHouse
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by your household (eg, credit card, cash, family savings)
+    on this long-term care over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5LongCareCostOthHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5LongCareCostOthHouse
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5LongCareCostOthOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5LongCareCostOthOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5LongCareCostOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5LongCareCostOther
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by other sources (eg, health insurance, government, charitable
+    organizations) on this long-term care over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5LongCareWhat
+  allow_multiple: true
+  calculation: ''
+  code: CBS5LongCareWhat
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What long-term care has your household utilised over the PAST 12 MONTHS to
+    accommodate the person with Angelman syndrome?
+  pattern: ''
+  pv_group: LongCareWhatPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5LongCareWhatOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS5LongCareWhatOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS5MedicalCostHousehold
+  allow_multiple: false
+  calculation: ''
+  code: CBS5MedicalCostHouse
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by your household (eg, credit card, cash, family savings)
+    on these medical equipment purchases over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5MedicalCostOthHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5MedicalCostOthHouse
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5MedicalCostOthOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5MedicalCostOthOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5MedicalCostOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5MedicalCostOther
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by other sources (eg, health insurance, government, charitable
+    organizations) on these medical equipment purchases over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5MedicalWhat
+  allow_multiple: true
+  calculation: ''
+  code: CBS5MedicalWhat
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What medical equipment purchases has your household incurred over the PAST
+    12 MONTHS to accommodate the person with Angelman syndrome?
+  pattern: ''
+  pv_group: MedicalWhatPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5MedicalWhatOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS5MedicalWhatOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS5ModCostHousehold
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ModCostHouse
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by your household (eg, credit card, cash, family savings)
+    on these home modifications / repairs over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5ModCostOthHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ModCostOthHouse
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5ModCostOthOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ModCostOthOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5ModCostOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ModCostOther
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by other sources (eg, health insurance, government, charitable
+    organizations) on these home modifications / repairs over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5ModWhat
+  allow_multiple: true
+  calculation: ''
+  code: CBS5ModWhat
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What home modifications / repairs has your household incurred over the PAST
+    12 MONTHS to accommodate the person with Angelman syndrome?
+  pattern: ''
+  pv_group: HomeModPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5ModWhatOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ModWhatOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS5ProfCareCostHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ProfCareCostHouse
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by your household (eg, credit card, cash, family savings)
+    on this professional caregiving over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5ProfCareCostOthHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ProfCareCostOthHouse
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5ProfCareCostOthOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ProfCareCostOthOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5ProfCareCostOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ProfCareCostOther
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by other sources (eg, health insurance, government, charitable
+    organizations) on this professional caregiving over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5ProfCareWhat
+  allow_multiple: true
+  calculation: ''
+  code: CBS5ProfCareWhat
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What professional caregiving has your household utilised over the PAST 12
+    MONTHS to accommodate the person with Angelman syndrome?
+  pattern: ''
+  pv_group: ProfCareWhatPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5ProfCareWhatOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS5ProfCareWhatOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS5SchoolEduCostHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SchoolEduCostHouse
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by your household (eg, credit card, cash, family savings)
+    on these school / education expenses over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5SchoolEduCostOthHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SchoolEduCostOthHouse
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5SchoolEduCostOthOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SchoolEduCostOthOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5SchoolEduCostOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SchoolEduCostOther
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by other sources (eg, health insurance, government, charitable
+    organizations) on these school / education expenses over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5SchoolEduWhat
+  allow_multiple: true
+  calculation: ''
+  code: CBS5SchoolEduWhat
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What school / education expenses has your household incurred over the PAST
+    12 MONTHS to accommodate the person with Angelman syndrome?
+  pattern: ''
+  pv_group: SchoolEduWhatPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5SchoolEduWhatOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SchoolEduWhatOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS5SupportTherapyCostHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SupportTherapyCostHouse
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by your household (eg, credit card, cash, family savings)
+    on supportive therapy over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5SupportTherapyCostOthHouse
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SupportTherapyCostOthHouse
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5SupportTherapyCostOthOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SupportTherapyCostOthOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5SupportTherapyCostOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SupportTherapyCostOther
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by other sources (eg, health insurance, government, charitable
+    organizations) on supportive therapy over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5SupportTherapyWhat
+  allow_multiple: true
+  calculation: ''
+  code: CBS5SupportTherapyWhat
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please mark all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What supportive therapy has your household utilised over the PAST 12 MONTHS
+    to accommodate the person with Angelman syndrome?
+  pattern: ''
+  pv_group: SupportTherapyWhatPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5SupportTherapyWhatOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS5SupportTherapyWhatOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS5Unafford
+  allow_multiple: true
+  calculation: ''
+  code: CBS5Unafford
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: During the PAST 12 MONTHS, was your household unable to afford any of the
+    following to accommodate person with Angelman syndrome? What would the cost have
+    been if affordability was not an issue?
+  pattern: ''
+  pv_group: CBS5UnaffordPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5VehicleCostHousehold
+  allow_multiple: false
+  calculation: ''
+  code: CBS5VehicleCostHouse
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by your household (eg, credit card, cash, family savings)
+    on these vehicle purchases / modifications over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5VehicleCostOthHousehold
+  allow_multiple: false
+  calculation: ''
+  code: CBS5VehicleCostOthHouse
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5VehicleCostOthOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5VehicleCostOthOther
+  datatype: float
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: Other, please specify
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5VehicleCostOther
+  allow_multiple: false
+  calculation: ''
+  code: CBS5VehicleCostOther
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: How much was spent by other sources (eg, health insurance, government, charitable
+    organizations) on these vehicle purchases / modifications over the PAST 12 MONTHS?
+  pattern: ''
+  pv_group: CostPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS5VehicleWhat
+  allow_multiple: true
+  calculation: ''
+  code: CBS5VehicleWhat
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: What vehicle purchases / modifications has your household incurred over the
+    PAST 12 MONTHS to accommodate the person with Angelman syndrome?
+  pattern: ''
+  pv_group: VehicleModPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS5VehicleWhatOth
+  allow_multiple: false
+  calculation: ''
+  code: CBS5VehicleWhatOth
+  datatype: string
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Other
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: ''
+- abbreviated_name: CBS6Anxiety
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Anxiety
+  datatype: range
+  desc: ''
+  important: false
+  instructions: © EuroQol Research Foundation. EQ-5D™ is a trade mark of the EuroQol
+    Research Foundation. UK (English) v2.1
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Anxiety / Depression
+  pattern: ''
+  pv_group: MentalPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Appreciated
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Appreciated
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: She/he appreciates everything I do for him/her
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Behaviour
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Behaviour
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Some behavior is upsetting
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Conditions
+  allow_multiple: true
+  calculation: ''
+  code: CBS6Conditions
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select all that apply
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Have you experienced or developed any of the following conditions as a result
+    of providing care to the person with Angelman syndrome?
+  pattern: ''
+  pv_group: ConditionsPVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS6Confine
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Confine
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: It is confining
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Daily
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Daily
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select which description best fits your caregiving situation
+    at the moment.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: I have problems combining my care tasks with my own daily activities (eg,
+    household activities, work, study, family, leisure activities)
+  pattern: ''
+  pv_group: CareSitPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Emotional
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Emotional
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: There have been emotional adjustments
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Family
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Family
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: There have been family adjustments
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6FinanceProblem
+  allow_multiple: false
+  calculation: ''
+  code: CBS6FinanceProblem
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select which description best fits your caregiving situation
+    at the moment.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: I have financial problems because of my care tasks
+  pattern: ''
+  pv_group: CareSitPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Financial
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Financial
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: It is a financial strain
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Fulfillment
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Fulfillment
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select which description best fits your caregiving situation
+    at the moment.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: I have fulfilment from carrying out my care tasks
+  pattern: ''
+  pv_group: CareSitPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Handle
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Handle
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: I can handle the care for her/him fine
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Happy
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Happy
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: I am happy to care for her/him
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Health
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Health
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select which description best fits your caregiving situation
+    at the moment.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: I have problems with my own physical health (eg, more often sick, tiredness,
+    physical stress)
+  pattern: ''
+  pv_group: CareSitPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Important
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Important
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Taking care of her/him is important to me
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Inconvenient
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Inconvenient
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: It is inconvenient
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6MedicalCost
+  allow_multiple: false
+  calculation: ''
+  code: CBS6MedicalCost
+  datatype: float
+  desc: ''
+  important: false
+  instructions: E.g., physicians, licensed therapists / social workers. This should
+    not include out-of-pocket costs for medications to treat other conditions (e.g.,
+    diabetes, cholesterol management).
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: During the PAST 12 MONTHS, how much have you spent out-of-pocket on this medical
+    care?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS6MedicalDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS6MedicalDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS6MedicalYou
+  allow_multiple: false
+  calculation: ''
+  code: CBS6MedicalYou
+  datatype: range
+  desc: ''
+  important: false
+  instructions: e.g., physicians, licensed therapists / social workers
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: During the PAST 12 MONTHS, have you received medical care from healthcare
+    professionals for managing pain, headaches, insomnia, anxiety, depression, or
+    other physical, mental, or emotional health due to caring for the person with
+    Angelman syndrome?
+  pattern: ''
+  pv_group: YNDNNAPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Mental
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Mental
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select which description best fits your caregiving situation
+    at the moment.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: I have problems with my own mental health (eg, stress, fear, gloominess, depression,
+    concern about the future)
+  pattern: ''
+  pv_group: CareSitPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Mobility
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Mobility
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Mobility
+  pattern: ''
+  pv_group: MobilityPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6OtherDemand
+  allow_multiple: false
+  calculation: ''
+  code: CBS6OtherDemand
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: There have been other demands on my time
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Overwhelm
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Overwhelm
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Feeling completely overwhelmed
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Pain
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Pain
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Pain / Discomfort
+  pattern: ''
+  pv_group: PainPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Personal
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Personal
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: There have been changes in personal plans
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6PharmCost
+  allow_multiple: false
+  calculation: ''
+  code: CBS6PharmCost
+  datatype: float
+  desc: ''
+  important: false
+  instructions: This should not include out-of-pocket costs for medications to treat
+    other conditions (e.g., diabetes, cholesterol management).
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: '0.00'
+  name: During the PAST 12 MONTHS, how much have you spent out-of-pocket on these
+    pharmaceutical treatments?
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS6PharmDK
+  allow_multiple: true
+  calculation: ''
+  code: CBS6PharmDK
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Or don't know
+  pattern: ''
+  pv_group: CBSDK
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: CBS6PharmYou
+  allow_multiple: false
+  calculation: ''
+  code: CBS6PharmYou
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: During the PAST 12 MONTHS, have you received or taken any pharmaceutical treatments
+    (medications) for pain, headaches, insomnia, anxiety, depression, or other physical,
+    mental, or emotional health due to caring for the person with Angelman syndrome?
+  pattern: ''
+  pv_group: YNDNNAPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Physical
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Physical
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: It is a physical strain
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Relational
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Relational
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select which description best fits your caregiving situation
+    at the moment.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: I have relational problems with the care receiver (eg, he/she is very demanding
+    or behaves differently; we have communication problems)
+  pattern: ''
+  pv_group: CareSitPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6SelfCare
+  allow_multiple: false
+  calculation: ''
+  code: CBS6SelfCare
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Self-Care
+  pattern: ''
+  pv_group: SelfCarePVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Sleep
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Sleep
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Sleep is disturbed
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Support
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Support
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please select which description best fits your caregiving situation
+    at the moment.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: I have support with carrying out my care tasks, with I need it (eg, from family,
+    friends, neighbors, acquaintances)
+  pattern: ''
+  pv_group: CareSitPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Time
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Time
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Besides the care I provide to him/her, I have enough time for myself
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Usual
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Usual
+  datatype: range
+  desc: Usual Activities (e.g., work, study, housework, family or leisure activities)
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Usual Activities (eg, work, study, housework, family or leisure activities)
+  pattern: ''
+  pv_group: UsualPVG
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
+- abbreviated_name: CBS6Work
+  allow_multiple: false
+  calculation: ''
+  code: CBS6Work
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Please take the last week as reference. There are no right or wrong
+    answers; we are interested in your view.
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: There have been work adjustments
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
 - abbreviated_name: Centre
   allow_multiple: false
   calculation: ''
@@ -23705,6 +27489,26 @@ cdes:
   questionnaire_text: Are you still participating in the GeneTX KIK-AS trial?
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
+- abbreviated_name: GutMicroAUYNCDE
+  allow_multiple: false
+  calculation: ''
+  code: GutMicroAUYN
+  datatype: range
+  desc: Are you still participating in the Gut Microbiota Dysbiosis in Angelman Syndrome
+    trial?
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Are you still participating in the Gut Microbiota Dysbiosis in Angelman Syndrome
+    trial?
+  pattern: ''
+  pv_group: ANGYesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
 - abbreviated_name: Are you still attending the Intermountain Primary Childrens Medical
     Center
   allow_multiple: false
@@ -24171,6 +27975,44 @@ cdes:
   questionnaire_text: Are you still participating in the Natural History Study?
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
+- abbreviated_name: NeurenAUSite
+  allow_multiple: true
+  calculation: ''
+  code: NeurenAUSite
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Which site?
+  pattern: ''
+  pv_group: NeurenAUSitePVG
+  questionnaire_text: ''
+  widget_name: ''
+  widget_settings: '{}'
+- abbreviated_name: NeurenAUYN
+  allow_multiple: false
+  calculation: ''
+  code: NeurenAUYN
+  datatype: range
+  desc: ''
+  important: false
+  instructions: ''
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: Are you still participating in the Open-Label Study of the Safety, Tolerability,
+    and Pharmacokinetics of Oral NNZ-2591 in Angelman Syndrome (Neuren Pharmaceuticals,
+    Australia)
+  pattern: ''
+  pv_group: YesNo
+  questionnaire_text: ''
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":false}'
 - abbreviated_name: Please comment on any other details about their non convulsive
     status epilepticus eg significant eve
   allow_multiple: false
@@ -24559,6 +28401,28 @@ cdes:
   questionnaire_text: Are you still participating in this study/ trial?
   widget_name: RadioSelect
   widget_settings: '{"force_vertical":true}'
+- abbreviated_name: QOLHealth
+  allow_multiple: false
+  calculation: ''
+  code: QOLHealth
+  datatype: integer
+  desc: ''
+  important: false
+  instructions: © EuroQol Research Foundation. EQ-5D™ is a trade mark of the EuroQol
+    Research Foundation. UK (English) v2.1
+  is_required: false
+  max_length: null
+  max_value: '100.00'
+  min_value: '0.00'
+  name: 'This scale is numbered from 0 to 100: 100 means the best health you can imagine,
+    0 means the worst health you can imagine - Please tap on the scale to indicate
+    how your health is today'
+  pattern: ''
+  pv_group: null
+  questionnaire_text: ''
+  widget_name: SliderWidget
+  widget_settings: '{"min":"0","max":"100","left_label":"The worst health you can
+    imagine","right_label":"The best health you can imagine","step":"1"}'
 - abbreviated_name: Are you still attending the Rady Childrens Hospital San Diego
   allow_multiple: false
   calculation: ''
@@ -25554,6 +29418,13 @@ complete_fields:
   - ResideNewborn
   form_name: NewbornAndInfancyHistory
 - cdes:
+  - CBS0CareSup
+  - CBS0Cost
+  - CBS0Duration
+  - CBS0Over18
+  - CBS0USA
+  form_name: CareBurden
+- cdes:
   - ANGAgeDiagnosis2
   - ANGCurrentPatientAge
   - ANGDNAMethylAbnormalResult
@@ -25787,7 +29658,7 @@ consent_rules:
 consent_sections:
 - applicability_condition: ''
   code: AngNewConsentSection
-  information_link: 4JUL2022_Angelman_Syndrome_Information_Sheet.pdf
+  information_link: 10OCT2022_Angelman_Syndrome_Information_Sheet.pdf
   information_text: |-
     <p><b>Parent/Carer/ Guardian Information </br></b></p>
 
@@ -25950,7 +29821,18 @@ context_form_groups:
   naming_cde_to_use: null
   naming_scheme: D
   ordering: C
-  sort_order: 8
+  sort_order: 9
+- abbreviated_name: CaregiverBurdenCFG
+  code: CaregiverBurdenCFG
+  context_type: M
+  forms:
+  - CareBurden
+  is_default: false
+  name: Caregiver Burden Survey
+  naming_cde_to_use: null
+  naming_scheme: D
+  ordering: C
+  sort_order: 7
 - abbreviated_name: My Child Adults 6 Month Review
   code: Review
   context_type: M
@@ -26042,12 +29924,12 @@ context_form_groups:
   naming_cde_to_use: null
   naming_scheme: D
   ordering: C
-  sort_order: 7
+  sort_order: 8
 demographic_fields:
 - field: date_of_death
   groups:
-  - Parents
   - Working Group Curators
+  - Parents
   is_section: false
   registry: ang
   status: 2
@@ -26059,22 +29941,22 @@ demographic_fields:
   status: 2
 - field: ethnic_origin
   groups:
-  - Parents
   - Working Group Curators
+  - Parents
   is_section: false
   registry: ang
   status: 2
 - field: maiden_name
   groups:
-  - Parents
   - Working Group Curators
+  - Parents
   is_section: false
   registry: ang
   status: 2
 - field: next_of_kin_parent_place_of_birth
   groups:
-  - Parents
   - Working Group Curators
+  - Parents
   is_section: false
   registry: ang
   status: 2
@@ -26147,24 +30029,29 @@ email_notifications:
   - body: |-
       <p>Dear {{parent.first_name}} {{parent.last_name|title}},</p>
 
-      <p>Thank you for your registration of the patient {{patient.given_names}} {{patient.family_name|title}} in the Global Angelman Syndrome Registry! </p>
+      <p>Thank you for signing up your loved one {{patient.given_names}} {{patient.family_name|title}} to help generate a better understanding of individuals with Angelman syndrome globally. Your de-identified data, such as genotype, age and country of birth will be used to help understand the true prevalence of Angelman syndrome (globally and within each country) in the <b>Global Search & Rescue project</b> (<a href="https://www.angelmansearchandrescue.org/">https://www.angelmansearchandrescue.org/)</a> This, in turn, will help to ensure that community and education supports are available to all.  Your names, address and email address will not be shared outside this platform. </p>
 
-      <p>Please click the following activation link to verify your account, or copy and paste into a web browser and log into the registry. This link will expire in 2 days.</p>
+      <p>We would like to invite you to provide more further detail to advance research & understanding in the <b>Global Angelman Syndrome Registry</b> by completing a series of modules such as behaviour, development, medications, seizures, therapies, and sleep. These modules can be completed all at once, or one by one as you have time.</p>
+
+      <p>Please click the following activation link to verify your Angelman registry account, or copy and paste into a web browser and log into the registry. This link will expire in 2 days.</p>
 
 
       <p><a href="https://trrf.angelmanregistry.info{% url 'registration_activate' registration.activation_key %}">Activation link</a></p>
       <p>https://trrf.angelmanregistry.info{% url 'registration_activate' registration.activation_key %}</p>
 
-      <p>If needed, we will contact you through your e-mail address {{parent.user.email}}. If you have any queries, please contact the registry curator at the email address below. You can also find detailed information on <a href="https://angelmanregistry.info/">our website</a>.</p>
+      <p>If needed, the registry data curator will contact you through your e-mail address {{parent.user.email}}. If you have any queries, please contact the registry curator at the email address below. You can also find detailed information on <a href="https://angelmanregistry.info/">the Global Angelman Syndrome Registry website</a>.</p>
 
+      <p>We encourage you to visit <a href="https://www.angelmansearchandrescue.org/">https://www.angelmansearchandrescue.org/</a> and <a href="https://www.angelmanregistry.info/partners/">https://www.angelmanregistry.info/partners/</a> to find the patient organisation/s in your country and region and sign up to their mailing lists so that they can keep you up to date and advocate for you at a local level.</p>
 
       <p>Yours sincerely,<br>
-      The Global Angelman Syndrome Registry Team<br>
+      Megan Tones<br>
+      Data Curator<br>
+      Global Angelman Syndrome Registry<br>
       Email: curator@angelmanregistry.info
     description: Email notification containing verification link sent to patients
       upon registration in the registry
     language: en
-    subject: Welcome to the Global Angelman Syndrome Registry!
+    subject: Thank you for participating in Angelman research!
   group_recipient: Working Group Curators
   recipient: '{{parent.user.email}}'
 - description: other-clinician
@@ -26396,6 +30283,9 @@ forms:
     - OvidTrialYN
     - OvidSTARSsite
     - OvidSTARSTrialYN
+    - GutMicroAUYN
+    - NeurenAUYN
+    - NeurenAUSite
     extra: null
     questionnaire_display_name: ''
     questionnaire_help: ''
@@ -30544,6 +34434,454 @@ forms:
     questionnaire_display_name: ''
     questionnaire_help: ''
   tags: []
+- abbreviated_name: CBS
+  applicability_condition: ''
+  conditional_rendering_rules: |-
+    section CBS1BGPT CBS2BGCG1 CBS3EMP1 CBS4INF1 CBS5OOP1 CBS6OTH CBS6OTH1 CBS6OTH2 CBS6OTH3 CBS6OTH4 visible if CBS0CareSup== Yes and CBS0Duration == Yes and
+    CBS0Cost == Yes and CBS0Over18 == Yes and CBS0USA == Yes
+
+    CBS1LivePTOth hidden if CBS1LivePT != Other
+    CBS1ProfCareHrs hidden if CBS1ProfCare != Yes
+    CBS1CareResHrs hidden if CBS1CareRes != Yes
+    CBS1InsureTypeOth hidden if CBS1InsureType does not include Other
+
+    CBS2RelOth hidden if CBS2Rel != Other
+    CBS2ChildSec CBS2AdultSec CBS2SeniorSec hidden if CBS2OthSec != Yes
+
+    CBS3MissCare CBS3MissOth CBS3HourWork CBS3CareAffectWork CBS3Earn hidden if CBS3Work
+     != Yes
+    CBS3EarnAS visible if CBS3WorkAS == EmpMS or CBS3WorkAS == EmpSupport
+
+    CBS3FinSS CBS3FinSSNA hidden if CBS3Fin does not include FinSS
+    CBS3SSDI CBS3SSDINA hidden if CBS3Fin does not include FinSSDI
+    CBS3SSI CBS3SSINA hidden if CBS3Fin does not include FinSSI
+    CBS3OthWelfare CBS3OthWelfareNA hidden if CBS3Fin does not include FinOthWelfare
+    CBS3Other CBS3OtherNA hidden if CBS3Fin does not include FinOther
+
+    CBS4Weeks hidden if CBS4LongCare != LessMonth
+    CBS4Months hidden if CBS4LongCare != LessYear
+    CBS4Year hidden if CBS4LongCare != MoreYear
+    CBS4FewerHrPaid CBS4YearGaveUpPaid hidden if CBS4GiveUpPaid != Yes
+    CBS4FewerHrUnpaid CBS4YearGaveUpUnpaid hidden if CBS4GiveUpUnpaid != Yes
+    CBS4FewerHrLeisure CBS4YearGaveUpLeisure hidden if CBS4GiveUpLeisure != Yes
+
+    CBS4TimePaid hidden if CBS4SpendTime does not include MorePaid
+    CBS4TimeUnpaid hidden if CBS4SpendTime does not include MoreUnpaid
+    CBS4TimeLeisure hidden if CBS4SpendTime does not include MoreLeisure
+    CBS4NumberOther CBS4HoursOther visible if CBS4OtherCaregiver == Yes
+
+    CBS4CompSource CBS4GovtHrs CBS4GovtPerHr CBS4InsureHrs CBS4InsurePerHr hidden if CBS4Compensation !=Yes
+    CBS4CompSourceOth CBS4OtherHrs CBS4OtherPerHr visible if CBS4CompSource includes Other and CBS4Compensation ==Yes
+    CBS4GovtHrs CBS4GovtPerHr visible if CBS4CompSource includes Government and CBS4Compensation ==Yes
+    CBS4InsureHrs CBS4InsurePerHr visible if CBS4CompSource includes Insurance and CBS4Compensation ==Yes
+
+
+    CBS5ModWhat CBS5ModCostHouse CBS5ModCostOthHouse CBS5ModCostOther CBS5ModCostOthOther visible if CBS5HouseCost includes HomeMod
+    CBS5ModCostOthHouse hidden if CBS5ModCostHouse != Other or CBS5HouseCost does not include HomeMod
+    CBS5ModCostOthOther hidden if CBS5ModCostOther != Other or CBS5HouseCost does not include HomeMod
+    CBS5ModWhatOth hidden if CBS5ModWhat does not include OtherHome or CBS5HouseCost does not include HomeMod
+
+    CBS5VehicleWhat CBS5VehicleCostHouse CBS5VehicleCostOthHouse CBS5VehicleCostOther CBS5VehicleCostOthOther visible if CBS5HouseCost includes VehicleMod
+    CBS5VehicleCostOthHouse hidden if CBS5VehicleCostHouse != Other or CBS5HouseCost does not include VehicleMod
+    CBS5VehicleCostOthOther hidden if CBS5VehicleCostOther != Other or CBS5HouseCost does not include VehicleMod
+    CBS5VehicleWhatOth hidden if CBS5VehicleWhat does not include Other or CBS5HouseCost does not include VehicleMod
+
+    CBS5MedicalWhat CBS5MedicalCostHouse CBS5MedicalCostOthHouse CBS5MedicalCostOther CBS5MedicalCostOthOther visible if CBS5HouseCost includes MedEquip
+    CBS5MedicalCostOthHouse hidden if CBS5MedicalCostHouse != Other or CBS5HouseCost does not include MedEquip
+    CBS5MedicalCostOthOther hidden if CBS5MedicalCostOther != Other or CBS5HouseCost does not include MedEquip
+    CBS5MedicalWhatOth hidden if CBS5MedicalWhat does not include Other or CBS5HouseCost does not include MedEquip
+
+    CBS5LongCareWhat CBS5LongCareCostHouse CBS5LongCareCostOthHouse CBS5LongCareCostOther
+    CBS5LongCareCostOthOther visible if CBS5HouseCost includes LongTerm
+    CBS5LongCareCostOthHouse hidden if CBS5LongCareCostHouse != Other or CBS5HouseCost does not include LongTerm
+    CBS5LongCareCostOthOther hidden if CBS5LongCareCostOther != Other or CBS5HouseCost does not include LongTerm
+    CBS5LongCareWhatOth hidden if CBS5LongCareWhat does not include Other or CBS5HouseCost does not include LongTerm
+
+    CBS5ProfCareWhat CBS5ProfCareCostHouse CBS5ProfCareCostOthHouse CBS5ProfCareCostOther
+    CBS5ProfCareCostOthOther visible if CBS5HouseCost includes ProfCare
+    CBS5ProfCareCostOthHouse hidden if CBS5ProfCareCostHouse != Other or CBS5HouseCost does not include ProfCare
+    CBS5ProfCareCostOthOther hidden if CBS5ProfCareCostOther != Other or CBS5HouseCost does not include ProfCare
+    CBS5ProfCareWhatOth hidden if CBS5ProfCareWhat does not include Other or CBS5HouseCost does not include ProfCare
+
+    CBS5SupportTherapyWhat CBS5SupportTherapyCostHouse CBS5SupportTherapyCostOthHouse
+    CBS5SupportTherapyCostOther CBS5SupportTherapyCostOthOther visible if CBS5HouseCost includes SupportTherapy
+    CBS5SupportTherapyCostOthHouse hidden if CBS5SupportTherapyCostHouse != Other or CBS5HouseCost does not include SupportTherapy
+    CBS5SupportTherapyCostOthOther hidden if CBS5SupportTherapyCostOther != Other or CBS5HouseCost does not include SupportTherapy
+    CBS5SupportTherapyWhatOth hidden if CBS5SupportTherapyWhat does not include Other or CBS5HouseCost does not include SupportTherapy
+
+    CBS5SchoolEduWhat CBS5SchoolEduCostHouse CBS5SchoolEduCostOthHouse CBS5SchoolEduCostOther CBS5SchoolEduCostOthOther visible if CBS5HouseCost includes SchoolEdu
+    CBS5SchoolEduCostOthHouse hidden if CBS5SchoolEduCostHouse != Other or CBS5HouseCost does not include SchoolEdu
+    CBS5SchoolEduCostOthOther hidden if CBS5SchoolEduCostOther != Other or CBS5HouseCost does not include SchoolEdu
+    CBS5SchoolEduWhatOth hidden if CBS5SchoolEduWhat does not include Other or CBS5HouseCost does not include SchoolEdu
+
+    CBS5AdditionalWhat CBS5AdditionalCostHouse CBS5AdditionalCostOthHouse
+    CBS5AdditionalCostOther CBS5AdditionalCostOthOther visible if CBS5HouseCost includes Other
+    CBS5AdditionalCostOthHouse hidden if CBS5AdditionalCostHouse != Other or CBS5HouseCost does not include Other
+    CBS5AdditionalCostOthOther hidden if CBS5AdditionalCostOther != Other or CBS5HouseCost does not include Other
+    CBS5AdditionalWhatOth hidden if CBS5AdditionalWhat does not include Other or CBS5HouseCost does not include Other
+
+    CBS5AntHomeMod CBS5AntHomeModDK visible if CBS5Unafford includes HomeMod
+    CBS5AntVehicleMod CBS5AntVehicleModDK visible if CBS5Unafford includes Vehicle
+    CBS5AntMedEquipMod CBS5AntMedEquipModDK visible if CBS5Unafford includes Medical
+    CBS5AntLongTermCare CBS5AntLongTermCareDK visible if CBS5Unafford includes LongTermCare
+    CBS5AntProfCare CBS5AntProfCareDK visible if CBS5Unafford includes ProfessionalCare
+    CBS5AntSupportTherapy CBS5AntSupportTherapyDK visible if CBS5Unafford includes SupportiveTherapy
+    CBS5AntSchoolEdu CBS5AntSchoolEduDK visible if CBS5Unafford includes SchoolEduEx
+    CBS5AntOther CBS5AntOtherDK visible if CBS5Unafford includes Other
+
+    CBS6PharmCost CBS6PharmDK hidden if CBS6PharmYou != Yes
+    CBS6MedicalCost CBS6MedicalDK hidden if CBS6MedicalYou != Yes
+  display_name: Caregiver Burden Survey
+  header: |-
+    <b><h4>Survey to Quantify the Societal Costs of Angelman Syndrome from a Caregiver Perspective</h4></b><p>
+    <center>Conducted by the Foundation for Angelman Syndrome Therapeutics (FAST) and the Angelman Syndrome Foundation (ASF)<p>
+    <b>Module Instructions</center></b><p>
+    This module is estimated to require approximately 30 to 45 minutes to complete and should be completed by:<p><ul>
+    <li>Individuals who are “primary” or “secondary” caregivers for an individual with AS</li>
+    <li>Individuals who are ≥ 18 years old</li>
+    <li>Individuals residing in the United States </li>
+    <li>Individuals familiar with the costs and care for the person with AS over the last 12 months</li></ul><p>
+    To make sure we are not capturing multiple responses for the same household, <b>we ask that only one representative from each household provide responses to this module.</b><p>
+    <i>Throughout the survey, we will refer to the person you care for as the “person with AS.” For the purposes of this study, a “primary” caregiver refers to the person who has the greatest responsibility for the daily care, health, housing, or safety of the person with AS. A “secondary” caregiver is defined as anyone who has caregiving responsibility for the person with AS but is not the “primary” caregiver. </i><br>
+    <br>
+    The module includes the following sections that you will be asked to complete:
+    <table>
+      <tr>
+        <th>Survey Section</th>
+        <th># Questions</th>
+        <th>Est. Minutes</th>
+      </tr>
+      <tr>
+        <td>I. Background Information for Person with Angelman Syndrome</td>
+        <td> 7</td>
+        <td> ~3 minutes</td>
+      </tr>
+      <tr>
+        <td>II. Background Information for Caregiver</td>
+        <td> 10</td>
+        <td> ~4 minutes</td>
+      </tr>
+     <tr>
+        <td>III. Impact of Caregiving on Employment / Work Productivity</td>
+        <td> 12</td>
+        <td> ~5 minutes</td>
+      </tr>
+     <tr>
+        <td>IV. Informal Caregiving for Person with Angelman Syndrome</td>
+        <td> 13</td>
+        <td> ~5 minutes</td>
+      </tr>
+     <tr>
+        <td>V. Out-of-Pocket Non-Medical Costs</td>
+        <td> 19</td>
+        <td> ~8 minutes</td>
+      </tr>
+     <tr>
+        <td>VI. Other Sources of Caregiver Burden</td>
+        <td> 8</td>
+        <td> ~3 minutes</td>
+      </tr>
+    </table><br>
+    We ask that you do your best to provide answers to all questions in the module. To assist with module completion and estimating costs for you and your family, it may be helpful to review last year’s tax return(s), credit card and/or flexible spending account statements, medical expense records, Individualized Education Program (IEP) forms, and Amazon purchase history. This is not a requirement, and we ask that you please provide your best estimates in your responses.<br>
+    <a href="https://www.angelmanregistry.info/wp-content/uploads/2022/09/28134429/CBS_Additional.pdf">Additional instructions for Sections III, IV and VI</a>
+    <p><b>Please click the green 'Save' button before progressing to the next Module. </p></b>
+  is_questionnaire: false
+  name: CareBurden
+  position: 0
+  questionnaire_display_name: ''
+  questionnaire_questions: ''
+  sections:
+  - abbreviated_name: Section0
+    allow_multiple: false
+    code: CBS0Screen
+    display_name: SURVEY SCREENER QUESTIONS
+    elements:
+    - CBS0CareSup
+    - CBS0Duration
+    - CBS0Cost
+    - CBS0Over18
+    - CBS0USA
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: CBS1BGPTBG
+    allow_multiple: false
+    code: CBS1BGPT
+    display_name: SECTION I – BACKGROUND INFORMATION FOR PERSON WITH AS
+    elements:
+    - CBS1Race
+    - CBS1LiveCG
+    - CBS1LivePT
+    - CBS1LivePTOth
+    - CBS1ProfCare
+    - CBS1ProfCareHrs
+    - CBS1CareRes
+    - CBS1CareResHrs
+    - CBS1Insure
+    - CBS1InsureType
+    - CBS1InsureTypeOth
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: Section2a
+    allow_multiple: false
+    code: CBS2BGCG1
+    display_name: SECTION II – BACKGROUND INFORMATION FOR CAREGIVER
+    elements:
+    - CBS2Rel
+    - CBS2RelOth
+    - CBS2PriSec
+    - CBS2Child
+    - CBS2Adult
+    - CBS2Senior
+    - CBS2OthSec
+    - CBS2ChildSec
+    - CBS2AdultSec
+    - CBS2SeniorSec
+    - CBS2Age
+    - CBS2Sex
+    - CBS2Race
+    - CBS2Edu
+    - CBS2Marital
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: Section3
+    allow_multiple: false
+    code: CBS3EMP1
+    display_name: SECTION III – IMPACT OF CAREGIVING ON EMPLOYMENT / PRODUCTIVITY
+    elements:
+    - CBS3Work
+    - CBS3MissCare
+    - CBS3MissOth
+    - CBS3HourWork
+    - CBS3CareAffectWork
+    - CBS3CareAffectOther
+    - CBS3Earn
+    - CBS3WorkAS
+    - CBS3EarnAS
+    - CBS3Fin
+    - CBS3FinSS
+    - CBS3FinSSNA
+    - CBS3SSDI
+    - CBS3SSDINA
+    - CBS3SSI
+    - CBS3SSINA
+    - CBS3OthWelfare
+    - CBS3OthWelfareNA
+    - CBS3Other
+    - CBS3OtherNA
+    - CBS3YourEmpSit
+    - CBS3OtherEmpSit
+    - CBS3LossYou
+    - CBS3LossYouDK
+    - CBS3LossOther
+    - CBS3LossOtherDK
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: Section4
+    allow_multiple: false
+    code: CBS4INF1
+    display_name: SECTION IV – INFORMAL CAREGIVING FOR PERSON WITH ANGELMAN SYNDROME
+    elements:
+    - CBS4LongCare
+    - CBS4Weeks
+    - CBS4Months
+    - CBS4Year
+    - CBS4DaysWk
+    - CBS4Alone
+    - CBS4GiveUpPaid
+    - CBS4FewerHrPaid
+    - CBS4YearGaveUpPaid
+    - CBS4GiveUpUnpaid
+    - CBS4FewerHrUnpaid
+    - CBS4YearGaveUpUnpaid
+    - CBS4GiveUpLeisure
+    - CBS4FewerHrLeisure
+    - CBS4YearGaveUpLeisure
+    - CBS4SpendTime
+    - CBS4TimePaid
+    - CBS4TimeUnpaid
+    - CBS4TimeLeisure
+    - CBS4HouseholdTask
+    - CBS4PersonalCare
+    - CBS4PracticalSupport
+    - CBS4OtherCaregiver
+    - CBS4NumberOther
+    - CBS4HoursOther
+    - CBS4Compensation
+    - CBS4CompSource
+    - CBS4CompSourceOth
+    - CBS4GovtHrs
+    - CBS4GovtPerHr
+    - CBS4InsureHrs
+    - CBS4InsurePerHr
+    - CBS4OtherHrs
+    - CBS4OtherPerHr
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: Section5
+    allow_multiple: false
+    code: CBS5OOP1
+    display_name: SECTION V – OUT-OF-POCKET NON-MEDICAL COSTS
+    elements:
+    - CBS5HouseCost
+    - CBS5ModWhat
+    - CBS5ModWhatOth
+    - CBS5ModCostHouse
+    - CBS5ModCostOthHouse
+    - CBS5ModCostOther
+    - CBS5ModCostOthOther
+    - CBS5VehicleWhat
+    - CBS5VehicleWhatOth
+    - CBS5VehicleCostHouse
+    - CBS5VehicleCostOthHouse
+    - CBS5VehicleCostOther
+    - CBS5VehicleCostOthOther
+    - CBS5MedicalWhat
+    - CBS5MedicalWhatOth
+    - CBS5MedicalCostHouse
+    - CBS5MedicalCostOthHouse
+    - CBS5MedicalCostOther
+    - CBS5MedicalCostOthOther
+    - CBS5LongCareWhat
+    - CBS5LongCareWhatOth
+    - CBS5LongCareCostHouse
+    - CBS5LongCareCostOthHouse
+    - CBS5LongCareCostOther
+    - CBS5LongCareCostOthOther
+    - CBS5ProfCareWhat
+    - CBS5ProfCareWhatOth
+    - CBS5ProfCareCostHouse
+    - CBS5ProfCareCostOthHouse
+    - CBS5ProfCareCostOther
+    - CBS5ProfCareCostOthOther
+    - CBS5SupportTherapyWhat
+    - CBS5SupportTherapyWhatOth
+    - CBS5SupportTherapyCostHouse
+    - CBS5SupportTherapyCostOthHouse
+    - CBS5SupportTherapyCostOther
+    - CBS5SupportTherapyCostOthOther
+    - CBS5SchoolEduWhat
+    - CBS5SchoolEduWhatOth
+    - CBS5SchoolEduCostHouse
+    - CBS5SchoolEduCostOthHouse
+    - CBS5SchoolEduCostOther
+    - CBS5SchoolEduCostOthOther
+    - CBS5AdditionalWhat
+    - CBS5AdditionalWhatOth
+    - CBS5AdditionalCostHouse
+    - CBS5AdditionalCostOthHouse
+    - CBS5AdditionalCostOther
+    - CBS5AdditionalCostOthOther
+    - CBS5CostPaid
+    - CBS5CostPaidDK
+    - CBS5CostOOP
+    - CBS5CostOOPDK
+    - CBS5CostOther
+    - CBS5CostOtherDK
+    - CBS5Unafford
+    - CBS5AntHomeMod
+    - CBS5AntHomeModDK
+    - CBS5AntVehicleMod
+    - CBS5AntVehicleModDK
+    - CBS5AntMedEquipMod
+    - CBS5AntMedEquipModDK
+    - CBS5AntLongTermCare
+    - CBS5AntLongTermCareDK
+    - CBS5AntProfCare
+    - CBS5AntProfCareDK
+    - CBS5AntSupportTherapy
+    - CBS5AntSupportTherapyDK
+    - CBS5AntSchoolEdu
+    - CBS5AntSchoolEduDK
+    - CBS5AntOther
+    - CBS5AntOtherDK
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: Section6a
+    allow_multiple: false
+    code: CBS6OTH
+    display_name: SECTION VI – OTHER SOURCES OF CAREGIVER BURDEN
+    elements:
+    - CBS6Conditions
+    - CBS6PharmYou
+    - CBS6PharmCost
+    - CBS6PharmDK
+    - CBS6MedicalYou
+    - CBS6MedicalCost
+    - CBS6MedicalDK
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: Section6a
+    allow_multiple: false
+    code: CBS6OTH1
+    display_name: Below we present a list of statements from other people providing
+      informal care. We are interested in how you feel about these statements.
+    elements:
+    - CBS6Sleep
+    - CBS6Inconvenient
+    - CBS6Appreciated
+    - CBS6Physical
+    - CBS6Confine
+    - CBS6Time
+    - CBS6Family
+    - CBS6Personal
+    - CBS6OtherDemand
+    - CBS6Emotional
+    - CBS6Handle
+    - CBS6Behaviour
+    - CBS6Happy
+    - CBS6Work
+    - CBS6Overwhelm
+    - CBS6Financial
+    - CBS6Important
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: Section6b
+    allow_multiple: false
+    code: CBS6OTH2
+    display_name: We would like to form an impression of your caregiving situation.
+    elements:
+    - CBS6Fulfillment
+    - CBS6Relational
+    - CBS6Mental
+    - CBS6Daily
+    - CBS6FinanceProblem
+    - CBS6Support
+    - CBS6Health
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: Section6c
+    allow_multiple: false
+    code: CBS6OTH3
+    display_name: Under each heading, please tick the ONE box that best describes
+      your health TODAY
+    elements:
+    - CBS6Mobility
+    - CBS6SelfCare
+    - CBS6Usual
+    - CBS6Pain
+    - CBS6Anxiety
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  - abbreviated_name: CBS6OTH4
+    allow_multiple: false
+    code: CBS6OTH4
+    display_name: We would like to know how good or bad your health is today
+    elements:
+    - QOLHealth
+    extra: null
+    questionnaire_display_name: ''
+    questionnaire_help: ''
+  tags: []
 - abbreviated_name: ChangeInSeizureActivity
   applicability_condition: ''
   conditional_rendering_rules: |-
@@ -30687,6 +35025,8 @@ forms:
     GeneTXYN visible if ANGOtherStudyWhat2 includes "16GeneTX"
     FREESIASYN visible if ANGOtherStudyWhat2 includes "17FREESIAS"
     TangeloYN visible if ANGOtherStudyWhat2 includes "18Tangelo"
+    GutMicroAUYN visible if ANGOtherStudyWhat2 includes "GutMicroAU"
+    NeurenAUYN NeurenAUSite visible if ANGOtherStudyWhat2 includes "NeurenAU"
 
     ClinicSiteUSA visible if ClinicSite includes "USA"
     ClinicSiteNorthAmerica visible if ClinicSite includes "OtherNorth"
@@ -30793,6 +35133,9 @@ forms:
     - OvidTrialYN
     - OvidSTARSsite
     - OvidSTARSTrialYN
+    - GutMicroAUYN
+    - NeurenAUYN
+    - NeurenAUSite
     extra: null
     questionnaire_display_name: ''
     questionnaire_help: ''
@@ -32791,7 +37134,9 @@ forms:
   applicability_condition: ''
   conditional_rendering_rules: |-
     ANGRegularSleepingPatternOTH visible if ANGRegularSleepingPattern == "5 - No, never"
+
     ANGSLEEPNIGHTUNKNOWN disabled if ANGBEHDEVSLEEPNIGHTYEARS2 is set
+    ANGBEHDEVSLEEPNIGHTYEARS2 disabled if ANGSLEEPNIGHTUNKNOWN is set
   display_name: Sleep (Every 1-2 years)
   header: |-
     <p><b>Instructions:</b></p>
@@ -32806,7 +37151,7 @@ forms:
 
     <p>To add a new Sleep Diary entry, please click the 'Add' button. If you wish to delete a Sleep Diary entry, please check the 'mark for deletion' box and click the green 'Save' button.</p>
 
-    <p>If you wish, you may print a paper copy of the Sleep Diary<a href="https://angelmanregistry.info/files/Sleep_Diary-2016-09-23.pdf" target="_blank"><b>from this link</b></a></p>.
+    <p>If you wish, you may print a paper copy of the Sleep Diary<a href="https://www.angelmanregistry.info/wp-content/uploads/2022/08/26075919/10.-Sleep-Diary-1-1.pdf" target="_blank"><b>from this link</b></a></p>.
 
     <p><b> Please click the green 'Save' button before progressing to the next Module. </b></p>
   is_questionnaire: false
@@ -32992,6 +37337,8 @@ forms:
     GeneTXYN visible if ANGOtherStudyWhatNEW includes "16GeneTX"
     FREESIASYN visible if ANGOtherStudyWhatNEW includes "17FREESIAS"
     TangeloYN visible if ANGOtherStudyWhatNEW includes "18Tangelo"
+    GutMicroAUYN visible if ANGOtherStudyWhatNEW includes "GutMicroAU"
+    NeurenAUYN NeurenAUSite visible if ANGOtherStudyWhatNEW includes "NeurenAU"
   display_name: Trial/ Study Participation
   header: |-
     <p>If your child/ adult has participated in a new study or trial, please report it here.</p>
@@ -33039,6 +37386,9 @@ forms:
     - OvidTrialYN
     - OvidSTARSsite
     - OvidSTARSTrialYN
+    - GutMicroAUYN
+    - NeurenAUYN
+    - NeurenAUSite
     - ANGComments
     extra: null
     questionnaire_display_name: ''
@@ -33077,6 +37427,8 @@ forms_allowed_groups:
   - AdminOnly
   BehaviourandDevelopment:
   - Parents
+  CareBurden:
+  - Burden Pilot Parents
   ChangeInSeizureActivity:
   - Parents
   CheckUp6Months:
@@ -33135,6 +37487,7 @@ forms_readonly_groups:
   AngelmanRegistryThanksYou: []
   AngelmanRegistryTheSleepDisturbanceScaleForChildren: []
   BehaviourandDevelopment: []
+  CareBurden: []
   ChangeInSeizureActivity: []
   CheckUp6Months: []
   ClinicalTrialsAndStudies: []
@@ -33191,8 +37544,6 @@ group_permissions:
 - name: Genetic Staff
   permissions: []
 - name: Clinical Staff
-  permissions: []
-- name: Parents
   permissions: []
 - name: Working Group Curators
   permissions:
@@ -33953,11 +38304,19 @@ group_permissions:
     - useraudit
     - loginlog
     name: Can delete login log
+- name: Parents
+  permissions:
+  - codename: can_see_data_modules
+    content_type:
+    - patients
+    - patient
+    name: Can see Data Modules column
+- name: Burden Pilot Parents
+  permissions: []
 metadata_json: '{"features": ["clinicians_have_patients", "registration", "clinician_form",
   "clinicians_have_patients", "consent_checks", "verification", "questionnaires" ,"contexts"],
-  "diagnosis_code": "ANGDNAMethylAbnormalResult", "verification_cdes":
-  [{"form": "AngelmanRegistryHistoryOfDiagnosisAndResults", "section": "ANGPatientResults",
-  "cde": "ANGGeneticTest"}, {"form": "AngelmanRegistryHistoryOfDiagnosisAndResults",
+  "diagnosis_code": "ANGDNAMethylAbnormalResult", "verification_cdes": [{"form": "AngelmanRegistryHistoryOfDiagnosisAndResults",
+  "section": "ANGPatientResults", "cde": "ANGGeneticTest"}, {"form": "AngelmanRegistryHistoryOfDiagnosisAndResults",
   "section": "ANGPatientResults", "cde": "ANGGeneticTestType"}, {"form": "AngelmanRegistryHistoryOfDiagnosisAndResults",
   "section": "ANGPatientResults", "cde": "ANGDNAMethylAbnormalResult"}, {"form": "AngelmanRegistryIllnessesOrMedicalProblems",
   "section": "ANGGastroesophagealReflux", "cde": "ANGGastroesophagealReflux"}, {"form":
@@ -38582,6 +42941,23 @@ pvgs:
     value: Ovid Trial Vanderbilt Children's Hospital, Nashville, TN (Kevin Haas)
 - code: ANGTrialList2
   values:
+  - code: NeurenAU
+    desc: An Open-Label Study of the Safety, Tolerability, and Pharmacokinetics of
+      Oral NNZ-2591 in Angelman Syndrome (Neuren Pharmaceuticals, Australia)
+    position: 20
+    questionnaire_value: null
+    value: An Open-Label Study of the Safety, Tolerability, and Pharmacokinetics of
+      Oral NNZ-2591 in Angelman Syndrome (Neuren Pharmaceuticals, Australia)
+  - code: 16GeneTX
+    desc: Ultragenyx  KIK-AS trial
+    position: 16
+    questionnaire_value: Ultragenyx  KIK-AS trial
+    value: Ultragenyx  KIK-AS trial
+  - code: GutMicroAU
+    desc: Gut Microbiota Dysbiosis in Angelman Syndrome (Australia)
+    position: 19
+    questionnaire_value: null
+    value: Gut Microbiota Dysbiosis in Angelman Syndrome (Australia)
   - code: 5Lev
     desc: Levodopa Trial
     position: 5
@@ -38612,7 +42988,7 @@ pvgs:
     value: Folic Acid/Betaine Trial
   - code: Other
     desc: Other
-    position: 19
+    position: 21
     questionnaire_value: Other
     value: Other
   - code: 4Met
@@ -38684,11 +43060,6 @@ pvgs:
     position: 15
     questionnaire_value: Disruptive Nutrition FANS/ketone trial
     value: Disruptive Nutrition FANS/ketone trial
-  - code: 16GeneTX
-    desc: GeneTX  KIK-AS trial
-    position: 16
-    questionnaire_value: GeneTX  KIK-AS trial
-    value: GeneTX  KIK-AS trial
   - code: 17FREESIAS
     desc: Roche & Genetech   FREESIAS Endpoint Study
     position: 17
@@ -38701,6 +43072,23 @@ pvgs:
     value: Roche Tangelo Clinical trial
 - code: ANGTrialList3
   values:
+  - code: GutMicroAU
+    desc: Gut Microbiota Dysbiosis in Angelman Syndrome
+    position: 19
+    questionnaire_value: null
+    value: Gut Microbiota Dysbiosis in Angelman Syndrome
+  - code: 16GeneTX
+    desc: Ultragenyx KIK-AS trial
+    position: 16
+    questionnaire_value: Ultragenyx KIK-AS trial
+    value: Ultragenyx KIK-AS trial
+  - code: NeurenAU
+    desc: An Open-Label Study of the Safety, Tolerability, and Pharmacokinetics of
+      Oral NNZ-2591 in Angelman Syndrome (Neuren Pharmaceuticals, Australia)
+    position: 20
+    questionnaire_value: null
+    value: An Open-Label Study of the Safety, Tolerability, and Pharmacokinetics of
+      Oral NNZ-2591 in Angelman Syndrome (Neuren Pharmaceuticals, Australia)
   - code: 2NatHist
     desc: Natural History Study 2018 onward
     position: 1
@@ -38788,11 +43176,6 @@ pvgs:
     position: 15
     questionnaire_value: Disruptive Nutrition FANS/ ketone trial
     value: Disruptive Nutrition FANS/ ketone trial
-  - code: 16GeneTX
-    desc: GeneTX KIK-AS trial
-    position: 16
-    questionnaire_value: GeneTX KIK-AS trial
-    value: GeneTX KIK-AS trial
   - code: 17FREESIAS
     desc: Rosche & Genetech - FREESIAS Endpoint Study
     position: 17
@@ -38805,7 +43188,7 @@ pvgs:
     value: Rosche Tangelo Clinical trial
   - code: Other
     desc: Other
-    position: 19
+    position: 21
     questionnaire_value: Other
     value: Other
   - code: 3FolBet
@@ -38927,6 +43310,87 @@ pvgs:
     position: 2
     questionnaire_value: 'No'
     value: 'No'
+- code: AccommodationsPVG
+  values:
+  - code: HomeMod
+    desc: Home modifications / repairs
+    position: 1
+    questionnaire_value: null
+    value: Home modifications / repairs
+  - code: VehicleMod
+    desc: Vehicle purchases / modifications
+    position: 2
+    questionnaire_value: null
+    value: Vehicle purchases / modifications
+  - code: MedEquip
+    desc: Medical equipment purchases
+    position: 3
+    questionnaire_value: null
+    value: Medical equipment purchases
+  - code: LongTerm
+    desc: Long-term care
+    position: 4
+    questionnaire_value: null
+    value: Long-term care
+  - code: ProfCare
+    desc: Professional caregiving
+    position: 5
+    questionnaire_value: null
+    value: Professional caregiving
+  - code: SupportTherapy
+    desc: Supportive therapy (e.g., horse therapy, speech therapy)
+    position: 6
+    questionnaire_value: null
+    value: Supportive therapy (e.g., horse therapy, speech therapy)
+  - code: SchoolEdu
+    desc: School / educational expense
+    position: 7
+    questionnaire_value: null
+    value: School / educational expense
+  - code: Other
+    desc: Additional out-of-pocket expenses
+    position: 8
+    questionnaire_value: null
+    value: Additional out-of-pocket expenses
+- code: AdditionalWhatPVG
+  values:
+  - code: Incontinence
+    desc: Incontinence products (e.g., briefs, pullups, diapers)
+    position: 6
+    questionnaire_value: null
+    value: Incontinence products (e.g., briefs, pullups, diapers)
+  - code: SpecialFood
+    desc: Special food / meals (e.g., formula)
+    position: 1
+    questionnaire_value: null
+    value: Special food / meals (e.g., formula)
+  - code: NonPharm
+    desc: Non-pharmaceutical supplements / vitamins (e.g., melatonin, multivitamin)
+    position: 2
+    questionnaire_value: null
+    value: Non-pharmaceutical supplements / vitamins (e.g., melatonin, multivitamin)
+  - code: Clothing
+    desc: Special clothing (e.g., body temperature regulation, G-tube accessible clothing,
+      bibs)
+    position: 3
+    questionnaire_value: null
+    value: Special clothing (e.g., body temperature regulation, G-tube accessible
+      clothing, bibs)
+  - code: Legal
+    desc: Legal fees related to caregiving
+    position: 4
+    questionnaire_value: null
+    value: Legal fees related to caregiving
+  - code: Toys
+    desc: Toys to keep individual relaxed / calm (not including communication devices)
+    position: 5
+    questionnaire_value: null
+    value: Toys to keep individual relaxed / calm (not including communication devices)
+  - code: Other
+    desc: Other expenses to accommodate person with AS
+    position: 7
+    questionnaire_value: null
+    value: Other expenses to accommodate person with AS
 - code: AddressType
   values:
   - code: AddressTypeHome
@@ -38939,6 +43403,23 @@ pvgs:
     position: 2
     questionnaire_value: Postal
     value: Postal
+- code: AlonePVG
+  values:
+  - code: 'No'
+    desc: No, she/he needs continuous surveillance
+    position: 1
+    questionnaire_value: null
+    value: No, she/he needs continuous surveillance
+  - code: Yes1Hr
+    desc: Yes, but not for more than one hour
+    position: 2
+    questionnaire_value: null
+    value: Yes, but not for more than one hour
+  - code: Yes1hrPlus
+    desc: Yes, she/he can easily be left alone for several hours (or more)
+    position: 3
+    questionnaire_value: null
+    value: Yes, she/he can easily be left alone for several hours (or more)
 - code: AnxiousBeh
   values:
   - code: NewPpl
@@ -39090,6 +43571,62 @@ pvgs:
     position: 9
     questionnaire_value: Other
     value: Other
+- code: CBS5UnaffordPVG
+  values:
+  - code: HomeMod
+    desc: Home modifications / repairs
+    position: 1
+    questionnaire_value: null
+    value: Home modifications / repairs
+  - code: Vehicle
+    desc: Vehicle purchases / modifications
+    position: 2
+    questionnaire_value: null
+    value: Vehicle purchases / modifications
+  - code: Medical
+    desc: Medical equipment purchases
+    position: 3
+    questionnaire_value: null
+    value: Medical equipment purchases
+  - code: LongTermCare
+    desc: Long-term care
+    position: 4
+    questionnaire_value: null
+    value: Long-term care
+  - code: ProfessionalCare
+    desc: Professional caregiving
+    position: 5
+    questionnaire_value: null
+    value: Professional caregiving
+  - code: SupportiveTherapy
+    desc: Supportive therapy (eg, horse therapy, speech therapy)
+    position: 6
+    questionnaire_value: null
+    value: Supportive therapy (eg, horse therapy, speech therapy)
+  - code: SchoolEduEx
+    desc: School / educational expense
+    position: 7
+    questionnaire_value: null
+    value: School / educational expense
+  - code: Other
+    desc: Other expense
+    position: 8
+    questionnaire_value: null
+    value: Other expense
+- code: CBSDK
+  values:
+  - code: DK
+    desc: Don't Know
+    position: 1
+    questionnaire_value: null
+    value: Don't Know
+- code: CBSNA
+  values:
+  - code: NA
+    desc: Not known/ Prefer not to answer
+    position: 1
+    questionnaire_value: null
+    value: Not known/ Prefer not to answer
 - code: CMTool
   values:
   - code: 3Heard
@@ -39115,6 +43652,35 @@ pvgs:
       teacher or speech therapist)
     value: Yes, and it has been completed by a third party (eg school teacher or speech
       therapist)
+- code: CareSitPVG
+  values:
+  - code: 'No'
+    desc: 'No'
+    position: 1
+    questionnaire_value: null
+    value: 'No'
+  - code: Some
+    desc: Some
+    position: 2
+    questionnaire_value: null
+    value: Some
+  - code: Lot
+    desc: A lot of
+    position: 3
+    questionnaire_value: null
+    value: A lot of
+- code: CaregPVG
+  values:
+  - code: Primary
+    desc: Primary caregiver
+    position: 1
+    questionnaire_value: null
+    value: Primary caregiver
+  - code: Secondary
+    desc: Secondary caregiver
+    position: 2
+    questionnaire_value: null
+    value: Secondary caregiver
 - code: ClinicLocation
   values:
   - code: USA
@@ -39400,6 +43966,90 @@ pvgs:
     position: 8
     questionnaire_value: High tech AAC (e.g. Dynamic display, iPad, Novachat Tobii)
     value: High tech AAC (e.g. Dynamic display, iPad, Novachat Tobii)
+- code: CompSourcePVG
+  values:
+  - code: Insurance
+    desc: Insurance company
+    position: 2
+    questionnaire_value: null
+    value: Insurance company
+  - code: Other
+    desc: Other
+    position: 3
+    questionnaire_value: null
+    value: Other
+  - code: Government
+    desc: Government
+    position: 1
+    questionnaire_value: null
+    value: Government
+- code: ConditionsPVG
+  values:
+  - code: Fatigue
+    desc: Fatigue
+    position: 1
+    questionnaire_value: null
+    value: Fatigue
+  - code: Insomnia
+    desc: Insomnia
+    position: 2
+    questionnaire_value: null
+    value: Insomnia
+  - code: Stress
+    desc: Stress
+    position: 3
+    questionnaire_value: null
+    value: Stress
+  - code: Pain
+    desc: Pain / aching
+    position: 4
+    questionnaire_value: null
+    value: Pain / aching
+  - code: Physical
+    desc: Physical injuries
+    position: 5
+    questionnaire_value: null
+    value: Physical injuries
+  - code: Depression
+    desc: Depression
+    position: 6
+    questionnaire_value: null
+    value: Depression
+  - code: Anxiety
+    desc: Anxiety
+    position: 7
+    questionnaire_value: null
+    value: Anxiety
+  - code: Alcohol
+    desc: Alcohol dependence
+    position: 8
+    questionnaire_value: null
+    value: Alcohol dependence
+  - code: Drugs
+    desc: Drug dependence
+    position: 9
+    questionnaire_value: null
+    value: Drug dependence
+  - code: Headaches
+    desc: Headaches
+    position: 10
+    questionnaire_value: null
+    value: Headaches
+  - code: Gain
+    desc: Weight gain
+    position: 11
+    questionnaire_value: null
+    value: Weight gain
+  - code: Loss
+    desc: Weight loss
+    position: 12
+    questionnaire_value: null
+    value: Weight loss
+  - code: Appetite
+    desc: Loss of appetite
+    position: 13
+    questionnaire_value: null
+    value: Loss of appetite
 - code: ConfirmScale
   values:
   - code: Confirm
@@ -39407,6 +44057,83 @@ pvgs:
     position: 1
     questionnaire_value: Confirm
     value: Confirm
+- code: CostPVG
+  values:
+  - code: 2500to5000
+    desc: $2,500 to < $5,000
+    position: 5
+    questionnaire_value: null
+    value: $2,500 to < $5,000
+  - code: 0to100
+    desc: $0 to < $100
+    position: 1
+    questionnaire_value: null
+    value: $0 to < $100
+  - code: 100to500
+    desc: $100 to < $500
+    position: 2
+    questionnaire_value: null
+    value: $100 to < $500
+  - code: 500to1000
+    desc: $500 to < $1,000
+    position: 3
+    questionnaire_value: null
+    value: $500 to < $1,000
+  - code: 5000to10000
+    desc: $5,000 to < $10,000
+    position: 6
+    questionnaire_value: null
+    value: $5,000 to < $10,000
+  - code: 10000to25000
+    desc: $10,000 to < $25,000
+    position: 7
+    questionnaire_value: null
+    value: $10,000 to < $25,000
+  - code: 25000to50000
+    desc: $25,000 to < $50,000
+    position: 8
+    questionnaire_value: null
+    value: $25,000 to < $50,000
+  - code: 50000to75000
+    desc: $50,000 to < $75,000
+    position: 9
+    questionnaire_value: null
+    value: $50,000 to < $75,000
+  - code: 75000to100000
+    desc: $75,000 to < $100,000
+    position: 10
+    questionnaire_value: null
+    value: $75,000 to < $100,000
+  - code: 100000to150000
+    desc: $100,000 to < $150,000
+    position: 11
+    questionnaire_value: null
+    value: $100,000 to < $150,000
+  - code: 150000to200000
+    desc: $150,000 to < $200,000
+    position: 12
+    questionnaire_value: null
+    value: $150,000 to < $200,000
+  - code: 200000OrMore
+    desc: $200,000 or more
+    position: 13
+    questionnaire_value: null
+    value: $200,000 or more
+  - code: Other
+    desc: Other
+    position: 14
+    questionnaire_value: null
+    value: Other
+  - code: DK
+    desc: Not known / Prefer not to answer
+    position: 15
+    questionnaire_value: null
+    value: Not known / Prefer not to answer
+  - code: 1000to2500
+    desc: $1,000 to < $2,500
+    position: 4
+    questionnaire_value: null
+    value: $1,000 to < $2,500
 - code: Country
   values:
   - code: AU
@@ -39465,6 +44192,43 @@ pvgs:
     position: 3
     questionnaire_value: Unknown
     value: Unknown
+- code: DaysPVG
+  values:
+  - code: 1day
+    desc: 1 day
+    position: 1
+    questionnaire_value: null
+    value: 1 day
+  - code: 2day
+    desc: 2 days
+    position: 2
+    questionnaire_value: null
+    value: 2 days
+  - code: 3day
+    desc: 3 days
+    position: 3
+    questionnaire_value: null
+    value: 3 days
+  - code: 4day
+    desc: 4 days
+    position: 4
+    questionnaire_value: null
+    value: 4 days
+  - code: 5day
+    desc: 5 days
+    position: 5
+    questionnaire_value: null
+    value: 5 days
+  - code: 6day
+    desc: 6 days
+    position: 6
+    questionnaire_value: null
+    value: 6 days
+  - code: 7day
+    desc: 7 days
+    position: 7
+    questionnaire_value: null
+    value: 7 days
 - code: DeviceFunction
   values:
   - code: 1Video
@@ -39487,6 +44251,233 @@ pvgs:
     position: 4
     questionnaire_value: Other
     value: Other
+- code: EarnPVG
+  values:
+  - code: Less10K
+    desc: < $10,000
+    position: 1
+    questionnaire_value: null
+    value: < $10,000
+  - code: 10to25K
+    desc: $10,000 to < $25,000
+    position: 2
+    questionnaire_value: null
+    value: $10,000 to < $25,000
+  - code: 20to50K
+    desc: $25,000 to < $50,000
+    position: 3
+    questionnaire_value: null
+    value: $25,000 to < $50,000
+  - code: 50to75K
+    desc: $50,000 to < $75,000
+    position: 4
+    questionnaire_value: null
+    value: $50,000 to < $75,000
+  - code: 75to100K
+    desc: $75,000 to < $100,000
+    position: 5
+    questionnaire_value: null
+    value: $75,000 to < $100,000
+  - code: 100to125K
+    desc: $100,000 to < $125,000
+    position: 6
+    questionnaire_value: null
+    value: $100,000 to < $125,000
+  - code: 125to150K
+    desc: $125,000 to < $150,000
+    position: 7
+    questionnaire_value: null
+    value: $125,000 to < $150,000
+  - code: 15050175K
+    desc: $150,000 to < $175,000
+    position: 8
+    questionnaire_value: null
+    value: $150,000 to < $175,000
+  - code: 175to200K
+    desc: $175,000 to < $200,000
+    position: 9
+    questionnaire_value: null
+    value: $175,000 to < $200,000
+  - code: 200KMore
+    desc: $200,000 or more
+    position: 10
+    questionnaire_value: null
+    value: $200,000 or more
+  - code: DK
+    desc: Not known/ Prefer not to answer
+    position: 11
+    questionnaire_value: null
+    value: Not known/ Prefer not to answer
+  - code: NA
+    desc: Not applicable
+    position: 12
+    questionnaire_value: null
+    value: Not applicable
+- code: EduPVG
+  values:
+  - code: LessThanHS
+    desc: Less than a high school diploma
+    position: 1
+    questionnaire_value: null
+    value: Less than a high school diploma
+  - code: HighSchool
+    desc: High school graduate, no college
+    position: 2
+    questionnaire_value: null
+    value: High school graduate, no college
+  - code: SomeCollege
+    desc: Some college or associate degree
+    position: 3
+    questionnaire_value: null
+    value: Some college or associate degree
+  - code: Bachelors
+    desc: Bachelor’s degree (no post-graduate degree)
+    position: 4
+    questionnaire_value: null
+    value: Bachelor’s degree (no post-graduate degree)
+  - code: PostGrad
+    desc: Post-graduate degree
+    position: 5
+    questionnaire_value: null
+    value: Post-graduate degree
+  - code: Other
+    desc: Other
+    position: 6
+    questionnaire_value: null
+    value: Other
+- code: EmpSitPVG
+  values:
+  - code: RetireEarly
+    desc: Retired early
+    position: 1
+    questionnaire_value: null
+    value: Retired early
+  - code: LaidOff
+    desc: Been laid off from a job
+    position: 2
+    questionnaire_value: null
+    value: Been laid off from a job
+  - code: StoppedWork
+    desc: Stopped working for more than one year
+    position: 3
+    questionnaire_value: null
+    value: Stopped working for more than one year
+  - code: UnableFindWork
+    desc: Been unable to find employment or take a job
+    position: 4
+    questionnaire_value: null
+    value: Been unable to find employment or take a job
+  - code: LowerPay
+    desc: Switched to a lower paying job
+    position: 5
+    questionnaire_value: null
+    value: Switched to a lower paying job
+  - code: DecHrs
+    desc: Reduced work hours
+    position: 6
+    questionnaire_value: null
+    value: Reduced work hours
+  - code: IncHrs
+    desc: Increased work hours
+    position: 7
+    questionnaire_value: null
+    value: Increased work hours
+  - code: NoPromo
+    desc: Been unable to get a promotion
+    position: 8
+    questionnaire_value: null
+    value: Been unable to get a promotion
+  - code: DelayRetire
+    desc: Had to delay retirement
+    position: 9
+    questionnaire_value: null
+    value: Had to delay retirement
+  - code: None
+    desc: None of the above
+    position: 15
+    questionnaire_value: null
+    value: None of the above
+  - code: NA
+    desc: Not applicable
+    position: 16
+    questionnaire_value: null
+    value: Not applicable
+  - code: Unsocial
+    desc: Changed to working unsociable hours
+    position: 10
+    questionnaire_value: null
+    value: Changed to working unsociable hours
+  - code: DeferEdu
+    desc: Deferred a year of education
+    position: 11
+    questionnaire_value: null
+    value: Deferred a year of education
+  - code: DropEdu
+    desc: Dropped out of education
+    position: 12
+    questionnaire_value: null
+    value: Dropped out of education
+  - code: StopWorkMedicaid
+    desc: Stopped working to qualify for health insurance (e.g., Medicaid)
+    position: 13
+    questionnaire_value: null
+    value: Stopped working to qualify for health insurance (e.g., Medicaid)
+  - code: UnableSwitch
+    desc: Been unable to switch jobs due to health insurance needs
+    position: 14
+    questionnaire_value: null
+    value: Been unable to switch jobs due to health insurance needs
+- code: EmpStatPVG
+  values:
+  - code: NotEmp
+    desc: Not employed
+    position: 1
+    questionnaire_value: null
+    value: Not employed
+  - code: EmpMS
+    desc: Employed in mainstream employment
+    position: 2
+    questionnaire_value: null
+    value: Employed in mainstream employment
+  - code: EmpSupport
+    desc: Employed in supported employment (e.g., community participation program)
+    position: 3
+    questionnaire_value: null
+    value: Employed in supported employment (e.g., community participation program)
+  - code: NA
+    desc: Not applicable
+    position: 4
+    questionnaire_value: null
+    value: Not applicable
+- code: FinAssisPVG
+  values:
+  - code: FinSSDI
+    desc: Social Security Disability Insurance
+    position: 2
+    questionnaire_value: null
+    value: Social Security Disability Insurance
+  - code: FinSSI
+    desc: Supplemental Security Income
+    position: 3
+    questionnaire_value: null
+    value: Supplemental Security Income
+  - code: FinOthWelfare
+    desc: Other public assistance or welfare payments from the state or local welfare
+      office
+    position: 4
+    questionnaire_value: null
+    value: Other public assistance or welfare payments from the state or local welfare
+      office
+  - code: FinOther
+    desc: Any other sources of income received regularly
+    position: 5
+    questionnaire_value: null
+    value: Any other sources of income received regularly
+  - code: FinSS
+    desc: Social Security
+    position: 1
+    questionnaire_value: null
+    value: Social Security
 - code: FocalGeneralised
   values:
   - code: 3Unknown
@@ -39584,6 +44575,166 @@ pvgs:
     position: 10
     questionnaire_value: Infancy only
     value: Infancy only
+- code: GiveUpLeisurePVG
+  values:
+  - code: NoNone
+    desc: No, I did not have time for leisure before
+    position: 1
+    questionnaire_value: null
+    value: No, I did not have time for leisure before
+  - code: NoSame
+    desc: No, I still spend the same amount of time on leisure
+    position: 2
+    questionnaire_value: null
+    value: No, I still spend the same amount of time on leisure
+  - code: 'Yes'
+    desc: 'Yes'
+    position: 3
+    questionnaire_value: null
+    value: 'Yes'
+- code: GiveUpPaidPVG
+  values:
+  - code: NoNone
+    desc: No, I did not have paid work before
+    position: 1
+    questionnaire_value: null
+    value: No, I did not have paid work before
+  - code: NoSame
+    desc: No, I still perform the same amount of paid work
+    position: 2
+    questionnaire_value: null
+    value: No, I still perform the same amount of paid work
+  - code: 'Yes'
+    desc: 'Yes'
+    position: 3
+    questionnaire_value: null
+    value: 'Yes'
+- code: GiveUpUnpaidPVG
+  values:
+  - code: NoNone
+    desc: No, I did not have unpaid work before
+    position: 1
+    questionnaire_value: null
+    value: No, I did not have unpaid work before
+  - code: NoSame
+    desc: No, I still perform the same amount of unpaid work
+    position: 2
+    questionnaire_value: null
+    value: No, I still perform the same amount of unpaid work
+  - code: 'Yes'
+    desc: 'Yes'
+    position: 3
+    questionnaire_value: null
+    value: 'Yes'
+- code: HomeModPVG
+  values:
+  - code: WideDoorHall
+    desc: Widened doorways or hallways
+    position: 1
+    questionnaire_value: null
+    value: Widened doorways or hallways
+  - code: RampEntrance
+    desc: Installed ramps or street level entrances
+    position: 2
+    questionnaire_value: null
+    value: Installed ramps or street level entrances
+  - code: InstallRailings
+    desc: Installed railings
+    position: 3
+    questionnaire_value: null
+    value: Installed railings
+  - code: InstallLocks
+    desc: Installed locks or stair locks
+    position: 4
+    questionnaire_value: null
+    value: Installed locks or stair locks
+  - code: InstallAutoDoor
+    desc: Installed automatic or easy to open doors
+    position: 5
+    questionnaire_value: null
+    value: Installed automatic or easy to open doors
+  - code: AccessParking
+    desc: Created accessible parking or drop-off site
+    position: 6
+    questionnaire_value: null
+    value: Created accessible parking or drop-off site
+  - code: BathroomMod
+    desc: Made bathroom modifications
+    position: 7
+    questionnaire_value: null
+    value: Made bathroom modifications
+  - code: KitchenMod
+    desc: Made kitchen modifications
+    position: 8
+    questionnaire_value: null
+    value: Made kitchen modifications
+  - code: AlertDevice
+    desc: Installed alerting devices
+    position: 9
+    questionnaire_value: null
+    value: Installed alerting devices
+  - code: GateFence
+    desc: Gates / fences
+    position: 10
+    questionnaire_value: null
+    value: Gates / fences
+  - code: ExpandHome
+    desc: Expanded home to accommodate caregivers
+    position: 11
+    questionnaire_value: null
+    value: Expanded home to accommodate caregivers
+  - code: HomeRepair
+    desc: Home repairs due to damage or excess wear
+    position: 12
+    questionnaire_value: null
+    value: Home repairs due to damage or excess wear
+  - code: OtherHome
+    desc: Other home modifications to accommodate person with AS
+    position: 13
+    questionnaire_value: null
+    value: Other home modifications to accommodate person with AS
+- code: InsureTypePVG
+  values:
+  - code: CommEmp
+    desc: Commercial insurance through employer
+    position: 1
+    questionnaire_value: null
+    value: Commercial insurance through employer
+  - code: OthComm
+    desc: Other commercial insurance
+    position: 2
+    questionnaire_value: null
+    value: Other commercial insurance
+  - code: MedicaidSCHIP
+    desc: Medicaid or State Children’s Health Insurance Program (SCHIP)
+    position: 3
+    questionnaire_value: null
+    value: Medicaid or State Children’s Health Insurance Program (SCHIP)
+  - code: Medicare
+    desc: Medicare or Medicare supplemental
+    position: 4
+    questionnaire_value: null
+    value: Medicare or Medicare supplemental
+  - code: Military
+    desc: Military (e.g., TRICARE, VA)
+    position: 5
+    questionnaire_value: null
+    value: Military (e.g., TRICARE, VA)
+  - code: Uninsured
+    desc: Uninsured
+    position: 6
+    questionnaire_value: null
+    value: Uninsured
+  - code: Other
+    desc: Other
+    position: 7
+    questionnaire_value: null
+    value: Other
+  - code: NA
+    desc: Not applicable
+    position: 8
+    questionnaire_value: null
+    value: Not applicable
 - code: LOSTMOTOR
   values:
   - code: Walking
@@ -39644,6 +44795,82 @@ pvgs:
     questionnaire_value: Vanderbilt Children's Hospital, Nashville, TN (Greg Barnes,
       then Cary Fu)
     value: Vanderbilt Children's Hospital, Nashville, TN (Greg Barnes, then Cary Fu)
+- code: LongCarePVG
+  values:
+  - code: LessMonth
+    desc: Less than a month
+    position: 1
+    questionnaire_value: null
+    value: Less than a month
+  - code: LessYear
+    desc: Less than a year
+    position: 2
+    questionnaire_value: null
+    value: Less than a year
+  - code: MoreYear
+    desc: More than a year
+    position: 3
+    questionnaire_value: null
+    value: More than a year
+- code: LongCareWhatPVG
+  values:
+  - code: SkilledNursingFacility
+    desc: Skilled nursing facility
+    position: 1
+    questionnaire_value: null
+    value: Skilled nursing facility
+  - code: AssistedLivingFacility
+    desc: Assisted living facility
+    position: 2
+    questionnaire_value: null
+    value: Assisted living facility
+  - code: GroupFosterHome
+    desc: Group home / foster home
+    position: 3
+    questionnaire_value: null
+    value: Group home / foster home
+  - code: SpecialDayCare
+    desc: Special day care
+    position: 4
+    questionnaire_value: null
+    value: Special day care
+  - code: Other
+    desc: Other long-term care to accommodate person with AS
+    position: 5
+    questionnaire_value: null
+    value: Other long-term care to accommodate person with AS
+- code: MarStatPVG
+  values:
+  - code: Married
+    desc: Married or living with someone
+    position: 1
+    questionnaire_value: null
+    value: Married or living with someone
+  - code: Widowed
+    desc: Widowed
+    position: 2
+    questionnaire_value: null
+    value: Widowed
+  - code: Divorced
+    desc: Divorced
+    position: 3
+    questionnaire_value: null
+    value: Divorced
+  - code: Separated
+    desc: Separated
+    position: 4
+    questionnaire_value: null
+    value: Separated
+  - code: Never
+    desc: Never married
+    position: 5
+    questionnaire_value: null
+    value: Never married
+  - code: Other
+    desc: Other
+    position: 6
+    questionnaire_value: null
+    value: Other
 - code: MedNewFolScale
   values:
   - code: 'Yes'
@@ -39656,6 +44883,137 @@ pvgs:
     position: 2
     questionnaire_value: No, follow up
     value: No, follow up
+- code: MedPharmPVG
+  values:
+  - code: MedPharm
+    desc: Medical and pharmacy coverage
+    position: 1
+    questionnaire_value: null
+    value: Medical and pharmacy coverage
+  - code: MedOnly
+    desc: Medical coverage only
+    position: 2
+    questionnaire_value: null
+    value: Medical coverage only
+  - code: PharmOnly
+    desc: Pharmacy coverage only
+    position: 3
+    questionnaire_value: null
+    value: Pharmacy coverage only
+  - code: Neither
+    desc: Neither medical nor pharmacy coverage
+    position: 4
+    questionnaire_value: null
+    value: Neither medical nor pharmacy coverage
+  - code: DKNR
+    desc: Not sure / not reported
+    position: 5
+    questionnaire_value: null
+    value: Not sure / not reported
+- code: MedicalWhatPVG
+  values:
+  - code: Stroller
+    desc: Stroller
+    position: 1
+    questionnaire_value: null
+    value: Stroller
+  - code: Wheelchair
+    desc: Wheelchair
+    position: 2
+    questionnaire_value: null
+    value: Wheelchair
+  - code: Ambulatory
+    desc: Ambulatory aids
+    position: 3
+    questionnaire_value: null
+    value: Ambulatory aids
+  - code: Walker
+    desc: Walker/ leg braces
+    position: 4
+    questionnaire_value: null
+    value: Walker/ leg braces
+  - code: Chair
+    desc: Activity/ bath chair(s)
+    position: 5
+    questionnaire_value: null
+    value: Activity/ bath chair(s)
+  - code: SeizureMonitors
+    desc: Seizure monitors
+    position: 6
+    questionnaire_value: null
+    value: Seizure monitors
+  - code: Helmet
+    desc: Helmet
+    position: 7
+    questionnaire_value: null
+    value: Helmet
+  - code: FeedingTube
+    desc: Feeding tube (e.g., nasogastric tube [NG tube], gastronomy tube [G-tube])
+    position: 9
+    questionnaire_value: null
+    value: Feeding tube (e.g., nasogastric tube [NG tube], gastronomy tube [G-tube])
+  - code: AAC
+    desc: Augmentative and alternative communication (AAC) device(s)
+    position: 10
+    questionnaire_value: null
+    value: Augmentative and alternative communication (AAC) device(s)
+  - code: SensoryAids
+    desc: Sensory adaptation aids
+    position: 11
+    questionnaire_value: null
+    value: Sensory adaptation aids
+  - code: SafetyBed
+    desc: Safety bed(s)
+    position: 12
+    questionnaire_value: null
+    value: Safety bed(s)
+  - code: ToiletAid
+    desc: Toilet aid
+    position: 13
+    questionnaire_value: null
+    value: Toilet aid
+  - code: Monitoring
+    desc: Personal location monitoring system
+    position: 14
+    questionnaire_value: null
+    value: Personal location monitoring system
+  - code: Respiratory
+    desc: Respiratory equipment (e.g., CPAP/BiPaP, tracheotomies, pulmonary vests)
+    position: 15
+    questionnaire_value: null
+    value: Respiratory equipment (e.g., CPAP/BiPaP, tracheotomies, pulmonary vests)
+  - code: Other
+    desc: Other medical equipment to accommodate person with AS
+    position: 16
+    questionnaire_value: null
+    value: Other medical equipment to accommodate person with AS
+- code: MentalPVG
+  values:
+  - code: None
+    desc: I am not anxious or depressed
+    position: 1
+    questionnaire_value: null
+    value: I am not anxious or depressed
+  - code: Slight
+    desc: I am slightly anxious or depressed
+    position: 2
+    questionnaire_value: null
+    value: I am slightly anxious or depressed
+  - code: Moderate
+    desc: I am moderately anxious or depressed
+    position: 3
+    questionnaire_value: null
+    value: I am moderately anxious or depressed
+  - code: Severe
+    desc: I am severely anxious or depressed
+    position: 4
+    questionnaire_value: null
+    value: I am severely anxious or depressed
+  - code: Extreme
+    desc: I am extremely anxious or depressed
+    position: 5
+    questionnaire_value: null
+    value: I am extremely anxious or depressed
 - code: MetafolinSite
   values:
   - code: 1Baylor
@@ -39678,6 +45036,33 @@ pvgs:
     position: 4
     questionnaire_value: Greenwood Genetics Center, Greenwood, SC (Steve Skinner)
     value: Greenwood Genetics Center, Greenwood, SC (Steve Skinner)
+- code: MobilityPVG
+  values:
+  - code: None
+    desc: I have no problems walking
+    position: 1
+    questionnaire_value: null
+    value: I have no problems walking
+  - code: Slight
+    desc: I have slight problems walking
+    position: 2
+    questionnaire_value: null
+    value: I have slight problems walking
+  - code: Moderate
+    desc: I have moderate problems walking
+    position: 3
+    questionnaire_value: null
+    value: I have moderate problems walking
+  - code: Severe
+    desc: I have severe problems walking
+    position: 4
+    questionnaire_value: null
+    value: I have severe problems walking
+  - code: Unable
+    desc: I am unable to walk
+    position: 5
+    questionnaire_value: null
+    value: I am unable to walk
 - code: NatHistSiteNewPVG
   values:
   - code: 1Rady
@@ -39734,6 +45119,25 @@ pvgs:
     position: 5
     questionnaire_value: UCSF, San Francisco, CA (Anne Slavotinek)
     value: UCSF, San Francisco, CA (Anne Slavotinek)
+- code: NeurenAUSitePVG
+  values:
+  - code: NSW
+    desc: New South Wales - Sydney Children's Hospital, Randwick
+    position: 1
+    questionnaire_value: null
+    value: New South Wales - Sydney Children's Hospital, Randwick
+  - code: QLD
+    desc: Queensland - Centre for Clinical Trials in Rare Neurodevelopmental Disorders
+      at Children's Health Queensland Hospital and Health Service, South Brisbane
+    position: 2
+    questionnaire_value: null
+    value: Queensland - Centre for Clinical Trials in Rare Neurodevelopmental Disorders
+      at Children's Health Queensland Hospital and Health Service, South Brisbane
+  - code: VIC
+    desc: Victoria - Austin Health, Heidelberg
+    position: 3
+    questionnaire_value: null
+    value: Victoria - Austin Health, Heidelberg
 - code: OvidSTARSsite
   values:
   - code: 1Arizona
@@ -39887,6 +45291,102 @@ pvgs:
     position: 5
     questionnaire_value: Seizures/ infantile spasms
     value: Seizures/ infantile spasms
+- code: PainPVG
+  values:
+  - code: None
+    desc: I have no pain or discomfort
+    position: 1
+    questionnaire_value: null
+    value: I have no pain or discomfort
+  - code: Slight
+    desc: I have slight pain or discomfort
+    position: 2
+    questionnaire_value: null
+    value: I have slight pain or discomfort
+  - code: Moderate
+    desc: I have moderate pain or discomfort
+    position: 3
+    questionnaire_value: null
+    value: I have moderate pain or discomfort
+  - code: Severe
+    desc: I have severe pain or discomfort
+    position: 4
+    questionnaire_value: null
+    value: I have severe pain or discomfort
+  - code: Extreme
+    desc: I have extreme pain or discomfort
+    position: 5
+    questionnaire_value: null
+    value: I have extreme pain or discomfort
+- code: ProfCareWhatPVG
+  values:
+  - code: AtHomeCare
+    desc: At-home caregiver (e.g., personal home care aid / companion / respite care)
+    position: 1
+    questionnaire_value: null
+    value: At-home caregiver (e.g., personal home care aid / companion / respite care)
+  - code: HomeHealth
+    desc: Home health aid
+    position: 2
+    questionnaire_value: null
+    value: Home health aid
+  - code: NurseAssist
+    desc: Certified nursing assistant
+    position: 3
+    questionnaire_value: null
+    value: Certified nursing assistant
+  - code: SkilledNurse
+    desc: Skilled nurse
+    position: 4
+    questionnaire_value: null
+    value: Skilled nurse
+  - code: Other
+    desc: Other caregiving service to accommodate person with AS
+    position: 5
+    questionnaire_value: null
+    value: Other caregiving service to accommodate person with AS
+- code: RacePVG
+  values:
+  - code: AIAN
+    desc: American Indian or Alaska Native
+    position: 1
+    questionnaire_value: null
+    value: American Indian or Alaska Native
+  - code: Asian
+    desc: Asian
+    position: 2
+    questionnaire_value: null
+    value: Asian
+  - code: Black
+    desc: Black or African American
+    position: 3
+    questionnaire_value: null
+    value: Black or African American
+  - code: Hispanic
+    desc: Hispanic or Latino
+    position: 4
+    questionnaire_value: null
+    value: Hispanic or Latino
+  - code: NHOPI
+    desc: Native Hawaiian or Other Pacific Islander
+    position: 5
+    questionnaire_value: null
+    value: Native Hawaiian or Other Pacific Islander
+  - code: White
+    desc: White
+    position: 6
+    questionnaire_value: null
+    value: White
+  - code: Other
+    desc: Other / prefer not to answer
+    position: 7
+    questionnaire_value: null
+    value: Other / prefer not to answer
+  - code: DK
+    desc: Not sure
+    position: 8
+    questionnaire_value: null
+    value: Not sure
 - code: RegistrationDiagnosisPVG
   values:
   - code: RegistrationDiagnosisUnknown
@@ -39936,6 +45436,144 @@ pvgs:
     position: 2
     questionnaire_value: null
     value: Donation
+- code: RelPVG
+  values:
+  - code: Mother
+    desc: Mother
+    position: 1
+    questionnaire_value: null
+    value: Mother
+  - code: Father
+    desc: Father
+    position: 2
+    questionnaire_value: null
+    value: Father
+  - code: Grandmother
+    desc: Grandmother
+    position: 3
+    questionnaire_value: null
+    value: Grandmother
+  - code: Grandfather
+    desc: Grandfather
+    position: 4
+    questionnaire_value: null
+    value: Grandfather
+  - code: Sister
+    desc: Sister
+    position: 5
+    questionnaire_value: null
+    value: Sister
+  - code: Brother
+    desc: Brother
+    position: 6
+    questionnaire_value: null
+    value: Brother
+  - code: Other
+    desc: Other
+    position: 7
+    questionnaire_value: null
+    value: Other
+- code: ResidenceAS
+  values:
+  - code: FamilyHouse
+    desc: Living in family household
+    position: 1
+    questionnaire_value: null
+    value: Living in family household
+  - code: ResidentNursing
+    desc: Living in a residential or nursing home
+    position: 2
+    questionnaire_value: null
+    value: Living in a residential or nursing home
+  - code: HealthInstitution
+    desc: Living in another health institution
+    position: 3
+    questionnaire_value: null
+    value: Living in another health institution
+  - code: LivingAlone
+    desc: Living alone
+    position: 4
+    questionnaire_value: null
+    value: Living alone
+  - code: HouseholdOther
+    desc: Sharing a household with at least one other person
+    position: 5
+    questionnaire_value: null
+    value: Sharing a household with at least one other person
+  - code: Other
+    desc: Other
+    position: 6
+    questionnaire_value: null
+    value: Other
+  - code: Unsure
+    desc: Not sure
+    position: 7
+    questionnaire_value: null
+    value: Not sure
+- code: SchoolEduWhatPVG
+  values:
+  - code: Tuition
+    desc: Tuition fees for person with Angelman syndrome
+    position: 1
+    questionnaire_value: null
+    value: Tuition fees for person with Angelman syndrome
+  - code: OneOnOneAide
+    desc: Private one-on-one aide in school
+    position: 2
+    questionnaire_value: null
+    value: Private one-on-one aide in school
+  - code: EducationalTutoring
+    desc: Educational tutoring
+    position: 4
+    questionnaire_value: null
+    value: Educational tutoring
+  - code: TeacherAideTraining
+    desc: Teacher aide training
+    position: 5
+    questionnaire_value: null
+    value: Teacher aide training
+  - code: AssistiveSchoolEquip
+    desc: Assistive school equipment
+    position: 6
+    questionnaire_value: null
+    value: Assistive school equipment
+  - code: Other
+    desc: Other school / special education expense to accommodate person with AS
+    position: 7
+    questionnaire_value: null
+    value: Other school / special education expense to accommodate person with AS
+  - code: SharedOneOnOneAide
+    desc: Shared one-on-one aide in school
+    position: 3
+    questionnaire_value: null
+    value: Shared one-on-one aide in school
+- code: SelfCarePVG
+  values:
+  - code: None
+    desc: I have no problems washing or dressing myself
+    position: 1
+    questionnaire_value: null
+    value: I have no problems washing or dressing myself
+  - code: Slight
+    desc: I have slight problems washing or dressing myself
+    position: 2
+    questionnaire_value: null
+    value: I have slight problems washing or dressing myself
+  - code: Moderate
+    desc: I have moderate problems washing or dressing myself
+    position: 3
+    questionnaire_value: null
+    value: I have moderate problems washing or dressing myself
+  - code: Severe
+    desc: I have severe problems washing or dressing myself
+    position: 4
+    questionnaire_value: null
+    value: I have severe problems washing or dressing myself
+  - code: Unable
+    desc: I am unable to wash or dress myself
+    position: 5
+    questionnaire_value: null
+    value: I am unable to wash or dress myself
 - code: Sex
   values:
   - code: F
@@ -39953,6 +45591,40 @@ pvgs:
     position: null
     questionnaire_value: null
     value: Male
+- code: SexPVG
+  values:
+  - code: Male
+    desc: Male
+    position: 1
+    questionnaire_value: null
+    value: Male
+  - code: Female
+    desc: Female
+    position: 2
+    questionnaire_value: null
+    value: Female
+  - code: Other
+    desc: Other/ prefer not to answer
+    position: 3
+    questionnaire_value: null
+    value: Other/ prefer not to answer
+- code: SpendTimePVG
+  values:
+  - code: MorePaid
+    desc: More paid work
+    position: 1
+    questionnaire_value: null
+    value: More paid work
+  - code: MoreUnpaid
+    desc: More unpaid work
+    position: 2
+    questionnaire_value: null
+    value: More unpaid work
+  - code: MoreLeisure
+    desc: More leisure
+    position: 3
+    questionnaire_value: null
+    value: More leisure
 - code: State
   values:
   - code: WA
@@ -40054,6 +45726,63 @@ pvgs:
     position: 7
     questionnaire_value: ''
     value: Unknown
+- code: SupportTherapyWhatPVG
+  values:
+  - code: ECI
+    desc: Early childhood intervention
+    position: 1
+    questionnaire_value: null
+    value: Early childhood intervention
+  - code: PhysicalT
+    desc: Physical therapy
+    position: 2
+    questionnaire_value: null
+    value: Physical therapy
+  - code: OccupationalT
+    desc: Occupational therapy
+    position: 3
+    questionnaire_value: null
+    value: Occupational therapy
+  - code: SpeechT
+    desc: Speech therapy
+    position: 4
+    questionnaire_value: null
+    value: Speech therapy
+  - code: BehaviouralT
+    desc: Behavioral therapy / Applied Behavior Analysis (ABA)
+    position: 5
+    questionnaire_value: null
+    value: Behavioral therapy / Applied Behavior Analysis (ABA)
+  - code: Physiotherapy
+    desc: Physiotherapy
+    position: 6
+    questionnaire_value: null
+    value: Physiotherapy
+  - code: MusicT
+    desc: Music therapy
+    position: 7
+    questionnaire_value: null
+    value: Music therapy
+  - code: HorseT
+    desc: Horse therapy
+    position: 8
+    questionnaire_value: null
+    value: Horse therapy
+  - code: Hydrotherapy
+    desc: Hydrotherapy
+    position: 9
+    questionnaire_value: null
+    value: Hydrotherapy
+  - code: NeurofeedbackT
+    desc: Neurofeedback therapy
+    position: 10
+    questionnaire_value: null
+    value: Neurofeedback therapy
+  - code: Other
+    desc: Other supportive therapy to accommodate person with AS
+    position: 11
+    questionnaire_value: null
+    value: Other supportive therapy to accommodate person with AS
 - code: TexturesPVG
   values:
   - code: Dry
@@ -40161,6 +45890,88 @@ pvgs:
     position: 21
     questionnaire_value: Other
     value: Other
+- code: UsualPVG
+  values:
+  - code: None
+    desc: I have no problems doing my usual activities
+    position: 1
+    questionnaire_value: null
+    value: I have no problems doing my usual activities
+  - code: Slight
+    desc: I have slight problems doing my usual activities
+    position: 2
+    questionnaire_value: null
+    value: I have slight problems doing my usual activities
+  - code: Moderate
+    desc: I have moderate problems doing my usual activities
+    position: 3
+    questionnaire_value: null
+    value: I have moderate problems doing my usual activities
+  - code: Severe
+    desc: I have severe problems doing my usual activities
+    position: 4
+    questionnaire_value: null
+    value: I have severe problems doing my usual activities
+  - code: Unable
+    desc: I am unable to do my usual activities
+    position: 5
+    questionnaire_value: null
+    value: I am unable to do my usual activities
+- code: VehicleModPVG
+  values:
+  - code: NewCar
+    desc: Purchasing a new car / vehicle to accommodate the person with Angelman syndrome
+    position: 1
+    questionnaire_value: null
+    value: Purchasing a new car / vehicle to accommodate the person with Angelman
+      syndrome
+  - code: AirCon
+    desc: Installing air conditioning
+    position: 2
+    questionnaire_value: null
+    value: Installing air conditioning
+  - code: Button
+    desc: Installing a button that opens the car door
+    position: 3
+    questionnaire_value: null
+    value: Installing a button that opens the car door
+  - code: Storage
+    desc: Creating a large trunk or storage area
+    position: 4
+    questionnaire_value: null
+    value: Creating a large trunk or storage area
+  - code: CarSeat
+    desc: Special car seat
+    position: 5
+    questionnaire_value: null
+    value: Special car seat
+  - code: Other
+    desc: Other vehicle purchase / modification to accommodate person with AS
+    position: 6
+    questionnaire_value: null
+    value: Other vehicle purchase / modification to accommodate person with AS
+- code: YNDNNAPVG
+  values:
+  - code: 'Yes'
+    desc: 'Yes'
+    position: 1
+    questionnaire_value: null
+    value: 'Yes'
+  - code: 'No'
+    desc: 'No'
+    position: 2
+    questionnaire_value: null
+    value: 'No'
+  - code: DK
+    desc: Don't know
+    position: 3
+    questionnaire_value: null
+    value: Don't know
+  - code: NA
+    desc: Not applicable
+    position: 4
+    questionnaire_value: null
+    value: Not applicable
 - code: YesNo
   values:
   - code: 'Yes'
@@ -40190,19 +46001,58 @@ pvgs:
     position: 1
     questionnaire_value: ''
     value: 'Yes'
+registry_dashboards:
+- registry: ang
+  widgets:
+  - cdes: []
+    demographics: []
+    free_text: Click on the links to be taken to the modules.
+    links: []
+    title: Module progress
+    widget_type: module_progress
+  - cdes: []
+    demographics: []
+    free_text: Here you can see the number of consents you have completed. Only the
+      first one is mandatory.
+    links: []
+    title: Consents
+    widget_type: consents
+  - cdes:
+    - cde: ANGDNAMethylAbnormalResult
+      context_form_group: History
+      label: Diagnostic result
+      registry_form: HistoryOfDiagnosisAndResults
+      section: ANGPatientResults
+      sort_order: 3
+    - cde: 6MoWeight
+      context_form_group: Review
+      label: Weight
+      registry_form: CheckUp6Months
+      section: 6moAgehw
+      sort_order: 4
+    - cde: 6MoHeight
+      context_form_group: Review
+      label: Height
+      registry_form: CheckUp6Months
+      section: 6moAgehw
+      sort_order: 5
+    demographics: []
+    free_text: This is the latest information you have provided about your child/
+      adult with Angelman Syndrome.
+    links:
+    - context_form_group: History
+      label: Update diagnostic information
+      registry_form: HistoryOfDiagnosisAndResults
+      sort_order: 1
+    - context_form_group: Review
+      label: Update height and weight
+      registry_form: CheckUp6Months
+      sort_order: 2
+    title: My Child/ Adult
+    widget_type: demographics1
 reports: []
 reports_v2: []
-splash_screen: |-
-  <h1>{% trans "Angelman Registry"%}</h1>
-  <p>
-  {% trans "The Angelman Registry is a tool to help medical professionals and researchers learn more about individuals with Angelman Syndrome (AS). The Registry will create new opportunities to gain insight and understanding about AS, and providing an important tool for both facilitating research and enabling clinical trial sponsors to quickly identify suitable patients for each study. "%}</p>
-
-  <section><div class="alert alert-info"><a href="{% url 'registration_register' registry_code %}"><b><center>{% trans "Register now"%}</center></b></a></div></section>
-
-
-  <div class="alert alert-warning">{% trans "This is a demo site only! Do not enter real data!"%}</div>
-
-  <div class="alert alert-info">{% trans "Please log in by clicking on the link located in the top-right corner"%}</div>
+splash_screen: ''
 working_groups:
 - Unallocated
 - Default Working Group

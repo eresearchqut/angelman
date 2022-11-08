@@ -47,22 +47,25 @@ def _field_widget_class(field):
 
 class ANGPatientRegistrationForm(RegistrationForm):
 
-    placeholders = {
-        'username': _("Username"),
+    labels = {
+        'username': _("Email"),
         'password1': _("Password"),
         'password2': _("Repeat Password"),
         'first_name': _("Given Names"),
         'surname': _("Surname"),
         'date_of_birth': _("Date of Birth"),
         'diagnosis': _("Diagnosis"),
-        'address': _("Address"),
+        'address': _("Street"),
         'suburb': _("Suburb / Town"),
         'state': _("State / County / Province / Region"),
         'postcode': _("Zip / Postal Code"),
-        'phone_number': _('Phone Number')
+        'phone_number': _('Phone Number'),
+        'preferred_languages': _('Preferred Language')
     }
 
-    no_placeholder_fields = ['gender']
+    placeholders = {
+        'date_of_birth': _("YYYY-MM-DD")
+    }
 
     country_choices = _countries()
 
@@ -78,7 +81,10 @@ class ANGPatientRegistrationForm(RegistrationForm):
             if field_widget_class is not None:
                 self.fields[field].widget.attrs['class'] = field_widget_class
 
-            if field not in self.no_placeholder_fields:
+            if field in self.labels.keys():
+                self.fields[field].label = self.labels.get(field, '')
+
+            if field in self.placeholders.keys():
                 self.fields[field].widget.attrs['placeholder'] = self.placeholders.get(field, '')
             if field in self.password_fields:
                 self.fields[field].widget.render_value = True
@@ -100,19 +106,22 @@ class ANGPatientRegistrationForm(RegistrationForm):
 
 class ANGRegistrationForm(ANGPatientRegistrationForm):
 
-    ANGPatientRegistrationForm.placeholders.update({
-        'parent_guardian_first_name': _("Parent/Guardian Given Names"),
-        'parent_guardian_last_name': _("Parent/Guardian Surname"),
-        'parent_guardian_date_of_birth': _("Parent/Guardian Date of Birth"),
-        'parent_guardian_gender': _("Parent/Guardian gender"),
-        'parent_guardian_address': _("Parent/Guardian Address"),
-        'parent_guardian_suburb': _("Parent/Guardian Suburb / Town"),
-        'parent_guardian_state': _("Parent/Guardian State / County / Province / Region"),
-        'parent_guardian_postcode': _("Parent/Guardian Zip / Postal Code"),
-        'parent_guardian_phone': _('Parent/Guardian Phone Number')
+    ANGPatientRegistrationForm.labels.update({
+        'parent_guardian_first_name': _("Given Names"),
+        'parent_guardian_last_name': _("Surname"),
+        'parent_guardian_date_of_birth': _("Date of Birth"),
+        'parent_guardian_gender': _("Gender"),
+        'parent_guardian_address': _("Street"),
+        'parent_guardian_suburb': _("Suburb / Town"),
+        'parent_guardian_state': _("State / County / Province / Region"),
+        'parent_guardian_country': _("Country"),
+        'parent_guardian_postcode': _("Zip / Postal Code"),
+        'parent_guardian_phone': _('Phone Number')
     })
 
-    ANGPatientRegistrationForm.no_placeholder_fields.extend(['parent_guardian_gender', 'same_address'])
+    ANGPatientRegistrationForm.placeholders.update({
+        'parent_guardian_date_of_birth': _('YYYY-MM-DD')
+    })
 
     tooltip_info = {
         'parent_guardian_address': _("Please enter an address through which we can contact you"),
@@ -122,10 +131,6 @@ class ANGRegistrationForm(ANGPatientRegistrationForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        for field, tooltip in self.tooltip_info.items():
-            self.fields[field].widget.attrs['data-toggle'] = 'tooltip'
-            self.fields[field].widget.attrs['data-placement'] = 'left'
-            self.fields[field].widget.attrs['title'] = tooltip
 
     parent_guardian_first_name = CharField(required=True)
     parent_guardian_last_name = CharField(required=True)

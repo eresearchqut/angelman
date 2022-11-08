@@ -1,4 +1,4 @@
-EXPORT_TIME: '2022-10-26 11:24:46.040546'
+EXPORT_TIME: '2022-11-08 14:45:39.461415'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -42948,6 +42948,11 @@ pvgs:
     questionnaire_value: null
     value: An Open-Label Study of the Safety, Tolerability, and Pharmacokinetics of
       Oral NNZ-2591 in Angelman Syndrome (Neuren Pharmaceuticals, Australia)
+  - code: 16GeneTX
+    desc: Ultragenyx  KIK-AS trial
+    position: 16
+    questionnaire_value: Ultragenyx  KIK-AS trial
+    value: Ultragenyx  KIK-AS trial
   - code: GutMicroAU
     desc: Gut Microbiota Dysbiosis in Angelman Syndrome (Australia)
     position: 19
@@ -43055,11 +43060,6 @@ pvgs:
     position: 15
     questionnaire_value: Disruptive Nutrition FANS/ketone trial
     value: Disruptive Nutrition FANS/ketone trial
-  - code: 16GeneTX
-    desc: GeneTX  KIK-AS trial
-    position: 16
-    questionnaire_value: GeneTX  KIK-AS trial
-    value: GeneTX  KIK-AS trial
   - code: 17FREESIAS
     desc: Roche & Genetech   FREESIAS Endpoint Study
     position: 17
@@ -43077,6 +43077,11 @@ pvgs:
     position: 19
     questionnaire_value: null
     value: Gut Microbiota Dysbiosis in Angelman Syndrome
+  - code: 16GeneTX
+    desc: Ultragenyx KIK-AS trial
+    position: 16
+    questionnaire_value: Ultragenyx KIK-AS trial
+    value: Ultragenyx KIK-AS trial
   - code: NeurenAU
     desc: An Open-Label Study of the Safety, Tolerability, and Pharmacokinetics of
       Oral NNZ-2591 in Angelman Syndrome (Neuren Pharmaceuticals, Australia)
@@ -43171,11 +43176,6 @@ pvgs:
     position: 15
     questionnaire_value: Disruptive Nutrition FANS/ ketone trial
     value: Disruptive Nutrition FANS/ ketone trial
-  - code: 16GeneTX
-    desc: GeneTX KIK-AS trial
-    position: 16
-    questionnaire_value: GeneTX KIK-AS trial
-    value: GeneTX KIK-AS trial
   - code: 17FREESIAS
     desc: Rosche & Genetech - FREESIAS Endpoint Study
     position: 17
@@ -46001,9 +46001,57 @@ pvgs:
     position: 1
     questionnaire_value: ''
     value: 'Yes'
+registry_dashboards:
+- registry: ang
+  widgets:
+  - cdes: []
+    demographics: []
+    free_text: Click on the links to be taken to the modules.
+    links: []
+    title: Module progress
+    widget_type: module_progress
+  - cdes: []
+    demographics: []
+    free_text: Here you can see the number of consents you have completed. Only the
+      first one is mandatory.
+    links: []
+    title: Consents
+    widget_type: consents
+  - cdes:
+    - cde: ANGDNAMethylAbnormalResult
+      context_form_group: History
+      label: Diagnostic result
+      registry_form: HistoryOfDiagnosisAndResults
+      section: ANGPatientResults
+      sort_order: 3
+    - cde: 6MoWeight
+      context_form_group: Review
+      label: Weight
+      registry_form: CheckUp6Months
+      section: 6moAgehw
+      sort_order: 4
+    - cde: 6MoHeight
+      context_form_group: Review
+      label: Height
+      registry_form: CheckUp6Months
+      section: 6moAgehw
+      sort_order: 5
+    demographics: []
+    free_text: This is the latest information you have provided about your child/
+      adult with Angelman Syndrome.
+    links:
+    - context_form_group: History
+      label: Update diagnostic information
+      registry_form: HistoryOfDiagnosisAndResults
+      sort_order: 1
+    - context_form_group: Review
+      label: Update height and weight
+      registry_form: CheckUp6Months
+      sort_order: 2
+    title: My Child/ Adult
+    widget_type: demographics1
 reports: []
 reports_v2: []
-registry_dashboards: []
 splash_screen: ''
 working_groups:
 - Unallocated

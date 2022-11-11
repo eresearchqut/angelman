@@ -132,6 +132,10 @@
                 {
                     "name": "VIDEO_HOSTING_BASE_URL",
                     "value": "$VIDEO_HOSTING_BASE_URL"
+                },
+                {
+                    "name": "EMBED_FRAME_ANCESTORS",
+                    "value": "$EMBED_FRAME_ANCESTORS"
                 }
             ],
             "image": "${IMAGE_REPO}:${IMAGE_TAG}",

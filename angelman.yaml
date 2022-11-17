@@ -1,4 +1,4 @@
-EXPORT_TIME: '2022-11-08 14:45:39.461415'
+EXPORT_TIME: '2022-11-17 17:39:52.410357'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -29828,7 +29828,7 @@ context_form_groups:
   forms:
   - CareBurden
   is_default: false
-  name: Caregiver Burden Survey
+  name: Caregiver Impact Survey
   naming_cde_to_use: null
   naming_scheme: D
   ordering: C
@@ -34531,7 +34531,7 @@ forms:
 
     CBS6PharmCost CBS6PharmDK hidden if CBS6PharmYou != Yes
     CBS6MedicalCost CBS6MedicalDK hidden if CBS6MedicalYou != Yes
-  display_name: Caregiver Burden Survey
+  display_name: Caregiver Impact Survey
   header: |-
     <b><h4>Survey to Quantify the Societal Costs of Angelman Syndrome from a Caregiver Perspective</h4></b><p>
     <center>Conducted by the Foundation for Angelman Syndrome Therapeutics (FAST) and the Angelman Syndrome Foundation (ASF)<p>

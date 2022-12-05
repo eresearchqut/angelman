@@ -98,7 +98,7 @@ class ANGPatientRegistrationForm(RegistrationForm):
     address = CharField(required=True, max_length=100)
     suburb = CharField(required=True, max_length=30)
     country = ChoiceField(required=True, widget=Select, choices=country_choices, initial="")
-    state = CharField(required=True, widget=Select)
+    state = CharField(required=False, widget=Select)
     postcode = CharField(required=True, max_length=30)
     phone_number = CharField(required=True, max_length=30)
     registry_code = CharField(required=True)

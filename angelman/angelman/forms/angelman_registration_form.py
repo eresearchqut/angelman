@@ -5,8 +5,8 @@ from django.forms import CharField, ChoiceField, DateField, BooleanField
 from django.forms.widgets import RadioSelect, Select
 from django.utils.translation import gettext_lazy as _
 
-from registration.forms import RegistrationForm
 from angelman.registry.groups.registration.angelman_registration import DIAGNOSIS_CDE
+from rdrf.forms.registration_forms import RegistrationFormCaseInsensitiveCheck
 from rdrf.helpers.utils import get_preferred_languages
 from rdrf.models.definition.models import CommonDataElement
 from registry.patients.models import Patient
@@ -45,7 +45,7 @@ def _field_widget_class(field):
         return 'form-control'
 
 
-class ANGPatientRegistrationForm(RegistrationForm):
+class ANGPatientRegistrationForm(RegistrationFormCaseInsensitiveCheck):
 
     labels = {
         'username': _("Email"),

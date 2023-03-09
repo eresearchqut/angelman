@@ -35,6 +35,8 @@ WORKDIR /requirements
 COPY rdrf/requirements/* rdrf/
 COPY requirements/* ./
 
+COPY rdrf/clients ./clients
+
 RUN pip install -r rdrf/requirements.txt
 RUN pip install -r requirements.txt
 
@@ -85,6 +87,8 @@ WORKDIR /requirements
 COPY --from=builder /root/.cache /root/.cache
 COPY --from=builder /requirements/requirements.txt .
 COPY --from=builder /requirements/rdrf/requirements.txt rdrf/
+
+COPY rdrf/clients ./clients
 
 RUN pip install -r rdrf/requirements.txt
 RUN pip install -r requirements.txt

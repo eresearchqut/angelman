@@ -35,6 +35,8 @@ WORKDIR /requirements
 COPY requirements/* ./
 COPY rdrf/requirements/* ./rdrf/
 
+COPY rdrf/clients ./clients
+
 RUN    pip install -r rdrf/requirements.txt \
     && pip install -r rdrf/dev-requirements.txt \
     && pip install -r rdrf/test-requirements.txt \

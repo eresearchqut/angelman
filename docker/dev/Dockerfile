@@ -12,6 +12,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   mime-support \
   nodejs \
   unixodbc \
+
   # Builder
   build-essential \
   git \
@@ -68,6 +69,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   libpq5 \
   mime-support \
   nodejs \
+  postgresql-client \
   unixodbc \
   libmagic1 \
   git \

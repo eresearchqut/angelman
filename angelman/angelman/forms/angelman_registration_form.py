@@ -54,6 +54,7 @@ class ANGPatientRegistrationForm(RegistrationFormCaseInsensitiveCheck):
         'first_name': _("Given Names"),
         'surname': _("Surname"),
         'date_of_birth': _("Date of Birth"),
+        'gender': _("Gender"),
         'diagnosis': _("Diagnosis"),
         'country': _("Country"),
         'address': _("Street"),

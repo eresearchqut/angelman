@@ -1,0 +1,26 @@
+name: Submodule Update
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types:
+      - submodule_update
+jobs:
+  submodule_update:
+    name: Submodule Update
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Update submodule
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          cd rdrf
+          git checkout next_release
+          git pull
+          cd ..
+          git add rdrf
+          git commit -m "Submodule Update"
+          git push

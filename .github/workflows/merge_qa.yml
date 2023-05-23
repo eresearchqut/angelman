@@ -1,0 +1,23 @@
+name: Merge QA
+on:
+  workflow_dispatch:
+  repository_dispatch:
+    types:
+      - merge_qa
+jobs:
+  merge_qa:
+    name: Merge QA
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - name: Merge next_release branch into cicd branch
+        run: |
+          git config --global user.name "${GITHUB_ACTOR}"
+          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git checkout cicd
+          git pull
+          git merge next_release
+          git push

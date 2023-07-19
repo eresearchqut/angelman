@@ -27,6 +27,8 @@ PROJECT_LOGO = env.get("project_logo", "images/logo.png")
 
 VERSION = env.get('app_version', '%s (ang)' % angelman.VERSION)
 
+CURATOR_EMAIL = env.get("curator_email", "curator@angelmanregistry.info")
+
 REGISTRATION_FORM = "angelman.forms.angelman_registration_form.ANGRegistrationForm"
 REGISTRATION_CLASS = "angelman.registry.groups.registration.angelman_registration.AngelmanRegistration"
 REGISTRATION_CLASS_EMBEDDED = "angelman.registry.groups.registration.angelman_registration.EmbeddedAngelmanRegistration"

@@ -1,4 +1,4 @@
-EXPORT_TIME: '2023-06-02 11:25:33.108924'
+EXPORT_TIME: '2023-10-16 10:36:46.203421'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -634,6 +634,24 @@ cdes:
   pv_group: null
   widget_name: ''
   widget_settings: '{}'
+- abbreviated_name: CISValid
+  allow_multiple: false
+  calculation: ''
+  calculation_query: ''
+  code: ADMINCISValidation
+  datatype: range
+  desc: ''
+  important: false
+  instructions: Validation of caregiver impact survey
+  is_required: false
+  max_length: null
+  max_value: null
+  min_value: null
+  name: CIS Validation
+  pattern: ''
+  pv_group: ADMCISValidPVG
+  widget_name: RadioSelect
+  widget_settings: '{"force_vertical":true}'
 - abbreviated_name: Curator decision
   allow_multiple: false
   calculation: ''
@@ -28933,16 +28951,16 @@ cdes:
 code: ang
 complete_fields:
 - cdes:
-  - ResideInfancy
-  - ResideNewborn
-  form_name: NewbornAndInfancyHistory
-- cdes:
   - CBS0CareSup
   - CBS0Cost
   - CBS0Duration
   - CBS0Over18
   - CBS0USA
   form_name: CareBurden
+- cdes:
+  - ResideInfancy
+  - ResideNewborn
+  form_name: NewbornAndInfancyHistory
 - cdes:
   - ADMINDUPLICATEOTH
   - ADMINPASS
@@ -29232,64 +29250,8 @@ consent_sections:
         </p>
       </video>
 
-    <div class="btn-group" role="group">
-    <button type="button" class="btn btn-link btn-sm" data-bs-toggle="modal" data-bs-target="#transcriptModal">
-      Read transcript
-    </button>
-    <a class="btn btn-link btn-sm" style="text-decoration: underline" href="https://youtu.be/82aZCfgsmY0" target=”_blank”>Watch on YouTube</a>
-    </div>
 
-    <div class="modal fade" id="transcriptModal" tabindex="-1" aria-labelledby="transcript" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">Transcript</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <p>
-              The Global Angelman Syndrome Registry collects data on individuals with Angelman syndrome through a series of online surveys, or modules that are driven by parents and caregivers.
-              </p>
-              <p>
-              Your data, combined with data from all around the world, helps clinicians and researchers understand how people with  Angelman syndrome differ from one another, and how their condition changes over time. This will help researchers develop new studies into Angelman syndrome, as  well as  help clinical trial sponsors to find suitable patients for each study.
-              </p>
-              <p>
-              Taking part in the registry is easy. We will ask you to complete the online consent questions on this webpage and save your response. This will unlock a series of registry modules that will take approximately 1.5 to 2 hours to complete. To help you do this, gather up any information you have on your child or adult’s diagnosis, tests and development. If you can’t find all the details you need, or you don’t have enough time to complete the registry, don’t worry. You can log in at a later date and complete or update your child/ adult’s information.
-              <p>
-              When you first join the registry, you will complete an initial set of modules about the health and development of your child or adult. We will email you reminders to complete follow up modules to understand Angelman syndrome across time. We may contact you if there are changes and additional modules added.
-              </p>
-              <p>
-              The Global Angelman Syndrome Registry is not a trial. Your child or adult does not need to have any medical tests or take any medications to be included in the registry.
-              </p>
-              <p>
-              The research team will make every effort to ensure your data is kept safe. We remind you to be vigilant when entering information online. Once you consent to enter the project your data will be stored in secure systems where identifying information such as your name and address are stored separately to the other data. In this way, the data held and used for research cannot be directly linked back to you by anyone but the authorised registry staff.  Researchers will receive a ‘code’ linked to individual data that we can use to re-identify you if we need to. Your coded data can be used to provide statistics for research. Your agreement to allow this only relates to your data in this registry.
-              </p>
-              <p>
-              We cannot promise any benefits from taking part in this registry. Your child/ adult may have the opportunity to take part in a clinical trial if they meet the requirements for the trial. You will be asked for additional consent if we wish to invite you to participate in studies that involve you or your child directly.
-              </p>
-              <p>
-              This project is not directly related to your child’s ongoing medical care and is voluntary. Not participating or withdrawing will not impact any care being provided to your child now or in the future. You can decide to leave this project at any time and request that any data currently held is removed from further use. It is important to note that if any data has already been used this cannot be withdrawn. However, all use of data is in aggregate forms and your child cannot be identified through its use. If you wish to withdraw, please email the data curator.
-              </p>
-              <p>
-              There is one consent that is required, or mandatory, for you to be part of this project and there are others that are optional, it’s important that you understand these and also that you can change these consents at any time.
-              </p>
-              <p>
-              Our goal is to make your data as useful as possible and where you give your consent to allow it, we will share your non identifiable or coded data with others who have similar goals to understanding Angelman syndrome and can demonstrate equivalent protections of privacy and confidentiality. These projects will require independent evaluation by an ethics committee to ensure they meet the obligations we have outlined to you.
-              <p>
-              In some cases, such as Angelman syndrome clinics or Natural History studies, we may ask you if you would like to share your identifying information as well to save time and money across each study. We will always contact you personally before doing this and won’t share anything without your consent.
-              </p>
-              <p>
-              Another optional consent is to be contacted regarding patient organisations in your region, research studies and clinical trials. If you give your consent for this we will contact you directly to share any relevant opportunities directly with you so you can make a decision at that time. Again, this does not guarantee a place in any study or clinical trial.
-              </p>
-              <p>
-              If you have any concerns or questions about the study, please contact the data curator.
-              </p>
-              <p>
-              The Mater Misericordiae Ltd Human Research Ethics Committee is overseeing the registry. If you wish to discuss your rights as a participant or make a complaint, you may contact the Chairperson of the ethics committee at research.ethics@mater.uq.edu.au. If you have any concerns about data security, you may contact the Australian Federal Privacy Commissioner at enquiries@oaic.gov.au.
-              </p>
-          </div>
-        </div>
-      </div>
+    <a class="btn btn-link btn-sm" style="text-decoration: underline" href="https://youtu.be/82aZCfgsmY0" target=”_blank”>Watch on YouTube</a>
     </div>
   questions:
   - code: angnewconsent1
@@ -29542,6 +29504,33 @@ email_notifications:
     subject: Angelman Registry Clinician Signup Request
   group_recipient: null
   recipient: curator@angelmanregistry.info
+- description: longitudinal-followup
+  disabled: false
+  email_from: no-reply@angelmanregistry.info
+  email_templates:
+  - body: |-
+      <p>Hello {{patient.parentguardian_set.first.first_name}},</p>
+      <p>The main goal of the Global Angelman Syndrome Registry is to learn more about Angelman syndrome and how it affects individuals over time. That's why we might get in touch with you every now and then to ask for updates. The six-month update is just a quick check-in and won't take up much of your time. You might also be asked to complete other modules once a year or every two years.</p>
+      <p>
+      You are due to follow up on the following forms in the registry on behalf of {{patient.given_names}}:
+      <ul>
+      {% for name, entries in longitudinal_followups.items %}
+      <li><a href="https://trrf.angelmanregistry.info{{ entries.0.longitudinal_followup.context_form_group.link }}">{{ entries.0.longitudinal_followup.description }}</a></li>
+      {% endfor %}
+      </ul>
+      <p>
+
+      <p>
+      Regards,
+      </p>
+      <p>
+      Curator
+      </p>
+    description: Longitudinal followup
+    language: en
+    subject: Angelman Registry - Longitudinal Followup
+  group_recipient: null
+  recipient: '{{patient.parentguardian_set.first.user.email}}'
 - description: new-patient-user-registered
   disabled: false
   email_from: noreply@angelman.prod.registryframework.net
@@ -29733,6 +29722,14 @@ forms:
     - ADMINUSERDECISION
     - ADMINCURATORDEC
     - ADMINDUPLICATEOTH
+    extra: null
+    header: ''
+  - abbreviated_name: CISValidSection
+    allow_multiple: false
+    code: CISVALID
+    display_name: Caregiver Impact Survey Validation
+    elements:
+    - ADMINCISValidation
     extra: null
     header: ''
   - abbreviated_name: Individual Passed Away
@@ -33754,7 +33751,7 @@ forms:
     header: ''
   tags: []
 - abbreviated_name: CBS
-  applicability_condition: ''
+  applicability_condition: patient.country_of_birth == 'US'
   conditional_rendering_rules: |-
     section CBS1BGPT CBS2BGCG1 CBS3EMP1 CBS3EMP1a CBS4INF1 CBS5OOP1 CBS6OTH CBS6OTH2 CBS6OTH3 CBS6OTH4 visible if CBS0CareSup== Yes and CBS0Duration == Yes and
     CBS0Cost == Yes and CBS0Over18 == Yes and CBS0USA == Yes
@@ -37560,9 +37557,66 @@ group_permissions:
     name: Can see Data Modules column
 - name: Burden Pilot Parents
   permissions: []
-longitudinal_followups: []
+longitudinal_followups:
+- condition: consents.get('ang.AngNewConsentSection.angnewconsent6b') and patient.living_status
+    == 'Alive'
+  context_form_group: Review
+  debounce: 15724800.0
+  description: 6 month check up
+  frequency: 15724800.0
+  name: 6MonthCheck
+- condition: consents.get('ang.AngNewConsentSection.angnewconsent6b') and patient.living_status
+    == 'Alive'
+  context_form_group: IllnessMed
+  debounce: 31536000.0
+  description: Illnesses and medical conditions
+  frequency: 31536000.0
+  name: Illness_Medical
+- condition: consents.get('ang.AngNewConsentSection.angnewconsent6b') and patient.living_status
+    == 'Alive' and patient.age < 10
+  context_form_group: Communication
+  debounce: 31536000.0
+  description: Communication in children under 10 years
+  frequency: 31536000.0
+  name: Communication_Under10
+- condition: consents.get('ang.AngNewConsentSection.angnewconsent6b') and patient.living_status
+    == 'Alive' and patient.age >= 10
+  context_form_group: Communication
+  debounce: 63072000.0
+  description: Communication in children over 10 years and adults
+  frequency: 63072000.0
+  name: Communication_Over10
+- condition: consents.get('ang.AngNewConsentSection.angnewconsent6b') and patient.living_status
+    == 'Alive' and patient.age < 10
+  context_form_group: BehaviourDev
+  debounce: 31536000.0
+  description: Behaviour in children under 10 years
+  frequency: 31536000.0
+  name: Behaviour_Under10
+- condition: consents.get('ang.AngNewConsentSection.angnewconsent6b') and patient.living_status
+    == 'Alive' and patient.age >= 10
+  context_form_group: BehaviourDev
+  debounce: 63072000.0
+  description: Behaviour in children over 10 years and adults
+  frequency: 63072000.0
+  name: Behaviour_Over10
+- condition: consents.get('ang.AngNewConsentSection.angnewconsent6b') and patient.living_status
+    == 'Alive' and patient.age < 10
+  context_form_group: Sleep
+  debounce: 31536000.0
+  description: Sleep in children under 10 years
+  frequency: 31536000.0
+  name: Sleep_Under10
+- condition: consents.get('ang.AngNewConsentSection.angnewconsent6b') and patient.living_status
+    == 'Alive' and patient.age >= 10
+  context_form_group: Sleep
+  debounce: 63072000.0
+  description: Sleep in children aged 10 and over, and adults
+  frequency: 63072000.0
+  name: Sleep_Over10
 metadata_json: '{"features": ["clinicians_have_patients", "registration", "clinician_form",
-  "clinicians_have_patients", "consent_checks", "verification", "questionnaires" ,"contexts"],
+  "clinicians_have_patients", "consent_checks", "verification", "questionnaires",
+  "contexts", "user_email_activation_optional_for_admin", "longitudinal_followups"],
   "diagnosis_code": "ANGDNAMethylAbnormalResult", "verification_cdes": [{"form": "AngelmanRegistryHistoryOfDiagnosisAndResults",
   "section": "ANGPatientResults", "cde": "ANGGeneticTest"}, {"form": "AngelmanRegistryHistoryOfDiagnosisAndResults",
   "section": "ANGPatientResults", "cde": "ANGGeneticTestType"}, {"form": "AngelmanRegistryHistoryOfDiagnosisAndResults",
@@ -37789,9 +37843,9 @@ pvgs:
     position: 17
     value: Auditory processing disorders
   - code: 15Ear
-    desc: Ear infections (Otis media)
+    desc: Ear infections (Otitis media)
     position: 16
-    value: Ear infections (Otis media)
+    value: Ear infections (Otitis media)
   - code: 14CVI
     desc: Cortical visual impairment
     position: 15
@@ -38300,6 +38354,20 @@ pvgs:
     desc: Not making progress
     position: 1
     value: Not making progress
+- code: ADMCISValidPVG
+  values:
+  - code: '3'
+    desc: 3 - to be quarantined from dataset
+    position: 3
+    value: 3 - to be quarantined from dataset
+  - code: '2'
+    desc: 2 - to be confirmed
+    position: 2
+    value: 2 - to be confirmed
+  - code: '1'
+    desc: 1 - validated
+    position: 1
+    value: 1 - validated
 - code: ANGAllergyType
   values:
   - code: Insect
@@ -39492,6 +39560,18 @@ pvgs:
     value: Yes, currently have
 - code: ANGMedIntListMaster
   values:
+  - code: 1Carbamazepine(Tegretol)
+    desc: Carbamazepine (Tegretol)
+    position: 1
+    value: Carbamazepine (Tegretol)
+  - code: 44Metformin(Diaformin)
+    desc: Metformin (Diaformin)
+    position: 43
+    value: Metformin (Diaformin)
+  - code: 27Omeprazole(LosecAcimax
+    desc: Omeprazole (Losec, Acimax, Maxor)
+    position: 26
+    value: Omeprazole (Losec, Acimax, Maxor)
   - code: Other
     desc: Other
     position: 55
@@ -39500,10 +39580,6 @@ pvgs:
     desc: Promethazine (Phenergan)
     position: 23
     value: Promethazine (Phenergan)
-  - code: 1Cabamazepine(Tegretol)
-    desc: Cabamazepine (Tegretol)
-    position: 1
-    value: Cabamazepine (Tegretol)
   - code: 51Cannabis
     desc: Cannabis or cannabinoid
     position: 50
@@ -39568,10 +39644,6 @@ pvgs:
     desc: Oxybutynin (Ditropan)
     position: 44
     value: Oxybutynin (Ditropan)
-  - code: 44Netformin(Diaformin)
-    desc: Netformin (Diaformin)
-    position: 43
-    value: Netformin (Diaformin)
   - code: 52Ketogenicdiet
     desc: Ketogenic diet
     position: 51
@@ -39620,10 +39692,6 @@ pvgs:
     desc: Ondansetron (Zofran)
     position: 27
     value: Ondansetron (Zofran)
-  - code: 27Ommeprazole(LosecAcimax
-    desc: Ommeprazole (Losec, Acimax, Maxor)
-    position: 26
-    value: Ommeprazole (Losec, Acimax, Maxor)
   - code: 26Lactulose(Actilax,Dulose)
     desc: Lactulose (Actilax, Dulose)
     position: 25
@@ -40554,19 +40622,19 @@ pvgs:
     position: 2
     value: 'No'
   - code: 1Yes
-    desc: Yes – please report in the medical history and hospitalisations module
+    desc: Yes – please report in the "Hospitalisations and Surgical Procedures" module
     position: 1
-    value: Yes – please report in the medical history and hospitalisations module
+    value: Yes – please report in the "Hospitalisations and Surgical Procedures" module
 - code: ANGSeizureMedicationPVG
   values:
+  - code: 1Yes
+    desc: Yes – please report in the "Medications, Interventions and Therapies" module
+    position: 1
+    value: Yes – please report in the "Medications, Interventions and Therapies" module
   - code: 2No
     desc: 'No'
     position: 2
     value: 'No'
-  - code: 1Yes
-    desc: Yes – please report in the medications and interventions module
-    position: 1
-    value: Yes – please report in the medications and interventions module
 - code: ANGSeizureRecurY
   values:
   - code: Morethan24
@@ -44217,6 +44285,38 @@ registry_dashboards:
     widget_type: demographics
 reports: []
 splash_screen: ''
+whitelisted_file_extensions:
+- .csv
+- .txt
+- .doc
+- .docx
+- .pdf
+- .rtf
+- .msg
+- .jfif
+- .jpeg
+- .jpg
+- .tif
+- .png
+- .heic
+- .mov
+- .apng
+- .avif
+- .gif
+- .webp
+- .3gp
+- .aac
+- .flac
+- .mpg
+- .mpeg
+- .mp3
+- .mp4
+- .m4a
+- .m4p
+- .ogv
+- .ogg
+- .wav
+- .webm
 working_group_types: []
 working_groups:
 - name: Default Working Group

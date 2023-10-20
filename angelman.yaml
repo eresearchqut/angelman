@@ -1,4 +1,4 @@
-EXPORT_TIME: '2023-10-16 10:36:46.203421'
+EXPORT_TIME: '2023-10-20 13:03:27.581724'
 EXPORT_TYPE: REGISTRY_PLUS_CDES
 RDRF_VERSION: 1.0.0
 REGISTRY_VERSION: '1.49'
@@ -29252,7 +29252,6 @@ consent_sections:
 
 
     <a class="btn btn-link btn-sm" style="text-decoration: underline" href="https://youtu.be/82aZCfgsmY0" target=”_blank”>Watch on YouTube</a>
-    </div>
   questions:
   - code: angnewconsent1
     instructions: ''
@@ -33751,7 +33750,7 @@ forms:
     header: ''
   tags: []
 - abbreviated_name: CBS
-  applicability_condition: patient.country_of_birth == 'US'
+  applicability_condition: ''
   conditional_rendering_rules: |-
     section CBS1BGPT CBS2BGCG1 CBS3EMP1 CBS3EMP1a CBS4INF1 CBS5OOP1 CBS6OTH CBS6OTH2 CBS6OTH3 CBS6OTH4 visible if CBS0CareSup== Yes and CBS0Duration == Yes and
     CBS0Cost == Yes and CBS0Over18 == Yes and CBS0USA == Yes

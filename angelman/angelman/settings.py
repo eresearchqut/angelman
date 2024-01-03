@@ -45,4 +45,10 @@ SECURITY_WHITELISTED_URLS += (
 
 PASSWORD_EXPIRY_DAYS = env.get("password_expiry_days", 0)
 PASSWORD_EXPIRY_WARNING_DAYS = env.get("password_expiry_warning_days", 0)
-ACCOUNT_EXPIRY_DAYS = env.get("account_expiry_days", 0) 
+ACCOUNT_EXPIRY_DAYS = env.get("account_expiry_days", 0)
+
+# Reports settings
+SCHEMA_MODULE = 'report.schema'
+SCHEMA_METHOD_PATIENT_FIELDS = 'get_patient_fields'
+REPORT_CONFIG_MODULE = 'angelman.report.report_configuration'
+REPORT_CONFIG_METHOD_GET = 'get_angelman_configuration'

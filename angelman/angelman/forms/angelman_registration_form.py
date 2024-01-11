@@ -7,7 +7,7 @@ from django.utils.translation import gettext_lazy as _
 
 from angelman.registry.groups.registration.angelman_registration import DIAGNOSIS_CDE
 from rdrf.forms.registration_forms import RegistrationFormCaseInsensitiveCheck
-from rdrf.helpers.utils import get_preferred_languages
+from rdrf.helpers.utils import get_all_language_codes
 from rdrf.models.definition.models import CommonDataElement
 from registry.patients.models import Patient
 
@@ -32,7 +32,7 @@ def _get_diagnosis():
 
 
 def _preferred_languages():
-    languages = get_preferred_languages()
+    languages = get_all_language_codes()
     return [_tuple(lang.code, lang.name) for lang in languages] if languages else [_tuple('en', 'English')]
 
 

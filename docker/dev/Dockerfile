@@ -38,7 +38,8 @@ COPY rdrf/requirements/* ./rdrf/
 
 COPY rdrf/clients ./clients
 
-RUN    pip install -r rdrf/requirements.txt \
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install -r rdrf/requirements.txt \
     && pip install -r rdrf/dev-requirements.txt \
     && pip install -r rdrf/test-requirements.txt \
     && pip install -r requirements.txt \
@@ -78,10 +79,10 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN mkdir -p /requirements/rdrf/
 WORKDIR /requirements
 
-COPY --from=builder /root/.cache /root/.cache
 COPY --from=builder /requirements/ .
 
-RUN    pip install -r rdrf/requirements.txt \
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install -r rdrf/requirements.txt \
     && pip install -r rdrf/dev-requirements.txt \
     && pip install -r rdrf/test-requirements.txt \
     && pip install -r requirements.txt \

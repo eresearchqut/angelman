@@ -7,7 +7,6 @@ from django.utils.translation import gettext_lazy as _
 
 from angelman.registry.groups.registration.angelman_registration import DIAGNOSIS_CDE
 from rdrf.forms.registration_forms import RegistrationFormCaseInsensitiveCheck
-from rdrf.helpers.utils import get_all_language_codes
 from rdrf.models.definition.models import CommonDataElement
 from registry.patients.models import Patient
 
@@ -29,11 +28,6 @@ def _get_diagnosis():
     initial = {'code': '', 'text': 'Diagnosis'}
     options = [initial] + options
     return [(o['code'], _(o['text'])) for o in options]
-
-
-def _preferred_languages():
-    languages = get_all_language_codes()
-    return [_tuple(lang.code, lang.name) for lang in languages] if languages else [_tuple('en', 'English')]
 
 
 def _field_widget_class(field):
@@ -62,7 +56,6 @@ class ANGPatientRegistrationForm(RegistrationFormCaseInsensitiveCheck):
         'state': _("State / County / Province / Region"),
         'postcode': _("Zip / Postal Code"),
         'phone_number': _('Phone Number'),
-        'preferred_languages': _('Preferred Language')
     }
 
     placeholders = {
@@ -71,12 +64,12 @@ class ANGPatientRegistrationForm(RegistrationFormCaseInsensitiveCheck):
 
     country_choices = _countries()
 
-    language_choices = _preferred_languages()
 
     password_fields = ['password1', 'password2']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+
         for field in self.fields:
 
             field_widget_class = _field_widget_class(self.fields[field])
@@ -91,7 +84,6 @@ class ANGPatientRegistrationForm(RegistrationFormCaseInsensitiveCheck):
             if field in self.password_fields:
                 self.fields[field].widget.render_value = True
 
-    preferred_languages = ChoiceField(required=False, choices=language_choices)
     first_name = CharField(required=True, max_length=30)
     surname = CharField(required=True, max_length=30)
     date_of_birth = DateField(required=True)
